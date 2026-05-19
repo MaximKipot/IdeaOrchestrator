@@ -11,6 +11,8 @@ The framework is intentionally Markdown-based. Chat is useful for discussion, bu
 - Do not copy or create the full project folder tree up front.
 - At startup, create only the project folder and the control files needed to begin.
 - Phase folders and files are created just in time when their phase starts or when a file is actually needed.
+- If the user starts from an existing chat, document, transcript, or notes dump, use `idea-import` before normal intake.
+- Import work may create `00-import/source-material.md` and `00-import/import-summary.md`, but only when source material exists.
 - Every important decision must be written to `00-control/decision-log.md`.
 - Every phase must begin by reading `00-control/current-state.md`.
 - Every phase must end by updating `00-control/current-state.md`.
@@ -37,6 +39,7 @@ Do not blur these labels. If a claim is uncertain, label it as uncertain.
 Codex must use the relevant skill from `.agents/skills/` for each phase.
 
 - Use `idea-orchestrator` to choose the current phase and maintain process flow.
+- Use `idea-import` before `idea-intake` when the user provides substantial existing material to organize.
 - Use one phase skill at a time for normal work.
 - Do not jump phases unless the user explicitly requests it.
 - If the user requests a jump, record the jump and its risk in `00-control/current-state.md`.
@@ -56,6 +59,8 @@ Codex must use the relevant skill from `.agents/skills/` for each phase.
 ## Decisions
 
 Log decisions immediately when they become meaningful.
+
+Imported conclusions from prior chats or documents are not decisions until the user confirms them. Record them as candidate decisions in `00-import/import-summary.md` or as open questions.
 
 Each decision must include:
 

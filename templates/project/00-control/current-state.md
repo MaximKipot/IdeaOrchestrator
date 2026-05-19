@@ -14,6 +14,7 @@
 
 | Phase | Status | Notes |
 | --- | --- | --- |
+| 00 Import Existing Material | Optional | Use only when starting from an existing chat, document, transcript, or notes dump. |
 | 00 Project Setup | Not Started | |
 | 01 Idea Capture | Not Started | |
 | 02 Problem Context | Not Started | |
@@ -35,4 +36,3 @@
 ## Notes
 
 - 
-

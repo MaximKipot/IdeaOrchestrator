@@ -2,6 +2,7 @@
 
 The normal process is sequential:
 
+Optional pre-initial import: existing material import
 0. Project setup
 1. Idea capture
 2. Problem context
@@ -25,6 +26,19 @@ Before starting a phase:
 - Use the relevant skill.
 - Create only the folders and files needed for the phase being started.
 - Do not create future phase folders in advance.
+
+## Import Transition
+
+Use `idea-import` before phase 1 when the user provides substantial existing material.
+
+Import is complete when:
+
+- The source material is preserved or faithfully summarized.
+- Candidate ideas and claims are classified.
+- Candidate decisions are separated from confirmed decisions.
+- The user has a recommended next normal phase.
+
+After import, route to `idea-intake` when the main idea still needs confirmation, or `problem-definition` when the main idea is already clear.
 
 Before leaving a phase:
 

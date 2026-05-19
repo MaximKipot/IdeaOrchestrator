@@ -30,6 +30,27 @@ Suggested depth levels:
 - `Standard`: most business, software, service, or content ideas.
 - `Deep`: high-cost, high-risk, regulated, or strategically important idea.
 
+## Start From Existing Material
+
+Use `idea-import` before normal intake when you already have a long chat, document, transcript, research dump, strategy note, or mixed notes.
+
+Ask Codex:
+
+> Import this existing material and turn it into an idea project.
+
+Codex should:
+
+1. Create the control files if they do not exist.
+2. Create only the import files:
+   - `00-import/source-material.md`
+   - `00-import/import-summary.md`
+3. Preserve the original material or a faithful summary of it.
+4. Extract candidate ideas, facts, assumptions, guesses, opinions, preferences, rejected alternatives, open questions, and candidate decisions.
+5. Ask you to confirm the main idea and any candidate decisions.
+6. Route into `idea-intake` or `problem-definition`.
+
+Old chat conclusions are not automatically decisions. They become decisions only after you confirm them.
+
 ## Continue An Existing Idea Project
 
 Ask Codex to:

@@ -1,6 +1,6 @@
 ---
 name: idea-orchestrator
-description: Use when starting, continuing, routing, skipping, jumping, or reviewing an idea project in the Codex idea framework; especially when the user uses plain-language commands like start, continue, run a phase, what next, skip this, or review.
+description: Use when starting, continuing, routing, skipping, jumping, or reviewing an idea project in the Codex idea framework; especially when the user uses plain-language commands like start, import existing material, continue, run a phase, what next, skip this, or review.
 ---
 
 # Idea Orchestrator
@@ -10,7 +10,7 @@ description: Use when starting, continuing, routing, skipping, jumping, or revie
 Use this skill as the front door for the framework.
 
 1. Read `00-control/current-state.md`. If it is missing, create only `00-control/current-state.md`, `00-control/open-questions.md`, and `00-control/decision-log.md`; do not copy or create the full folder tree.
-2. Translate the user's plain-language request into one of: start, continue, run phase, skip, jump, review, or status.
+2. Translate the user's plain-language request into one of: start, import, continue, run phase, skip, jump, review, or status.
 3. Check blockers in `00-control/open-questions.md` before moving forward.
 4. Before running a phase, create only that phase's required folders and files if they are missing.
 5. Run or recommend exactly one next phase skill unless the user asks for a broader review.
@@ -31,6 +31,7 @@ Use this skill as the front door for the framework.
 | User Says | Do This |
 | --- | --- |
 | Start a new idea | Create only control files, capture raw idea, recommend `idea-intake`. |
+| Import existing material | Create control and `00-import` files, preserve source, recommend `idea-import`. |
 | Continue | Read current state, resolve blockers, run the next recommended skill. |
 | What next? | Summarize current phase, blockers, and one recommended next action. |
 | Run research | Route to `research-evidence` and check research depth. |
@@ -75,6 +76,8 @@ Use before any phase, when resuming a project, when interpreting a plain-languag
 - `00-control/current-state.md`
 - `00-control/open-questions.md`
 - `00-control/decision-log.md` when process decisions are made
+- `00-import/source-material.md` when importing existing material
+- `00-import/import-summary.md` when importing existing material
 
 ## Questions To Ask
 
@@ -113,4 +116,4 @@ If the user skips a phase, artifact, or question:
 
 ## Next Recommended Skill
 
-Use the phase skill matching the current phase. If no phase is clear, use `idea-intake` for a new idea or `execution-tracking` for an active project with a selected path.
+Use the phase skill matching the current phase. If the user provides existing source material, use `idea-import`. If no phase is clear, use `idea-intake` for a new idea or `execution-tracking` for an active project with a selected path.
