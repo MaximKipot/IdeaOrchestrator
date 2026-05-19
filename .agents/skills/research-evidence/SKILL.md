@@ -5,6 +5,21 @@ description: Use when gathering, classifying, or summarizing research evidence f
 
 # Research Evidence
 
+## Quick Start
+
+1. Read `00-control/current-state.md`, idea brief, and problem context.
+2. Choose research depth: `Light`, `Standard`, or `Deep`, unless already set.
+3. Gather or summarize evidence appropriate to the depth.
+4. Update the research log, source list, and evidence map.
+5. Update `00-control/current-state.md` and recommend `assumptions-risks`.
+
+## Ease Of Use Rules
+
+- Start with the smallest research pass that can change the next decision.
+- Use user-provided sources first; add external research only when needed and available.
+- Treat unsourced claims as `Assumption` or `Guess`, not `Fact`.
+- If research cannot be completed now, log the missing research and risk rather than stalling silently.
+
 ## When To Use
 
 Use for phase `03-research-evidence`.

@@ -5,6 +5,21 @@ description: Use when reviewing experiment results, deciding whether to continue
 
 # Review Pivot
 
+## Quick Start
+
+1. Read `00-control/current-state.md`, experiment design, success metrics, and progress log.
+2. Summarize what changed and what was learned.
+3. Decide whether to continue, adjust, pivot, pause, or stop.
+4. Preserve abandoned paths and log pivot decisions.
+5. Update `00-control/current-state.md` and recommend the next phase or action.
+
+## Ease Of Use Rules
+
+- Anchor review in evidence, not general sentiment.
+- If evidence is thin, say so and choose the smallest next learning action.
+- Do not erase the previous direction; preserve it as rejected, paused, or superseded.
+- Keep the review decision plain and explicit.
+
 ## When To Use
 
 Use for phase `11-review-pivot`, after an experiment, a milestone, a stall, or new contradictory evidence.

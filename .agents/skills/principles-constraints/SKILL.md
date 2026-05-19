@@ -5,6 +5,21 @@ description: Use when defining decision principles, hard constraints, preference
 
 # Principles Constraints
 
+## Quick Start
+
+1. Read `00-control/current-state.md`, direction, and anti-vision.
+2. Write 3-7 principles that can guide tradeoffs.
+3. Separate hard constraints from preferences.
+4. Log any meaningful constraint decisions.
+5. Update `00-control/current-state.md` and recommend `strategy`.
+
+## Ease Of Use Rules
+
+- Keep each principle actionable, not aspirational.
+- Use constraints to simplify choices, not to create extra process.
+- If a constraint is uncertain, label it and continue unless it blocks strategy.
+- Avoid adding principles that do not change a decision.
+
 ## When To Use
 
 Use for phase `06-principles-constraints`.

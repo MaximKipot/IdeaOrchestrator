@@ -5,6 +5,21 @@ description: Use when selecting the path, preserving rejected options, and turni
 
 # Decision Roadmap
 
+## Quick Start
+
+1. Read `00-control/current-state.md` and the MVP experiment files.
+2. Record the selected path.
+3. Move rejected, deferred, or paused options into `09-roadmap/rejected-options.md`.
+4. Create a short roadmap with owners, sequence, and status.
+5. Log decisions, update `00-control/current-state.md`, and recommend `execution-tracking`.
+
+## Ease Of Use Rules
+
+- Keep the roadmap near-term and experiment-focused.
+- Make the next action obvious.
+- Preserve alternatives without relitigating them.
+- Use owner, status, and revisit trigger fields to reduce follow-up questions.
+
 ## When To Use
 
 Use for phase `09-decisions-roadmap`.

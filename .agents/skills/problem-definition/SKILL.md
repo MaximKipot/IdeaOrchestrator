@@ -5,6 +5,21 @@ description: Use when clarifying the problem, user context, current alternatives
 
 # Problem Definition
 
+## Quick Start
+
+1. Read `00-control/current-state.md` and the idea files.
+2. Write the problem from the user's or beneficiary's perspective.
+3. Record current alternatives before proposing new solutions.
+4. Add only unresolved blockers to `00-control/open-questions.md`.
+5. Update `00-control/current-state.md` and recommend `research-evidence`.
+
+## Ease Of Use Rules
+
+- Do not force a perfect problem statement before moving forward.
+- If multiple users are plausible, pick a likely initial user and label it as an `Assumption`.
+- Separate "problem" from "solution idea" in plain language.
+- Ask follow-up questions only when the user or problem is too vague to continue.
+
 ## When To Use
 
 Use for phase `02-problem-context`.

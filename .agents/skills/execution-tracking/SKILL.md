@@ -5,6 +5,21 @@ description: Use when tracking progress, current focus, next actions, and eviden
 
 # Execution Tracking
 
+## Quick Start
+
+1. Read `00-control/current-state.md`, selected path, roadmap, and execution files.
+2. Update current focus before adding new actions.
+3. Add or revise next actions with owner, status, and due date when known.
+4. Log progress and evidence created by execution.
+5. Update `00-control/current-state.md`; recommend review when evidence is available.
+
+## Ease Of Use Rules
+
+- Make the next action concrete and small.
+- Do not turn execution tracking into project management overhead.
+- If no due date is known, leave it blank rather than inventing one.
+- Surface decisions created by execution immediately.
+
 ## When To Use
 
 Use for phase `10-execution-tracking`.

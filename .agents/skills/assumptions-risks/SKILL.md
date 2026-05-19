@@ -5,6 +5,21 @@ description: Use when identifying assumptions, risks, unknowns, and the uncertai
 
 # Assumptions Risks
 
+## Quick Start
+
+1. Read `00-control/current-state.md` and the evidence map.
+2. List the assumptions that must be true for the idea to work.
+3. List the risks that could make the idea fail or become unattractive.
+4. Prioritize the assumptions and risks that should shape experiments.
+5. Update `00-control/current-state.md` and recommend `vision-direction`.
+
+## Ease Of Use Rules
+
+- Prefer a short prioritized list over a long exhaustive inventory.
+- Make uncertainty testable wherever possible.
+- If a risk is serious but unresolved, log it instead of debating it indefinitely.
+- Use simple severity language: low, medium, high.
+
 ## When To Use
 
 Use for phase `04-assumptions-risks`.

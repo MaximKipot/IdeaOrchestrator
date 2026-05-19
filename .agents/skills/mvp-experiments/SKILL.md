@@ -5,6 +5,21 @@ description: Use when generating MVP options, designing experiments, or selectin
 
 # MVP Experiments
 
+## Quick Start
+
+1. Read `00-control/current-state.md`, assumptions, risks, target user, metrics, and constraints.
+2. Generate at least three MVP or experiment options.
+3. Compare options by learning value, speed, cost, and risk.
+4. Select the smallest useful experiment and preserve rejected options.
+5. Log the decision, update `00-control/current-state.md`, and recommend `decision-roadmap`.
+
+## Ease Of Use Rules
+
+- Always look for a smaller experiment before selecting a larger one.
+- Prefer experiments that test the riskiest assumption quickly.
+- Do not let the first plausible idea become the only option.
+- Keep rejected options visible so the user can revisit them later.
+
 ## When To Use
 
 Use for phase `08-mvp-experiments`.

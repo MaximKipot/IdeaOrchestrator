@@ -5,6 +5,21 @@ description: Use when defining target user, positioning, value proposition, diff
 
 # Strategy
 
+## Quick Start
+
+1. Read `00-control/current-state.md`, direction, evidence, principles, and constraints.
+2. Select an initial target user.
+3. Draft positioning, value proposition, differentiation, model, distribution, and metrics at the chosen depth.
+4. Log strategy decisions and unresolved questions.
+5. Update `00-control/current-state.md` and recommend `mvp-experiments`.
+
+## Ease Of Use Rules
+
+- Fill strategy files just enough to choose experiments; do not over-polish.
+- If several target users are plausible, pick the most reachable initial segment and label the choice as a `Decision`.
+- Prefer testable distribution ideas over broad channel lists.
+- Keep metrics focused on learning and early evidence.
+
 ## When To Use
 
 Use for phase `07-strategy`.
