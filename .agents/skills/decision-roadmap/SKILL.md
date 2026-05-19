@@ -8,10 +8,11 @@ description: Use when selecting the path, preserving rejected options, and turni
 ## Quick Start
 
 1. Read `00-control/current-state.md` and the MVP experiment files.
-2. Record the selected path.
-3. Move rejected, deferred, or paused options into `09-roadmap/rejected-options.md`.
-4. Create a short roadmap with owners, sequence, and status.
-5. Log decisions, update `00-control/current-state.md`, and recommend `execution-tracking`.
+2. Create only this phase's required folders and files if they are missing; do not create later-phase folders.
+3. Record the selected path.
+4. Move rejected, deferred, or paused options into `09-roadmap/rejected-options.md`.
+5. Create a short roadmap with owners, sequence, and status.
+6. Log decisions, update `00-control/current-state.md`, and recommend `execution-tracking`.
 
 ## Ease Of Use Rules
 
@@ -74,4 +75,3 @@ If roadmap detail is skipped, log the risk that execution may start without owne
 ## Next Recommended Skill
 
 `execution-tracking`
-

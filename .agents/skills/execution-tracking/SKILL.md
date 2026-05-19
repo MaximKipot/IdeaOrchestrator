@@ -8,10 +8,11 @@ description: Use when tracking progress, current focus, next actions, and eviden
 ## Quick Start
 
 1. Read `00-control/current-state.md`, selected path, roadmap, and execution files.
-2. Update current focus before adding new actions.
-3. Add or revise next actions with owner, status, and due date when known.
-4. Log progress and evidence created by execution.
-5. Update `00-control/current-state.md`; recommend review when evidence is available.
+2. Create only this phase's required folders and files if they are missing; do not create later-phase folders.
+3. Update current focus before adding new actions.
+4. Add or revise next actions with owner, status, and due date when known.
+5. Log progress and evidence created by execution.
+6. Update `00-control/current-state.md`; recommend review when evidence is available.
 
 ## Ease Of Use Rules
 
@@ -76,4 +77,3 @@ If progress logging is skipped, log the risk that future reviews will lack evide
 ## Next Recommended Skill
 
 `review-pivot` when enough evidence exists; otherwise continue `execution-tracking`.
-

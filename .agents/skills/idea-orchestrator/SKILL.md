@@ -9,15 +9,17 @@ description: Use when starting, continuing, routing, skipping, jumping, or revie
 
 Use this skill as the front door for the framework.
 
-1. Read `00-control/current-state.md`. If it is missing, initialize the project from `templates/project/`.
+1. Read `00-control/current-state.md`. If it is missing, create only `00-control/current-state.md`, `00-control/open-questions.md`, and `00-control/decision-log.md`; do not copy or create the full folder tree.
 2. Translate the user's plain-language request into one of: start, continue, run phase, skip, jump, review, or status.
 3. Check blockers in `00-control/open-questions.md` before moving forward.
-4. Run or recommend exactly one next phase skill unless the user asks for a broader review.
-5. End by updating `00-control/current-state.md` with current phase, status, next action, and next recommended skill.
+4. Before running a phase, create only that phase's required folders and files if they are missing.
+5. Run or recommend exactly one next phase skill unless the user asks for a broader review.
+6. End by updating `00-control/current-state.md` with current phase, status, next action, and next recommended skill.
 
 ## Ease Of Use Rules
 
 - Do not make the user learn the framework structure.
+- Do not create folders for future phases in advance.
 - Prefer a concrete proposed next step over an open-ended question.
 - Ask only questions that block the next useful file update.
 - If information is uncertain but not blocking, continue and label it as `Assumption` or `Guess`.
@@ -28,7 +30,7 @@ Use this skill as the front door for the framework.
 
 | User Says | Do This |
 | --- | --- |
-| Start a new idea | Initialize files, capture raw idea, recommend `idea-intake`. |
+| Start a new idea | Create only control files, capture raw idea, recommend `idea-intake`. |
 | Continue | Read current state, resolve blockers, run the next recommended skill. |
 | What next? | Summarize current phase, blockers, and one recommended next action. |
 | Run research | Route to `research-evidence` and check research depth. |
@@ -84,7 +86,7 @@ Ask at most one question at a time. Prefer these only when needed:
 
 ## Blocking Conditions
 
-- No project files exist and the user has not provided enough information to initialize them.
+- No project folder exists and the user has not provided enough information to initialize it.
 - `00-control/current-state.md` is missing and project setup is not being run.
 - The requested jump would ignore an unresolved blocker without user acceptance.
 - A required decision is being implied but not logged.

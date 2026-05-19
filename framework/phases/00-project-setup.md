@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Create the working project folder, establish current state, choose depth, and confirm the first phase.
+Start from a single project folder, create only the required control files, choose depth, and confirm the first phase.
 
 ## Read
 
@@ -15,6 +15,8 @@ Create the working project folder, establish current state, choose depth, and co
 - `00-control/current-state.md`
 - `00-control/open-questions.md`
 - `00-control/decision-log.md`
+
+Do not create the full project folder tree. Later phase folders are created only when their phase starts.
 
 ## Questions
 
@@ -30,7 +32,8 @@ Create the working project folder, establish current state, choose depth, and co
 
 ## Done When
 
-- Project files exist.
+- The project folder exists.
+- The initial control files exist.
+- No future phase folders were created in advance.
 - Current phase, depth, owner, and next action are recorded.
 - The next recommended phase is `idea-intake`.
-

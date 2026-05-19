@@ -2,6 +2,16 @@
 
 Markdown files are the project memory. Keep them useful, short, and current.
 
+## Progressive Creation
+
+- Create only the project folder before work starts.
+- Do not create the full folder tree in advance.
+- Do not copy all files from `templates/project/` into a new project.
+- Create `00-control/current-state.md`, `00-control/open-questions.md`, and `00-control/decision-log.md` when initializing the project.
+- Create phase folders and files only when entering that phase or when the file is needed for a real decision, risk, note, or output.
+- If a phase is skipped, log the skip in control files. Do not create the skipped phase folder only to record that it was skipped.
+- Use `templates/project/` as reference content for files created just in time.
+
 ## General Rules
 
 - Prefer dated bullets and compact tables.
@@ -25,4 +35,3 @@ Every phase must update:
 - Keep headings stable.
 - Avoid long narrative unless context requires it.
 - Label claims as `Fact`, `Assumption`, `Guess`, `Opinion`, `Preference`, or `Decision`.
-

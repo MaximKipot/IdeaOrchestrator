@@ -8,10 +8,11 @@ description: Use when capturing a raw idea, preserving rough notes, or creating 
 ## Quick Start
 
 1. Read `00-control/current-state.md`.
-2. Capture the raw idea in `01-idea/raw-notes.md`.
-3. Convert it into a short `01-idea/idea-brief.md`.
-4. Label uncertainty as `Fact`, `Assumption`, `Guess`, `Opinion`, or `Preference`.
-5. Update `00-control/current-state.md` and recommend `problem-definition`.
+2. Create only this phase's required folders and files if they are missing; do not create later-phase folders.
+3. Capture the raw idea in `01-idea/raw-notes.md`.
+4. Convert it into a short `01-idea/idea-brief.md`.
+5. Label uncertainty as `Fact`, `Assumption`, `Guess`, `Opinion`, or `Preference`.
+6. Update `00-control/current-state.md` and recommend `problem-definition`.
 
 ## Ease Of Use Rules
 
@@ -69,4 +70,3 @@ If detailed intake is skipped, log the risk that later work may optimize around 
 ## Next Recommended Skill
 
 `problem-definition`
-

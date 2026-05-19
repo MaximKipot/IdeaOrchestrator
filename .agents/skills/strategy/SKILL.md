@@ -8,10 +8,11 @@ description: Use when defining target user, positioning, value proposition, diff
 ## Quick Start
 
 1. Read `00-control/current-state.md`, direction, evidence, principles, and constraints.
-2. Select an initial target user.
-3. Draft positioning, value proposition, differentiation, model, distribution, and metrics at the chosen depth.
-4. Log strategy decisions and unresolved questions.
-5. Update `00-control/current-state.md` and recommend `mvp-experiments`.
+2. Create only this phase's required folders and files if they are missing; do not create later-phase folders.
+3. Select an initial target user.
+4. Draft positioning, value proposition, differentiation, model, distribution, and metrics at the chosen depth.
+5. Log strategy decisions and unresolved questions.
+6. Update `00-control/current-state.md` and recommend `mvp-experiments`.
 
 ## Ease Of Use Rules
 
@@ -79,4 +80,3 @@ If a strategy artifact is skipped, log the risk in `current-state.md` and mark t
 ## Next Recommended Skill
 
 `mvp-experiments`
-

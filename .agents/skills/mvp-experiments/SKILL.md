@@ -8,10 +8,11 @@ description: Use when generating MVP options, designing experiments, or selectin
 ## Quick Start
 
 1. Read `00-control/current-state.md`, assumptions, risks, target user, metrics, and constraints.
-2. Generate at least three MVP or experiment options.
-3. Compare options by learning value, speed, cost, and risk.
-4. Select the smallest useful experiment and preserve rejected options.
-5. Log the decision, update `00-control/current-state.md`, and recommend `decision-roadmap`.
+2. Create only this phase's required folders and files if they are missing; do not create later-phase folders.
+3. Generate at least three MVP or experiment options.
+4. Compare options by learning value, speed, cost, and risk.
+5. Select the smallest useful experiment and preserve rejected options.
+6. Log the decision, update `00-control/current-state.md`, and recommend `decision-roadmap`.
 
 ## Ease Of Use Rules
 
@@ -77,4 +78,3 @@ If alternatives are skipped, log the risk of prematurely committing to a weak ex
 ## Next Recommended Skill
 
 `decision-roadmap`
-

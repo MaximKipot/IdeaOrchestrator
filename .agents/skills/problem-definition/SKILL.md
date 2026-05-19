@@ -8,10 +8,11 @@ description: Use when clarifying the problem, user context, current alternatives
 ## Quick Start
 
 1. Read `00-control/current-state.md` and the idea files.
-2. Write the problem from the user's or beneficiary's perspective.
-3. Record current alternatives before proposing new solutions.
-4. Add only unresolved blockers to `00-control/open-questions.md`.
-5. Update `00-control/current-state.md` and recommend `research-evidence`.
+2. Create only this phase's required folders and files if they are missing; do not create later-phase folders.
+3. Write the problem from the user's or beneficiary's perspective.
+4. Record current alternatives before proposing new solutions.
+5. Add only unresolved blockers to `00-control/open-questions.md`.
+6. Update `00-control/current-state.md` and recommend `research-evidence`.
 
 ## Ease Of Use Rules
 
@@ -71,4 +72,3 @@ If user context is skipped, log the risk that strategy and MVP choices may targe
 ## Next Recommended Skill
 
 `research-evidence`
-

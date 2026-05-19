@@ -8,10 +8,11 @@ description: Use when gathering, classifying, or summarizing research evidence f
 ## Quick Start
 
 1. Read `00-control/current-state.md`, idea brief, and problem context.
-2. Choose research depth: `Light`, `Standard`, or `Deep`, unless already set.
-3. Gather or summarize evidence appropriate to the depth.
-4. Update the research log, source list, and evidence map.
-5. Update `00-control/current-state.md` and recommend `assumptions-risks`.
+2. Create only this phase's required folders and files if they are missing; do not create later-phase folders.
+3. Choose research depth: `Light`, `Standard`, or `Deep`, unless already set.
+4. Gather or summarize evidence appropriate to the depth.
+5. Update the research log, source list, and evidence map.
+6. Update `00-control/current-state.md` and recommend `assumptions-risks`.
 
 ## Ease Of Use Rules
 
@@ -73,4 +74,3 @@ Research may be narrowed, but not removed. Log deferred research and the risk cr
 ## Next Recommended Skill
 
 `assumptions-risks`
-

@@ -23,6 +23,8 @@ Before starting a phase:
 - Read unresolved items in `00-control/open-questions.md`.
 - Confirm the phase is not blocked.
 - Use the relevant skill.
+- Create only the folders and files needed for the phase being started.
+- Do not create future phase folders in advance.
 
 Before leaving a phase:
 
@@ -41,5 +43,5 @@ When jumping:
 - Record the requested jump.
 - Record unresolved prior-phase risks.
 - Continue with the requested phase.
+- Create only the requested phase's needed files.
 - Recommend revisiting skipped phases when relevant.
-

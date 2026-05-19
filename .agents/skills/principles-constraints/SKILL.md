@@ -8,10 +8,11 @@ description: Use when defining decision principles, hard constraints, preference
 ## Quick Start
 
 1. Read `00-control/current-state.md`, direction, and anti-vision.
-2. Write 3-7 principles that can guide tradeoffs.
-3. Separate hard constraints from preferences.
-4. Log any meaningful constraint decisions.
-5. Update `00-control/current-state.md` and recommend `strategy`.
+2. Create only this phase's required folders and files if they are missing; do not create later-phase folders.
+3. Write 3-7 principles that can guide tradeoffs.
+4. Separate hard constraints from preferences.
+5. Log any meaningful constraint decisions.
+6. Update `00-control/current-state.md` and recommend `strategy`.
 
 ## Ease Of Use Rules
 
@@ -69,4 +70,3 @@ If principles are skipped, log the risk that future choices may be inconsistent.
 ## Next Recommended Skill
 
 `strategy`
-

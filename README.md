@@ -12,11 +12,17 @@ It works best when an idea is still uncertain and needs structured development b
 
 ## Start A New Idea Project
 
-1. Copy `templates/project/` into a new project folder.
-2. Open the new project with Codex.
+1. Create only one empty project folder for the idea.
+2. Open that folder with Codex.
 3. Ask Codex to use `.agents/skills/idea-orchestrator/SKILL.md`.
-4. Start with `01-idea/idea-brief.md` and `01-idea/raw-notes.md`.
-5. Let Codex suggest a depth level, then accept or override it.
+4. Codex creates only the control files needed to start:
+   - `00-control/current-state.md`
+   - `00-control/open-questions.md`
+   - `00-control/decision-log.md`
+5. Codex creates phase folders and files only when that phase starts or when a file is actually needed.
+6. Let Codex suggest a depth level, then accept or override it.
+
+Do not copy `templates/project/` into the new project. The templates are reference patterns, not an up-front scaffold.
 
 Suggested depth levels:
 
@@ -43,11 +49,12 @@ Codex should:
 
 1. Read `00-control/current-state.md`.
 2. Use the matching skill from `.agents/skills/`.
-3. Read the phase input files.
-4. Ask only the necessary questions.
-5. Update the phase output files.
-6. Log decisions and risks.
-7. Update `00-control/current-state.md`.
+3. Create only that phase's required folder and files if they are missing.
+4. Read the phase input files that exist.
+5. Ask only the necessary questions.
+6. Update the phase output files.
+7. Log decisions and risks.
+8. Update `00-control/current-state.md`.
 
 ## Skip With Risk Logging
 
@@ -60,6 +67,8 @@ You may skip a phase, question, or artifact. Codex must log:
 - When to revisit it
 
 Use `framework/rules/blocking-and-skipping.md` for the required format.
+
+Skipping does not require creating the skipped phase folder. Record the risk in `00-control/current-state.md` and `00-control/open-questions.md` unless a more specific file already exists.
 
 ## Review Or Pivot
 
@@ -76,7 +85,6 @@ Pivots are decisions. Record them in both `11-review/pivot-decisions.md` and `00
 
 - `framework/phases/`: phase-by-phase process guidance.
 - `framework/rules/`: cross-phase rules for evidence, decisions, files, transitions, blocking, and skipping.
-- `templates/project/`: files to copy for a new idea project.
+- `templates/project/`: reference file patterns for progressive creation; do not copy all files up front.
 - `.agents/skills/`: Codex skills for orchestrating and running phases.
 - `examples/cozyinn-demo/`: a short fictional example project.
-

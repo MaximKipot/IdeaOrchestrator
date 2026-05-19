@@ -8,10 +8,11 @@ description: Use when identifying assumptions, risks, unknowns, and the uncertai
 ## Quick Start
 
 1. Read `00-control/current-state.md` and the evidence map.
-2. List the assumptions that must be true for the idea to work.
-3. List the risks that could make the idea fail or become unattractive.
-4. Prioritize the assumptions and risks that should shape experiments.
-5. Update `00-control/current-state.md` and recommend `vision-direction`.
+2. Create only this phase's required folders and files if they are missing; do not create later-phase folders.
+3. List the assumptions that must be true for the idea to work.
+4. List the risks that could make the idea fail or become unattractive.
+5. Prioritize the assumptions and risks that should shape experiments.
+6. Update `00-control/current-state.md` and recommend `vision-direction`.
 
 ## Ease Of Use Rules
 
@@ -71,4 +72,3 @@ If risk analysis is skipped, log that MVP selection may test the wrong thing or 
 ## Next Recommended Skill
 
 `vision-direction`
-

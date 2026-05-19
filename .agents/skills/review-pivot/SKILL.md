@@ -8,10 +8,11 @@ description: Use when reviewing experiment results, deciding whether to continue
 ## Quick Start
 
 1. Read `00-control/current-state.md`, experiment design, success metrics, and progress log.
-2. Summarize what changed and what was learned.
-3. Decide whether to continue, adjust, pivot, pause, or stop.
-4. Preserve abandoned paths and log pivot decisions.
-5. Update `00-control/current-state.md` and recommend the next phase or action.
+2. Create only this phase's required folders and files if they are missing; do not create later-phase folders.
+3. Summarize what changed and what was learned.
+4. Decide whether to continue, adjust, pivot, pause, or stop.
+5. Preserve abandoned paths and log pivot decisions.
+6. Update `00-control/current-state.md` and recommend the next phase or action.
 
 ## Ease Of Use Rules
 
@@ -75,4 +76,3 @@ If review is skipped, log the risk that the project may continue despite contrad
 ## Next Recommended Skill
 
 `idea-orchestrator` to choose the next phase or continue execution.
-

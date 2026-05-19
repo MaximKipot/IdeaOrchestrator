@@ -7,6 +7,10 @@ The framework is intentionally Markdown-based. Chat is useful for discussion, bu
 ## Source of Truth
 
 - The source of truth is the project Markdown files, not chat memory.
+- New idea projects use progressive file creation by default.
+- Do not copy or create the full project folder tree up front.
+- At startup, create only the project folder and the control files needed to begin.
+- Phase folders and files are created just in time when their phase starts or when a file is actually needed.
 - Every important decision must be written to `00-control/decision-log.md`.
 - Every phase must begin by reading `00-control/current-state.md`.
 - Every phase must end by updating `00-control/current-state.md`.
@@ -38,6 +42,7 @@ Codex must use the relevant skill from `.agents/skills/` for each phase.
 - If the user requests a jump, record the jump and its risk in `00-control/current-state.md`.
 - Before starting any phase, read `00-control/current-state.md`.
 - After finishing any phase, update `00-control/current-state.md`.
+- When starting a phase, create only the folders and files required by that phase if they are missing.
 
 ## Blocking And Skipping
 
@@ -46,6 +51,7 @@ Codex must use the relevant skill from `.agents/skills/` for each phase.
 - Skipping is allowed only when the user accepts the risk.
 - Every skip must log the skipped item, reason, risk, owner, date, and revisit trigger.
 - Skipping research does not remove the research requirement; it only defers or narrows it.
+- Skipping a phase does not require creating that phase's folder. Log the skip in control files unless the phase file already exists.
 
 ## Decisions
 
@@ -76,4 +82,3 @@ Research is mandatory for every idea project, but depth depends on the idea.
 Execution means tracking progress and next actions. It does not always mean building software.
 
 The framework should always look for the smallest useful next experiment before committing to a large plan.
-

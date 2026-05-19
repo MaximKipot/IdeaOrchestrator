@@ -8,10 +8,11 @@ description: Use when turning evidence, problem context, and uncertainty into a 
 ## Quick Start
 
 1. Read `00-control/current-state.md`, problem context, evidence, assumptions, and risks.
-2. Draft a concise future-state vision.
-3. Choose a direction that fits the evidence and constraints.
-4. Write the anti-vision so scope boundaries are clear.
-5. Log direction decisions, update `00-control/current-state.md`, and recommend `principles-constraints`.
+2. Create only this phase's required folders and files if they are missing; do not create later-phase folders.
+3. Draft a concise future-state vision.
+4. Choose a direction that fits the evidence and constraints.
+5. Write the anti-vision so scope boundaries are clear.
+6. Log direction decisions, update `00-control/current-state.md`, and recommend `principles-constraints`.
 
 ## Ease Of Use Rules
 
@@ -72,4 +73,3 @@ If anti-vision is skipped, log the risk of scope creep or ambiguous direction.
 ## Next Recommended Skill
 
 `principles-constraints`
-
