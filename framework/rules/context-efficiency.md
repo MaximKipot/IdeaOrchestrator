@@ -46,3 +46,4 @@ Do not read by default:
 - Each skill should name the minimum files to read and write.
 - Ask only questions that block the next useful file update.
 - When Clean Handoff Mode is active, write `00-control/handoff.md` and let the next agent/model read from files instead of chat.
+- Before marking a phase complete, run the lightweight checks in `framework/rules/phase-quality-gates.md`.

@@ -87,6 +87,10 @@ Log risk that strategy and MVP may target the wrong audience.
 - Current alternatives
 - Open blockers
 
+## Quality Gate
+
+Before marking this phase complete, apply `framework/rules/phase-quality-gates.md`. Do not complete the phase until required files, decisions, open questions, skip risks, evidence labels, rejected alternatives, current state, and handoff requirements are handled.
+
 ## Handoff Output
 
 When Clean Handoff Mode is active, update `00-control/handoff.md` using `framework/rules/clean-handoff.md`. Include completed phase, files updated, confirmed decisions, key facts, key assumptions, open questions, skipped risks, recommended next skill, and minimum files the next skill must read.

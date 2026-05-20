@@ -127,7 +127,8 @@ Codex should:
 5. Ask only the necessary questions.
 6. Update the phase output files.
 7. Log decisions and risks.
-8. Update `00-control/current-state.md`.
+8. Apply `framework/rules/phase-quality-gates.md`.
+9. Update `00-control/current-state.md`.
 
 ## Skip With Risk Logging
 

@@ -45,6 +45,7 @@ Before leaving a phase:
 - Update the phase output files.
 - Log decisions.
 - Log skipped items and risks.
+- Apply `framework/rules/phase-quality-gates.md`.
 - Update `00-control/current-state.md`.
 - Recommend the next phase.
 

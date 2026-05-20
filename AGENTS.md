@@ -51,6 +51,7 @@ Codex must use the relevant skill from `.agents/skills/` for each phase.
 - When starting a phase, create only the folders and files required by that phase if they are missing.
 - Do not load examples, templates, future phase files, or all rules unless needed.
 - If Clean Handoff Mode is active, every skill must update `00-control/handoff.md` before the next skill starts.
+- Before marking a phase complete, apply `framework/rules/phase-quality-gates.md`.
 
 ## Blocking And Skipping
 

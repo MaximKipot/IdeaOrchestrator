@@ -20,6 +20,8 @@ Do not read `examples/`, `templates/project/`, future phase files, or all rules 
 
 For Clean Handoff Mode, use `framework/rules/clean-handoff.md`.
 
+Before marking a phase complete, use `framework/rules/phase-quality-gates.md`.
+
 ## Skill Route
 
 | Situation | Skill |
