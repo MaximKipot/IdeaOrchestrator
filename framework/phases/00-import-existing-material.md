@@ -44,4 +44,4 @@ If import is skipped despite existing material, log the risk that important cont
 - Extracted claims are classified.
 - Candidate decisions are separated from confirmed decisions.
 - Open questions are logged.
-- The next recommended skill is `idea-intake` or `problem-definition`.
+- The next recommended skill is `idea-o-intake` or `idea-o-problem`.

@@ -34,5 +34,5 @@ Clarify the problem, user context, current alternatives, and why the idea may ma
 
 - The problem is described from the user's perspective.
 - At least one current alternative is recorded.
-- The next recommended phase is `research-evidence`.
+- The next recommended skill is `idea-o-research`.
 

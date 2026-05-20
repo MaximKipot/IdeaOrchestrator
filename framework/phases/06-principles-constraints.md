@@ -32,5 +32,5 @@ Define decision principles and practical constraints that guide strategy and MVP
 ## Done When
 
 - Principles and constraints are actionable.
-- The next recommended phase is `strategy`.
+- The next recommended skill is `idea-o-strategy`.
 

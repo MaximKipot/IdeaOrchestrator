@@ -1,35 +1,34 @@
 ---
-name: problem-definition
-description: Use when clarifying the user problem, beneficiary, current alternatives, and why the idea matters.
+name: idea-o-execution
+description: Use when tracking current focus, next actions, progress, blockers, or evidence from execution.
 ---
 
-# Problem Definition
+# Execution Tracking
 
 ## Quick Start
 
-1. Read current state and idea brief.
-2. Create only `02-problem` files if missing.
-3. Describe problem from user perspective.
-4. Record current alternatives.
-5. Update current state and route forward.
+1. Read current state and selected path.
+2. Create only `10-execution` files if missing.
+3. Update current focus.
+4. Record next actions and progress.
+5. Recommend review when evidence exists.
 
 ## Context Budget
 
 Always read:
 
 - `00-control/current-state.md`
-- `01-idea/idea-brief.md`
+- `09-roadmap/selected-path.md`
 
 Read only if needed:
 
-- `02-problem/problem-context.md`
-- `02-problem/user-context.md`
-- `00-control/open-questions.md`
+- `09-roadmap/roadmap.md`
+- `10-execution/*`
+- `00-control/open-questions.md` for blockers
 
 Do not read:
 
-- research logs unless already summarized
-- strategy files
+- review files until reviewing
 - future phase folders
 
 Read `framework/rules/context-efficiency.md` only when unsure what to load.
@@ -43,49 +42,53 @@ Read `framework/rules/context-efficiency.md` only when unsure what to load.
 
 ## When To Use
 
-Use for phase `02-problem-context`.
+Use for phase `10-execution-tracking`.
 
 ## Inputs
 
-- Idea brief
-- Raw notes or import summary
-- Known user context
+- Selected path
+- Roadmap
+- Current progress
+- New evidence or blockers
 
 ## Files To Read
 
 - `00-control/current-state.md`
-- `01-idea/idea-brief.md`
-- `01-idea/raw-notes.md` if needed
+- selected path
+- roadmap/current execution files if present
 
 ## Files To Write
 
-- `02-problem/problem-context.md`
-- `02-problem/user-context.md`
+- `10-execution/current-focus.md`
+- `10-execution/next-actions.md`
+- `10-execution/progress-log.md`
 - `00-control/current-state.md`
 - `00-control/open-questions.md`
+- `00-control/decision-log.md` if execution creates a decision
 - `00-control/handoff.md` when Clean Handoff Mode is active
 
 ## Questions To Ask
 
-- Who has the problem?
-- What do they do today?
-- What makes it painful, costly, slow, risky, or important?
+- What changed?
+- What is the current focus?
+- What is the next action?
+- Is anything blocked?
 
 ## Blocking Conditions
 
-- No plausible user or beneficiary.
-- Only a solution exists, not a problem.
+- No owner or next action.
+- New evidence requires a decision before continuing.
 
 ## Skip Behavior
 
-Log risk that strategy and MVP may target the wrong audience.
+Log risk that future reviews will lack evidence.
 
 ## Outputs
 
-- Problem statement
-- User context
-- Current alternatives
-- Open blockers
+- Current focus
+- Next actions
+- Progress log
+- Blockers or decisions
 
 ## Quality Gate
 
@@ -97,4 +100,4 @@ When Clean Handoff Mode is active, update `00-control/handoff.md` using `framewo
 
 ## Next Recommended Skill
 
-`research-evidence`
+`idea-o-review` when enough evidence exists; otherwise continue `idea-o-execution`.

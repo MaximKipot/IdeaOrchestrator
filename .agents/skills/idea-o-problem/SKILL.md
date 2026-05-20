@@ -1,16 +1,16 @@
 ---
-name: principles-constraints
-description: Use when defining decision principles, constraints, preferences, and boundaries.
+name: idea-o-problem
+description: Use when clarifying the user problem, beneficiary, current alternatives, and why the idea matters.
 ---
 
-# Principles Constraints
+# Problem Definition
 
 ## Quick Start
 
-1. Read current state, direction, and anti-vision.
-2. Create only `06-principles` files if missing.
-3. Write 3-7 actionable principles.
-4. Separate constraints from preferences.
+1. Read current state and idea brief.
+2. Create only `02-problem` files if missing.
+3. Describe problem from user perspective.
+4. Record current alternatives.
 5. Update current state and route forward.
 
 ## Context Budget
@@ -18,17 +18,18 @@ description: Use when defining decision principles, constraints, preferences, an
 Always read:
 
 - `00-control/current-state.md`
-- `05-vision-direction/direction.md`
+- `01-idea/idea-brief.md`
 
 Read only if needed:
 
-- `05-vision-direction/anti-vision.md`
-- `06-principles/principles.md`
-- `06-principles/constraints.md`
+- `02-problem/problem-context.md`
+- `02-problem/user-context.md`
+- `00-control/open-questions.md`
 
 Do not read:
 
-- strategy files unless checking conflict
+- research logs unless already summarized
+- strategy files
 - future phase folders
 
 Read `framework/rules/context-efficiency.md` only when unsure what to load.
@@ -42,49 +43,49 @@ Read `framework/rules/context-efficiency.md` only when unsure what to load.
 
 ## When To Use
 
-Use for phase `06-principles-constraints`.
+Use for phase `02-problem-context`.
 
 ## Inputs
 
-- Direction
-- Anti-vision
-- Known constraints
-- User preferences
+- Idea brief
+- Raw notes or import summary
+- Known user context
 
 ## Files To Read
 
 - `00-control/current-state.md`
-- `05-vision-direction/direction.md`
-- `05-vision-direction/anti-vision.md`
+- `01-idea/idea-brief.md`
+- `01-idea/raw-notes.md` if needed
 
 ## Files To Write
 
-- `06-principles/principles.md`
-- `06-principles/constraints.md`
-- `00-control/decision-log.md` if needed
+- `02-problem/problem-context.md`
+- `02-problem/user-context.md`
 - `00-control/current-state.md`
+- `00-control/open-questions.md`
 - `00-control/handoff.md` when Clean Handoff Mode is active
 
 ## Questions To Ask
 
-- What principles guide tradeoffs?
-- Which constraints are hard?
-- Which are preferences?
+- Who has the problem?
+- What do they do today?
+- What makes it painful, costly, slow, risky, or important?
 
 ## Blocking Conditions
 
-- Constraints are unknown and affect strategy.
-- Principles are too vague to guide decisions.
+- No plausible user or beneficiary.
+- Only a solution exists, not a problem.
 
 ## Skip Behavior
 
-Log risk that future choices may be inconsistent.
+Log risk that strategy and MVP may target the wrong audience.
 
 ## Outputs
 
-- Actionable principles
-- Classified constraints
-- Constraint decisions if any
+- Problem statement
+- User context
+- Current alternatives
+- Open blockers
 
 ## Quality Gate
 
@@ -96,4 +97,4 @@ When Clean Handoff Mode is active, update `00-control/handoff.md` using `framewo
 
 ## Next Recommended Skill
 
-`strategy`
+`idea-o-research`

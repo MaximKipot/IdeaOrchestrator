@@ -1,5 +1,5 @@
 ---
-name: idea-orchestrator
+name: idea-o
 description: Use when routing, starting, continuing, importing, skipping, jumping, reviewing, or answering what to do next in an idea project.
 ---
 
@@ -96,4 +96,4 @@ When Clean Handoff Mode is active, update `00-control/handoff.md` using `framewo
 
 ## Next Recommended Skill
 
-Use the routed skill. If existing material is provided, use `idea-import`; if fresh, use `idea-intake`.
+Use the routed skill. If existing material is provided, use `idea-o-import`; if fresh, use `idea-o-intake`.

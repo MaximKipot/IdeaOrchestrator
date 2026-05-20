@@ -1,16 +1,16 @@
 ---
-name: strategy
-description: Use when defining target user, positioning, value, differentiation, model, distribution, or success metrics.
+name: idea-o-research
+description: Use when gathering, classifying, or summarizing evidence for an idea project.
 ---
 
-# Strategy
+# Research Evidence
 
 ## Quick Start
 
-1. Read current state, direction, principles, constraints, and evidence.
-2. Create only `07-strategy` files if missing.
-3. Draft strategy just enough for experiments.
-4. Log strategic decisions and gaps.
+1. Read current state, idea brief, and problem context.
+2. Create only `03-research` files if missing.
+3. Pick Light, Standard, or Deep depth.
+4. Log sources and classify evidence.
 5. Update current state and route forward.
 
 ## Context Budget
@@ -18,19 +18,20 @@ description: Use when defining target user, positioning, value, differentiation,
 Always read:
 
 - `00-control/current-state.md`
-- `05-vision-direction/direction.md`
-- `06-principles/principles.md`
+- `01-idea/idea-brief.md`
+- `02-problem/problem-context.md`
 
 Read only if needed:
 
+- `03-research/research-log.md`
 - `03-research/evidence-map.md`
-- `06-principles/constraints.md`
-- `07-strategy/*`
+- `03-research/source-list.md`
 
 Do not read:
 
-- MVP files unless revising strategy
+- examples/
 - future phase folders
+- full source dumps after summarized
 
 Read `framework/rules/context-efficiency.md` only when unsure what to load.
 
@@ -43,58 +44,53 @@ Read `framework/rules/context-efficiency.md` only when unsure what to load.
 
 ## When To Use
 
-Use for phase `07-strategy`.
+Use for phase `03-research-evidence`.
 
 ## Inputs
 
-- Direction
-- Evidence
-- Principles
-- Constraints
-- Assumptions and risks
+- Idea brief
+- Problem context
+- Research questions
+- Sources or notes
 
 ## Files To Read
 
 - `00-control/current-state.md`
-- `05-vision-direction/direction.md`
-- `06-principles/principles.md`
-- constraints/evidence if needed
+- `01-idea/idea-brief.md`
+- `02-problem/problem-context.md`
+- existing `03-research` files if present
 
 ## Files To Write
 
-- `07-strategy/target-user.md`
-- `07-strategy/positioning.md`
-- `07-strategy/value-proposition.md`
-- `07-strategy/differentiation.md`
-- `07-strategy/business-model.md`
-- `07-strategy/distribution.md`
-- `07-strategy/success-metrics.md`
-- `00-control/decision-log.md`
+- `03-research/research-log.md`
+- `03-research/evidence-map.md`
+- `03-research/source-list.md`
 - `00-control/current-state.md`
+- `00-control/open-questions.md`
 - `00-control/handoff.md` when Clean Handoff Mode is active
 
 ## Questions To Ask
 
-- Who is the first target user?
-- What value is promised?
-- How will users be reached?
-- What counts as early success?
+- What must be true?
+- What depth is appropriate?
+- Any specific sources, competitors, users, or markets?
 
 ## Blocking Conditions
 
-- No initial target user.
-- Distribution ignored for business/service idea.
-- Metrics are too vague.
+- No research can be logged.
+- Claims are treated as facts without sources.
+- High-risk domains lack explicit uncertainty.
 
 ## Skip Behavior
 
-Log risk for each skipped strategy artifact.
+Research may be narrowed, not removed; log deferred research and risk.
 
 ## Outputs
 
-- Lean strategy files
-- Strategy decisions
-- Unresolved strategy questions
+- Research log
+- Source list
+- Evidence map
+- Research gaps
 
 ## Quality Gate
 
@@ -106,4 +102,4 @@ When Clean Handoff Mode is active, update `00-control/handoff.md` using `framewo
 
 ## Next Recommended Skill
 
-`mvp-experiments`
+`idea-o-assumptions`

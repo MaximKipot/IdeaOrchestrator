@@ -35,5 +35,5 @@ Make uncertainty visible and prepare it for testing.
 ## Done When
 
 - Assumptions, risks, and unknowns are prioritized.
-- The next recommended phase is `vision-direction`.
+- The next recommended skill is `idea-o-vision`.
 

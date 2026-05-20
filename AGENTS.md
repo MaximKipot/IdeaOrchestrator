@@ -11,7 +11,7 @@ The framework is intentionally Markdown-based. Chat is useful for discussion, bu
 - Do not copy or create the full project folder tree up front.
 - At startup, create only the project folder and the control files needed to begin.
 - Phase folders and files are created just in time when their phase starts or when a file is actually needed.
-- If the user starts from an existing chat, document, transcript, or notes dump, use `idea-import` before normal intake.
+- If the user starts from an existing chat, document, transcript, or notes dump, use `idea-o-import` before normal intake.
 - Import work may create `00-import/source-material.md` and `00-import/import-summary.md`, but only when source material exists.
 - Protect context: follow `framework/rules/context-efficiency.md`.
 - Use Clean Handoff Mode from `framework/rules/clean-handoff.md` when the user requests separate agents/models, clean context, or phase handoffs.
@@ -41,8 +41,8 @@ Do not blur these labels. If a claim is uncertain, label it as uncertain.
 
 Codex must use the relevant skill from `.agents/skills/` for each phase.
 
-- Use `idea-orchestrator` to choose the current phase and maintain process flow.
-- Use `idea-import` before `idea-intake` when the user provides substantial existing material to organize.
+- Use `idea-o` to choose the current phase and maintain process flow.
+- Use `idea-o-import` before `idea-o-intake` when the user provides substantial existing material to organize.
 - Use one phase skill at a time for normal work.
 - Do not jump phases unless the user explicitly requests it.
 - If the user requests a jump, record the jump and its risk in `00-control/current-state.md`.

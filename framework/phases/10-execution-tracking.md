@@ -36,5 +36,5 @@ Track progress, next actions, current focus, and evidence produced by execution.
 
 - Next actions are clear.
 - Progress is logged.
-- The next recommended phase is `review-pivot` after enough evidence or time passes.
+- The next recommended skill is `idea-o-review` after enough evidence or time passes.
 

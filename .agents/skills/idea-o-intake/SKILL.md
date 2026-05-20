@@ -1,16 +1,16 @@
 ---
-name: assumptions-risks
-description: Use when sorting assumptions, risks, and unknowns that should shape experiments.
+name: idea-o-intake
+description: Use when capturing a fresh raw idea or sharpening an imported candidate idea into an initial idea brief.
 ---
 
-# Assumptions Risks
+# Idea Intake
 
 ## Quick Start
 
-1. Read current state and evidence map.
-2. Create only `04-assumptions-risks` files if missing.
-3. Prioritize assumptions, risks, and unknowns.
-4. Make key uncertainty testable.
+1. Read current state.
+2. Create only `01-idea` files if missing.
+3. Preserve raw notes.
+4. Write a concise idea brief with evidence labels.
 5. Update current state and route forward.
 
 ## Context Budget
@@ -18,17 +18,17 @@ description: Use when sorting assumptions, risks, and unknowns that should shape
 Always read:
 
 - `00-control/current-state.md`
-- `03-research/evidence-map.md`
 
 Read only if needed:
 
-- `04-assumptions-risks/assumptions.md`
-- `04-assumptions-risks/risks.md`
-- `04-assumptions-risks/unknowns.md`
+- `00-import/import-summary.md` after import
+- `01-idea/raw-notes.md`
+- `01-idea/idea-brief.md`
 
 Do not read:
 
-- strategy files unless resolving a conflict
+- research files
+- strategy files
 - future phase folders
 
 Read `framework/rules/context-efficiency.md` only when unsure what to load.
@@ -42,49 +42,48 @@ Read `framework/rules/context-efficiency.md` only when unsure what to load.
 
 ## When To Use
 
-Use for phase `04-assumptions-risks`.
+Use for phase `01-idea-capture` or after `idea-o-import` needs main-idea sharpening.
 
 ## Inputs
 
-- Evidence map
-- Problem context
-- Known constraints if already recorded
+- Raw idea
+- Imported candidate idea
+- Known preferences or constraints
 
 ## Files To Read
 
 - `00-control/current-state.md`
-- `03-research/evidence-map.md`
-- existing assumptions/risk files if present
+- `00-import/import-summary.md` if imported
+- `01-idea/raw-notes.md` if it exists
 
 ## Files To Write
 
-- `04-assumptions-risks/assumptions.md`
-- `04-assumptions-risks/risks.md`
-- `04-assumptions-risks/unknowns.md`
+- `01-idea/raw-notes.md`
+- `01-idea/idea-brief.md`
 - `00-control/current-state.md`
-- `00-control/open-questions.md`
+- `00-control/open-questions.md` if blocked
 - `00-control/handoff.md` when Clean Handoff Mode is active
 
 ## Questions To Ask
 
-- What must be true?
-- What could make this fail?
-- Which unknown matters most?
+- What is the idea?
+- Who might it help?
+- What outcome would make it worth exploring?
 
 ## Blocking Conditions
 
-- Critical assumptions are invisible.
-- Serious risks are omitted.
+- No identifiable idea, audience, or desired outcome.
 
 ## Skip Behavior
 
-Log risk that MVP selection may test the wrong thing or miss avoidable risk.
+If detailed intake is skipped, log risk that later phases may optimize around the wrong idea.
 
 ## Outputs
 
-- Prioritized assumptions
-- Prioritized risks
-- Unknowns with resolution paths
+- Raw notes
+- One-sentence idea
+- Initial audience
+- Desired outcome
 
 ## Quality Gate
 
@@ -96,4 +95,4 @@ When Clean Handoff Mode is active, update `00-control/handoff.md` using `framewo
 
 ## Next Recommended Skill
 
-`vision-direction`
+`idea-o-problem`

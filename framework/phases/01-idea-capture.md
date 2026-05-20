@@ -34,5 +34,5 @@ Skipping detailed capture is allowed only if a short idea brief exists. Log the 
 
 - A concise idea brief exists.
 - Raw notes are preserved.
-- The next recommended phase is `problem-definition`.
+- The next recommended skill is `idea-o-problem`.
 

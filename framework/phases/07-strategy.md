@@ -38,5 +38,5 @@ Define target user, positioning, value proposition, differentiation, business mo
 ## Done When
 
 - Strategy files are filled enough to guide experiments.
-- The next recommended phase is `mvp-experiments`.
+- The next recommended skill is `idea-o-mvp`.
 

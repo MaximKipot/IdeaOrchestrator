@@ -7,7 +7,7 @@
 - User-Approved Depth: Light
 - Status: Active
 - Last Updated: 2026-05-19
-- Next Recommended Skill: `execution-tracking`
+- Next Recommended Skill: `idea-o-execution`
 - Next Action: Recruit 3 small inn owners for a concierge test.
 
 ## Phase Summary

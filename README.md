@@ -16,7 +16,7 @@ It works best when an idea is still uncertain and needs structured development b
 
 1. Create only one empty project folder for the idea.
 2. Open that folder with Codex.
-3. Ask Codex to use `.agents/skills/idea-orchestrator/SKILL.md`.
+3. Ask Codex to use `.agents/skills/idea-o/SKILL.md`.
 4. Codex creates only the control files needed to start:
    - `00-control/current-state.md`
    - `00-control/open-questions.md`
@@ -34,7 +34,7 @@ Suggested depth levels:
 
 ## Start From Existing Material
 
-Use `idea-import` before normal intake when you already have a long chat, document, transcript, research dump, strategy note, or mixed notes.
+Use `idea-o-import` before normal intake when you already have a long chat, document, transcript, research dump, strategy note, or mixed notes.
 
 Ask Codex:
 
@@ -49,7 +49,7 @@ Codex should:
 3. Preserve the original material or a faithful summary of it.
 4. Extract candidate ideas, facts, assumptions, guesses, opinions, preferences, rejected alternatives, open questions, and candidate decisions.
 5. Ask you to confirm the main idea and any candidate decisions.
-6. Route into `idea-intake` or `problem-definition`.
+6. Route into `idea-o-intake` or `idea-o-problem`.
 
 Old chat conclusions are not automatically decisions. They become decisions only after you confirm them.
 
@@ -80,35 +80,35 @@ Codex should then create or update `00-control/handoff.md` after each phase.
 
 Best use cases for Clean Handoff Mode:
 
-- `idea-import`: when the source chat or document is long.
-- `research-evidence`: when evidence quality matters or research is broad.
-- `strategy`: when target, positioning, distribution, or model choices are strategic.
-- `mvp-experiments`: when comparing several experiment paths.
-- `review-pivot`: when deciding whether to continue, pivot, pause, or stop.
+- `idea-o-import`: when the source chat or document is long.
+- `idea-o-research`: when evidence quality matters or research is broad.
+- `idea-o-strategy`: when target, positioning, distribution, or model choices are strategic.
+- `idea-o-mvp`: when comparing several experiment paths.
+- `idea-o-review`: when deciding whether to continue, pivot, pause, or stop.
 
 Less useful for Clean Handoff Mode:
 
-- `idea-intake`: usually small enough to run inline.
-- `execution-tracking`: often better as quick incremental updates.
+- `idea-o-intake`: usually small enough to run inline.
+- `idea-o-execution`: often better as quick incremental updates.
 - Tiny personal projects or low-risk internal notes.
 
 Model assignment idea:
 
 | Skill | Suggested Model Type |
 | --- | --- |
-| `idea-orchestrator` | Fast general model |
-| `idea-import` | Strong summarization model for long source material |
-| `idea-intake` | Fast general model |
-| `problem-definition` | General or stronger reasoning model |
-| `research-evidence` | Strong research/reasoning model |
-| `assumptions-risks` | Strong reasoning model |
-| `vision-direction` | Strong reasoning model |
-| `principles-constraints` | General reasoning model |
-| `strategy` | Strong strategy/reasoning model |
-| `mvp-experiments` | Strong reasoning and option-generation model |
-| `decision-roadmap` | General reasoning model |
-| `execution-tracking` | Fast general model |
-| `review-pivot` | Strong reasoning model |
+| `idea-o` | Fast general model |
+| `idea-o-import` | Strong summarization model for long source material |
+| `idea-o-intake` | Fast general model |
+| `idea-o-problem` | General or stronger reasoning model |
+| `idea-o-research` | Strong research/reasoning model |
+| `idea-o-assumptions` | Strong reasoning model |
+| `idea-o-vision` | Strong reasoning model |
+| `idea-o-principles` | General reasoning model |
+| `idea-o-strategy` | Strong strategy/reasoning model |
+| `idea-o-mvp` | Strong reasoning and option-generation model |
+| `idea-o-roadmap` | General reasoning model |
+| `idea-o-execution` | Fast general model |
+| `idea-o-review` | Strong reasoning model |
 
 Use `Parallel Support` only for independent research branches, competitor scans, or option generation. One agent should integrate the results into the project files.
 

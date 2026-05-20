@@ -26,25 +26,25 @@ Before marking a phase complete, use `framework/rules/phase-quality-gates.md`.
 
 | Situation | Skill |
 | --- | --- |
-| Existing chat, doc, transcript, or notes dump | `idea-import` |
-| Fresh raw idea | `idea-intake` |
-| Problem/user unclear | `problem-definition` |
-| Evidence needed | `research-evidence` |
-| Uncertainty needs sorting | `assumptions-risks` |
-| Direction unclear | `vision-direction` |
-| Tradeoff rules needed | `principles-constraints` |
-| Target, value, model, channel, metrics needed | `strategy` |
-| Experiment options needed | `mvp-experiments` |
-| Path and roadmap needed | `decision-roadmap` |
-| Actions/progress needed | `execution-tracking` |
-| Evidence review or pivot needed | `review-pivot` |
+| Existing chat, doc, transcript, or notes dump | `idea-o-import` |
+| Fresh raw idea | `idea-o-intake` |
+| Problem/user unclear | `idea-o-problem` |
+| Evidence needed | `idea-o-research` |
+| Uncertainty needs sorting | `idea-o-assumptions` |
+| Direction unclear | `idea-o-vision` |
+| Tradeoff rules needed | `idea-o-principles` |
+| Target, value, model, channel, metrics needed | `idea-o-strategy` |
+| Experiment options needed | `idea-o-mvp` |
+| Path and roadmap needed | `idea-o-roadmap` |
+| Actions/progress needed | `idea-o-execution` |
+| Evidence review or pivot needed | `idea-o-review` |
 
 ## Sequential Flow
 
-Optional: `idea-import`
+Optional: `idea-o-import`
 
 Normal flow:
 
-`idea-intake` -> `problem-definition` -> `research-evidence` -> `assumptions-risks` -> `vision-direction` -> `principles-constraints` -> `strategy` -> `mvp-experiments` -> `decision-roadmap` -> `execution-tracking` -> `review-pivot`
+`idea-o-intake` -> `idea-o-problem` -> `idea-o-research` -> `idea-o-assumptions` -> `idea-o-vision` -> `idea-o-principles` -> `idea-o-strategy` -> `idea-o-mvp` -> `idea-o-roadmap` -> `idea-o-execution` -> `idea-o-review`
 
 Manual jumps are allowed only when requested by the user and logged with risk.

@@ -37,5 +37,5 @@ Generate multiple MVP or experiment options and choose the smallest useful next 
 - Multiple options exist.
 - One smallest useful experiment is selected.
 - Rejected options are preserved.
-- The next recommended phase is `decision-roadmap`.
+- The next recommended skill is `idea-o-roadmap`.
 

@@ -1,16 +1,16 @@
 ---
-name: idea-intake
-description: Use when capturing a fresh raw idea or sharpening an imported candidate idea into an initial idea brief.
+name: idea-o-strategy
+description: Use when defining target user, positioning, value, differentiation, model, distribution, or success metrics.
 ---
 
-# Idea Intake
+# Strategy
 
 ## Quick Start
 
-1. Read current state.
-2. Create only `01-idea` files if missing.
-3. Preserve raw notes.
-4. Write a concise idea brief with evidence labels.
+1. Read current state, direction, principles, constraints, and evidence.
+2. Create only `07-strategy` files if missing.
+3. Draft strategy just enough for experiments.
+4. Log strategic decisions and gaps.
 5. Update current state and route forward.
 
 ## Context Budget
@@ -18,17 +18,18 @@ description: Use when capturing a fresh raw idea or sharpening an imported candi
 Always read:
 
 - `00-control/current-state.md`
+- `05-vision-direction/direction.md`
+- `06-principles/principles.md`
 
 Read only if needed:
 
-- `00-import/import-summary.md` after import
-- `01-idea/raw-notes.md`
-- `01-idea/idea-brief.md`
+- `03-research/evidence-map.md`
+- `06-principles/constraints.md`
+- `07-strategy/*`
 
 Do not read:
 
-- research files
-- strategy files
+- MVP files unless revising strategy
 - future phase folders
 
 Read `framework/rules/context-efficiency.md` only when unsure what to load.
@@ -42,48 +43,58 @@ Read `framework/rules/context-efficiency.md` only when unsure what to load.
 
 ## When To Use
 
-Use for phase `01-idea-capture` or after `idea-import` needs main-idea sharpening.
+Use for phase `07-strategy`.
 
 ## Inputs
 
-- Raw idea
-- Imported candidate idea
-- Known preferences or constraints
+- Direction
+- Evidence
+- Principles
+- Constraints
+- Assumptions and risks
 
 ## Files To Read
 
 - `00-control/current-state.md`
-- `00-import/import-summary.md` if imported
-- `01-idea/raw-notes.md` if it exists
+- `05-vision-direction/direction.md`
+- `06-principles/principles.md`
+- constraints/evidence if needed
 
 ## Files To Write
 
-- `01-idea/raw-notes.md`
-- `01-idea/idea-brief.md`
+- `07-strategy/target-user.md`
+- `07-strategy/positioning.md`
+- `07-strategy/value-proposition.md`
+- `07-strategy/differentiation.md`
+- `07-strategy/business-model.md`
+- `07-strategy/distribution.md`
+- `07-strategy/success-metrics.md`
+- `00-control/decision-log.md`
 - `00-control/current-state.md`
-- `00-control/open-questions.md` if blocked
 - `00-control/handoff.md` when Clean Handoff Mode is active
 
 ## Questions To Ask
 
-- What is the idea?
-- Who might it help?
-- What outcome would make it worth exploring?
+- Who is the first target user?
+- What value is promised?
+- How will users be reached?
+- What counts as early success?
 
 ## Blocking Conditions
 
-- No identifiable idea, audience, or desired outcome.
+- No initial target user.
+- Distribution ignored for business/service idea.
+- Metrics are too vague.
 
 ## Skip Behavior
 
-If detailed intake is skipped, log risk that later phases may optimize around the wrong idea.
+Log risk for each skipped strategy artifact.
 
 ## Outputs
 
-- Raw notes
-- One-sentence idea
-- Initial audience
-- Desired outcome
+- Lean strategy files
+- Strategy decisions
+- Unresolved strategy questions
 
 ## Quality Gate
 
@@ -95,4 +106,4 @@ When Clean Handoff Mode is active, update `00-control/handoff.md` using `framewo
 
 ## Next Recommended Skill
 
-`problem-definition`
+`idea-o-mvp`

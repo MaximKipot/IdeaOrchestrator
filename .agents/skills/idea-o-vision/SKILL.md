@@ -1,16 +1,16 @@
 ---
-name: research-evidence
-description: Use when gathering, classifying, or summarizing evidence for an idea project.
+name: idea-o-vision
+description: Use when turning evidence and uncertainty into vision, direction, and anti-vision.
 ---
 
-# Research Evidence
+# Vision Direction
 
 ## Quick Start
 
-1. Read current state, idea brief, and problem context.
-2. Create only `03-research` files if missing.
-3. Pick Light, Standard, or Deep depth.
-4. Log sources and classify evidence.
+1. Read current state, problem, evidence, assumptions, and risks.
+2. Create only `05-vision-direction` files if missing.
+3. Draft vision, direction, and anti-vision.
+4. Log direction decisions.
 5. Update current state and route forward.
 
 ## Context Budget
@@ -18,20 +18,19 @@ description: Use when gathering, classifying, or summarizing evidence for an ide
 Always read:
 
 - `00-control/current-state.md`
-- `01-idea/idea-brief.md`
 - `02-problem/problem-context.md`
+- `03-research/evidence-map.md`
 
 Read only if needed:
 
-- `03-research/research-log.md`
-- `03-research/evidence-map.md`
-- `03-research/source-list.md`
+- `04-assumptions-risks/assumptions.md`
+- `04-assumptions-risks/risks.md`
+- `05-vision-direction/*`
 
 Do not read:
 
-- examples/
+- strategy files unless direction already exists
 - future phase folders
-- full source dumps after summarized
 
 Read `framework/rules/context-efficiency.md` only when unsure what to load.
 
@@ -44,53 +43,52 @@ Read `framework/rules/context-efficiency.md` only when unsure what to load.
 
 ## When To Use
 
-Use for phase `03-research-evidence`.
+Use for phase `05-vision-direction`.
 
 ## Inputs
 
-- Idea brief
 - Problem context
-- Research questions
-- Sources or notes
+- Evidence map
+- Assumptions and risks
+- User preferences
 
 ## Files To Read
 
 - `00-control/current-state.md`
-- `01-idea/idea-brief.md`
 - `02-problem/problem-context.md`
-- existing `03-research` files if present
+- `03-research/evidence-map.md`
+- assumptions/risks if needed
 
 ## Files To Write
 
-- `03-research/research-log.md`
-- `03-research/evidence-map.md`
-- `03-research/source-list.md`
+- `05-vision-direction/vision.md`
+- `05-vision-direction/direction.md`
+- `05-vision-direction/anti-vision.md`
+- `00-control/decision-log.md`
 - `00-control/current-state.md`
-- `00-control/open-questions.md`
 - `00-control/handoff.md` when Clean Handoff Mode is active
 
 ## Questions To Ask
 
-- What must be true?
-- What depth is appropriate?
-- Any specific sources, competitors, users, or markets?
+- What future should this create?
+- Which direction fits the evidence?
+- What should it avoid becoming?
 
 ## Blocking Conditions
 
-- No research can be logged.
-- Claims are treated as facts without sources.
-- High-risk domains lack explicit uncertainty.
+- Direction depends on unresolved critical assumptions.
+- Direction conflicts with constraints.
 
 ## Skip Behavior
 
-Research may be narrowed, not removed; log deferred research and risk.
+Log risk of ambiguous direction or scope creep.
 
 ## Outputs
 
-- Research log
-- Source list
-- Evidence map
-- Research gaps
+- Vision
+- Direction decision
+- Anti-vision
+- Deferred or rejected directions
 
 ## Quality Gate
 
@@ -102,4 +100,4 @@ When Clean Handoff Mode is active, update `00-control/handoff.md` using `framewo
 
 ## Next Recommended Skill
 
-`assumptions-risks`
+`idea-o-principles`

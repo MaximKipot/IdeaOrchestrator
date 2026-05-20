@@ -34,5 +34,5 @@ Turn evidence and uncertainty into a clear direction while preserving what the i
 
 - Vision, direction, and anti-vision are written.
 - Direction decisions are logged.
-- The next recommended phase is `principles-constraints`.
+- The next recommended skill is `idea-o-principles`.
 

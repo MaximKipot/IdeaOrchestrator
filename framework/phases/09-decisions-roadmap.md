@@ -35,5 +35,5 @@ Select the path, preserve alternatives, and translate the next experiment into a
 
 - Selected path and roadmap are recorded.
 - Decision log is current.
-- The next recommended phase is `execution-tracking`.
+- The next recommended skill is `idea-o-execution`.
 

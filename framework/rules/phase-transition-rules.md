@@ -29,7 +29,7 @@ Before starting a phase:
 
 ## Import Transition
 
-Use `idea-import` before phase 1 when the user provides substantial existing material.
+Use `idea-o-import` before phase 1 when the user provides substantial existing material.
 
 Import is complete when:
 
@@ -38,7 +38,7 @@ Import is complete when:
 - Candidate decisions are separated from confirmed decisions.
 - The user has a recommended next normal phase.
 
-After import, route to `idea-intake` when the main idea still needs confirmation, or `problem-definition` when the main idea is already clear.
+After import, route to `idea-o-intake` when the main idea still needs confirmation, or `idea-o-problem` when the main idea is already clear.
 
 Before leaving a phase:
 

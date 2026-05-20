@@ -1,36 +1,34 @@
 ---
-name: review-pivot
-description: Use when reviewing evidence, experiment results, stalls, or deciding whether to continue, adjust, pivot, pause, or stop.
+name: idea-o-roadmap
+description: Use when selecting the path, preserving rejected options, and turning an experiment into a practical roadmap.
 ---
 
-# Review Pivot
+# Decision Roadmap
 
 ## Quick Start
 
-1. Read current state, experiment design, metrics, and progress.
-2. Create only `11-review` files if missing.
-3. Summarize what changed and what was learned.
-4. Decide continue, adjust, pivot, pause, or stop.
-5. Update current state and route next.
+1. Read current state and selected experiment.
+2. Create only `09-roadmap` files if missing.
+3. Record selected path.
+4. Preserve rejected/deferred/paused options.
+5. Write short roadmap and route forward.
 
 ## Context Budget
 
 Always read:
 
 - `00-control/current-state.md`
-- `10-execution/progress-log.md`
+- `08-mvp-experiments/smallest-useful-experiment.md`
 
 Read only if needed:
 
+- `08-mvp-experiments/mvp-options.md`
 - `08-mvp-experiments/experiment-design.md`
-- `07-strategy/success-metrics.md`
-- `03-research/evidence-map.md`
-- `11-review/*`
+- `09-roadmap/*`
 
 Do not read:
 
-- templates/
-- examples/
+- execution files until roadmap exists
 - future phase folders
 
 Read `framework/rules/context-efficiency.md` only when unsure what to load.
@@ -44,52 +42,51 @@ Read `framework/rules/context-efficiency.md` only when unsure what to load.
 
 ## When To Use
 
-Use for phase `11-review-pivot`.
+Use for phase `09-decisions-roadmap`.
 
 ## Inputs
 
-- Progress log
-- Experiment design
-- Success metrics
-- Evidence map
-- User judgment
+- MVP options
+- Selected experiment
+- Constraints
 
 ## Files To Read
 
 - `00-control/current-state.md`
-- progress log
-- experiment design and metrics if needed
+- selected experiment
+- MVP options if needed
 
 ## Files To Write
 
-- `11-review/review-log.md`
-- `11-review/pivot-decisions.md`
-- `09-roadmap/rejected-options.md` if preserving paths
+- `09-roadmap/selected-path.md`
+- `09-roadmap/rejected-options.md`
+- `09-roadmap/roadmap.md`
 - `00-control/decision-log.md`
 - `00-control/current-state.md`
 - `00-control/handoff.md` when Clean Handoff Mode is active
 
 ## Questions To Ask
 
-- What did the evidence show?
-- Should the project continue, adjust, pivot, pause, or stop?
-- What should be preserved?
+- What path is selected?
+- What is rejected, deferred, or paused?
+- What milestones are needed?
 
 ## Blocking Conditions
 
-- No evidence or progress to review.
-- Pivot proposed without consequences.
+- Selection criteria unclear.
+- Rejected alternatives missing.
+- Roadmap actions do not connect to experiment.
 
 ## Skip Behavior
 
-Log risk that the project may continue despite contradictory evidence.
+Log risk that execution may start without owners or sequence.
 
 ## Outputs
 
-- Review findings
-- Continue/pivot/pause/stop decision
+- Selected path
 - Preserved alternatives
-- Updated current state
+- Short roadmap
+- Decision log entries
 
 ## Quality Gate
 
@@ -101,4 +98,4 @@ When Clean Handoff Mode is active, update `00-control/handoff.md` using `framewo
 
 ## Next Recommended Skill
 
-`idea-orchestrator` to route the next phase or action.
+`idea-o-execution`
