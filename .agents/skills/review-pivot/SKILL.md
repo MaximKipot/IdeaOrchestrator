@@ -67,6 +67,7 @@ Use for phase `11-review-pivot`.
 - `09-roadmap/rejected-options.md` if preserving paths
 - `00-control/decision-log.md`
 - `00-control/current-state.md`
+- `00-control/handoff.md` when Clean Handoff Mode is active
 
 ## Questions To Ask
 
@@ -89,6 +90,10 @@ Log risk that the project may continue despite contradictory evidence.
 - Continue/pivot/pause/stop decision
 - Preserved alternatives
 - Updated current state
+
+## Handoff Output
+
+When Clean Handoff Mode is active, update `00-control/handoff.md` using `framework/rules/clean-handoff.md`. Include completed phase, files updated, confirmed decisions, key facts, key assumptions, open questions, skipped risks, recommended next skill, and minimum files the next skill must read.
 
 ## Next Recommended Skill
 

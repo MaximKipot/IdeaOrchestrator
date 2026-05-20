@@ -61,6 +61,7 @@ Use before normal intake when substantial existing material already exists.
 - `00-import/source-material.md`
 - `00-import/import-summary.md`
 - `00-control/decision-log.md` for confirmed decisions only
+- `00-control/handoff.md` when Clean Handoff Mode is active
 
 ## Questions To Ask
 
@@ -84,6 +85,10 @@ If import is skipped, log risk of losing context, rejected alternatives, assumpt
 - Import summary
 - Candidate decisions separated from confirmed decisions
 - Recommended next skill
+
+## Handoff Output
+
+When Clean Handoff Mode is active, update `00-control/handoff.md` using `framework/rules/clean-handoff.md`. Include completed phase, files updated, confirmed decisions, key facts, key assumptions, open questions, skipped risks, recommended next skill, and minimum files the next skill must read.
 
 ## Next Recommended Skill
 

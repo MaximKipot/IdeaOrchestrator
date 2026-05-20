@@ -63,6 +63,7 @@ Use for phase `02-problem-context`.
 - `02-problem/user-context.md`
 - `00-control/current-state.md`
 - `00-control/open-questions.md`
+- `00-control/handoff.md` when Clean Handoff Mode is active
 
 ## Questions To Ask
 
@@ -85,6 +86,10 @@ Log risk that strategy and MVP may target the wrong audience.
 - User context
 - Current alternatives
 - Open blockers
+
+## Handoff Output
+
+When Clean Handoff Mode is active, update `00-control/handoff.md` using `framework/rules/clean-handoff.md`. Include completed phase, files updated, confirmed decisions, key facts, key assumptions, open questions, skipped risks, recommended next skill, and minimum files the next skill must read.
 
 ## Next Recommended Skill
 

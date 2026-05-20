@@ -65,6 +65,7 @@ Use for phase `10-execution-tracking`.
 - `00-control/current-state.md`
 - `00-control/open-questions.md`
 - `00-control/decision-log.md` if execution creates a decision
+- `00-control/handoff.md` when Clean Handoff Mode is active
 
 ## Questions To Ask
 
@@ -88,6 +89,10 @@ Log risk that future reviews will lack evidence.
 - Next actions
 - Progress log
 - Blockers or decisions
+
+## Handoff Output
+
+When Clean Handoff Mode is active, update `00-control/handoff.md` using `framework/rules/clean-handoff.md`. Include completed phase, files updated, confirmed decisions, key facts, key assumptions, open questions, skipped risks, recommended next skill, and minimum files the next skill must read.
 
 ## Next Recommended Skill
 

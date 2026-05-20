@@ -10,6 +10,16 @@ Read this only when routing, starting, or resuming an idea project.
 
 Do not read `examples/`, `templates/project/`, future phase files, or all rules by default.
 
+## Context Modes
+
+| Mode | Use When |
+| --- | --- |
+| `Inline` | Small projects or quick updates. |
+| `Clean Handoff` | Each phase should start fresh from files, possibly with another agent/model. |
+| `Parallel Support` | Independent research or option-generation subtasks can run separately. |
+
+For Clean Handoff Mode, use `framework/rules/clean-handoff.md`.
+
 ## Skill Route
 
 | Situation | Skill |
@@ -36,4 +46,3 @@ Normal flow:
 `idea-intake` -> `problem-definition` -> `research-evidence` -> `assumptions-risks` -> `vision-direction` -> `principles-constraints` -> `strategy` -> `mvp-experiments` -> `decision-roadmap` -> `execution-tracking` -> `review-pivot`
 
 Manual jumps are allowed only when requested by the user and logged with risk.
-

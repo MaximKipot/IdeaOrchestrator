@@ -62,6 +62,7 @@ Use for phase `01-idea-capture` or after `idea-import` needs main-idea sharpenin
 - `01-idea/idea-brief.md`
 - `00-control/current-state.md`
 - `00-control/open-questions.md` if blocked
+- `00-control/handoff.md` when Clean Handoff Mode is active
 
 ## Questions To Ask
 
@@ -83,6 +84,10 @@ If detailed intake is skipped, log risk that later phases may optimize around th
 - One-sentence idea
 - Initial audience
 - Desired outcome
+
+## Handoff Output
+
+When Clean Handoff Mode is active, update `00-control/handoff.md` using `framework/rules/clean-handoff.md`. Include completed phase, files updated, confirmed decisions, key facts, key assumptions, open questions, skipped risks, recommended next skill, and minimum files the next skill must read.
 
 ## Next Recommended Skill
 

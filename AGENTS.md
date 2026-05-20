@@ -14,6 +14,7 @@ The framework is intentionally Markdown-based. Chat is useful for discussion, bu
 - If the user starts from an existing chat, document, transcript, or notes dump, use `idea-import` before normal intake.
 - Import work may create `00-import/source-material.md` and `00-import/import-summary.md`, but only when source material exists.
 - Protect context: follow `framework/rules/context-efficiency.md`.
+- Use Clean Handoff Mode from `framework/rules/clean-handoff.md` when the user requests separate agents/models, clean context, or phase handoffs.
 - Use `framework/index.md` for routing when the next skill is unclear.
 - Every important decision must be written to `00-control/decision-log.md`.
 - Every phase must begin by reading `00-control/current-state.md`.
@@ -49,6 +50,7 @@ Codex must use the relevant skill from `.agents/skills/` for each phase.
 - After finishing any phase, update `00-control/current-state.md`.
 - When starting a phase, create only the folders and files required by that phase if they are missing.
 - Do not load examples, templates, future phase files, or all rules unless needed.
+- If Clean Handoff Mode is active, every skill must update `00-control/handoff.md` before the next skill starts.
 
 ## Blocking And Skipping
 

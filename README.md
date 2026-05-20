@@ -64,6 +64,54 @@ Ask Codex to:
 
 Codex should not read examples, templates, future phase folders, or every rule file unless the current task needs them.
 
+## Clean Handoff Mode
+
+Use Clean Handoff Mode when you want each phase to start with fresh context, possibly on a different agent or model.
+
+The pattern is:
+
+`Skill/Agent 1 -> writes Markdown files and handoff -> context clears -> Skill/Agent 2 reads the handoff and minimum files -> continues`
+
+Ask Codex:
+
+> Use Clean Handoff Mode for this project.
+
+Codex should then create or update `00-control/handoff.md` after each phase.
+
+Best use cases for Clean Handoff Mode:
+
+- `idea-import`: when the source chat or document is long.
+- `research-evidence`: when evidence quality matters or research is broad.
+- `strategy`: when target, positioning, distribution, or model choices are strategic.
+- `mvp-experiments`: when comparing several experiment paths.
+- `review-pivot`: when deciding whether to continue, pivot, pause, or stop.
+
+Less useful for Clean Handoff Mode:
+
+- `idea-intake`: usually small enough to run inline.
+- `execution-tracking`: often better as quick incremental updates.
+- Tiny personal projects or low-risk internal notes.
+
+Model assignment idea:
+
+| Skill | Suggested Model Type |
+| --- | --- |
+| `idea-orchestrator` | Fast general model |
+| `idea-import` | Strong summarization model for long source material |
+| `idea-intake` | Fast general model |
+| `problem-definition` | General or stronger reasoning model |
+| `research-evidence` | Strong research/reasoning model |
+| `assumptions-risks` | Strong reasoning model |
+| `vision-direction` | Strong reasoning model |
+| `principles-constraints` | General reasoning model |
+| `strategy` | Strong strategy/reasoning model |
+| `mvp-experiments` | Strong reasoning and option-generation model |
+| `decision-roadmap` | General reasoning model |
+| `execution-tracking` | Fast general model |
+| `review-pivot` | Strong reasoning model |
+
+Use `Parallel Support` only for independent research branches, competitor scans, or option generation. One agent should integrate the results into the project files.
+
 ## Run One Phase
 
 Ask Codex to run a specific phase, for example:

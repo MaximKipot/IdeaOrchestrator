@@ -69,6 +69,7 @@ Use for phase `08-mvp-experiments`.
 - `09-roadmap/rejected-options.md` when rejecting options
 - `00-control/decision-log.md`
 - `00-control/current-state.md`
+- `00-control/handoff.md` when Clean Handoff Mode is active
 
 ## Questions To Ask
 
@@ -92,6 +93,10 @@ Log risk of premature commitment if alternatives are skipped.
 - Selected smallest useful experiment
 - Experiment design
 - Rejected options
+
+## Handoff Output
+
+When Clean Handoff Mode is active, update `00-control/handoff.md` using `framework/rules/clean-handoff.md`. Include completed phase, files updated, confirmed decisions, key facts, key assumptions, open questions, skipped risks, recommended next skill, and minimum files the next skill must read.
 
 ## Next Recommended Skill
 

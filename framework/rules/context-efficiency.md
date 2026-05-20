@@ -45,4 +45,4 @@ Do not read by default:
 - Routing belongs in `framework/index.md`.
 - Each skill should name the minimum files to read and write.
 - Ask only questions that block the next useful file update.
-
+- When Clean Handoff Mode is active, write `00-control/handoff.md` and let the next agent/model read from files instead of chat.

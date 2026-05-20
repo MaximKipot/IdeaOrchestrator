@@ -5,6 +5,7 @@
 - Current Phase:
 - Suggested Depth: Light | Standard | Deep
 - User-Approved Depth:
+- Context Mode: Inline | Clean Handoff | Parallel Support
 - Status: Active | Blocked | Paused | Complete
 - Last Updated:
 - Next Recommended Skill:

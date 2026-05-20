@@ -66,6 +66,7 @@ Use for phase `05-vision-direction`.
 - `05-vision-direction/anti-vision.md`
 - `00-control/decision-log.md`
 - `00-control/current-state.md`
+- `00-control/handoff.md` when Clean Handoff Mode is active
 
 ## Questions To Ask
 
@@ -88,6 +89,10 @@ Log risk of ambiguous direction or scope creep.
 - Direction decision
 - Anti-vision
 - Deferred or rejected directions
+
+## Handoff Output
+
+When Clean Handoff Mode is active, update `00-control/handoff.md` using `framework/rules/clean-handoff.md`. Include completed phase, files updated, confirmed decisions, key facts, key assumptions, open questions, skipped risks, recommended next skill, and minimum files the next skill must read.
 
 ## Next Recommended Skill
 
