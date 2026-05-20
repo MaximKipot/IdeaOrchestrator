@@ -1,25 +1,45 @@
 ---
 name: problem-definition
-description: Use when clarifying the problem, user context, current alternatives, and why an idea may matter.
+description: Use when clarifying the user problem, beneficiary, current alternatives, and why the idea matters.
 ---
 
 # Problem Definition
 
 ## Quick Start
 
-1. Read `00-control/current-state.md` and the idea files.
-2. Create only this phase's required folders and files if they are missing; do not create later-phase folders.
-3. Write the problem from the user's or beneficiary's perspective.
-4. Record current alternatives before proposing new solutions.
-5. Add only unresolved blockers to `00-control/open-questions.md`.
-6. Update `00-control/current-state.md` and recommend `research-evidence`.
+1. Read current state and idea brief.
+2. Create only `02-problem` files if missing.
+3. Describe problem from user perspective.
+4. Record current alternatives.
+5. Update current state and route forward.
+
+## Context Budget
+
+Always read:
+
+- `00-control/current-state.md`
+- `01-idea/idea-brief.md`
+
+Read only if needed:
+
+- `02-problem/problem-context.md`
+- `02-problem/user-context.md`
+- `00-control/open-questions.md`
+
+Do not read:
+
+- research logs unless already summarized
+- strategy files
+- future phase folders
+
+Read `framework/rules/context-efficiency.md` only when unsure what to load.
 
 ## Ease Of Use Rules
 
-- Do not force a perfect problem statement before moving forward.
-- If multiple users are plausible, pick a likely initial user and label it as an `Assumption`.
-- Separate "problem" from "solution idea" in plain language.
-- Ask follow-up questions only when the user or problem is too vague to continue.
+- Ask only questions that block the next useful file update.
+- Create only files needed for the current action.
+- Keep outputs compact: bullets or tables, not long narrative.
+- Preserve uncertainty labels and rejected alternatives.
 
 ## When To Use
 
@@ -28,46 +48,43 @@ Use for phase `02-problem-context`.
 ## Inputs
 
 - Idea brief
-- Raw notes
-- User or beneficiary context
+- Raw notes or import summary
+- Known user context
 
 ## Files To Read
 
 - `00-control/current-state.md`
 - `01-idea/idea-brief.md`
-- `01-idea/raw-notes.md`
-- `02-problem/problem-context.md`
-- `02-problem/user-context.md`
+- `01-idea/raw-notes.md` if needed
 
 ## Files To Write
 
 - `02-problem/problem-context.md`
 - `02-problem/user-context.md`
-- `00-control/open-questions.md`
 - `00-control/current-state.md`
+- `00-control/open-questions.md`
 
 ## Questions To Ask
 
 - Who has the problem?
 - What do they do today?
-- What makes the problem painful, costly, slow, risky, or important?
-- What happens if nothing changes?
+- What makes it painful, costly, slow, risky, or important?
 
 ## Blocking Conditions
 
-- No plausible user or beneficiary exists.
-- The problem statement only describes a solution.
+- No plausible user or beneficiary.
+- Only a solution exists, not a problem.
 
 ## Skip Behavior
 
-If user context is skipped, log the risk that strategy and MVP choices may target the wrong audience.
+Log risk that strategy and MVP may target the wrong audience.
 
 ## Outputs
 
 - Problem statement
-- Potential user segments
+- User context
 - Current alternatives
-- Evidence-labeled claims
+- Open blockers
 
 ## Next Recommended Skill
 

@@ -1,71 +1,88 @@
 ---
 name: idea-intake
-description: Use when capturing a raw idea, preserving rough notes, or creating the initial idea brief for an idea project.
+description: Use when capturing a fresh raw idea or sharpening an imported candidate idea into an initial idea brief.
 ---
 
 # Idea Intake
 
 ## Quick Start
 
-1. Read `00-control/current-state.md`.
-2. Create only this phase's required folders and files if they are missing; do not create later-phase folders.
-3. Capture the raw idea in `01-idea/raw-notes.md`.
-4. Convert it into a short `01-idea/idea-brief.md`.
-5. Label uncertainty as `Fact`, `Assumption`, `Guess`, `Opinion`, or `Preference`.
-6. Update `00-control/current-state.md` and recommend `problem-definition`.
+1. Read current state.
+2. Create only `01-idea` files if missing.
+3. Preserve raw notes.
+4. Write a concise idea brief with evidence labels.
+5. Update current state and route forward.
+
+## Context Budget
+
+Always read:
+
+- `00-control/current-state.md`
+
+Read only if needed:
+
+- `00-import/import-summary.md` after import
+- `01-idea/raw-notes.md`
+- `01-idea/idea-brief.md`
+
+Do not read:
+
+- research files
+- strategy files
+- future phase folders
+
+Read `framework/rules/context-efficiency.md` only when unsure what to load.
 
 ## Ease Of Use Rules
 
-- Ask only for the minimum needed to produce a useful idea brief.
-- If the user gives a messy idea, preserve the mess in raw notes and synthesize the brief separately.
-- Offer a suggested depth level instead of making the user choose from scratch.
-- Keep the first pass lightweight; later phases can refine it.
+- Ask only questions that block the next useful file update.
+- Create only files needed for the current action.
+- Keep outputs compact: bullets or tables, not long narrative.
+- Preserve uncertainty labels and rejected alternatives.
 
 ## When To Use
 
-Use for phase `01-idea-capture`.
+Use for phase `01-idea-capture` or after `idea-import` needs main-idea sharpening.
 
 ## Inputs
 
-- Raw user idea
-- Existing notes
-- Any stated preferences, constraints, or desired outcomes
+- Raw idea
+- Imported candidate idea
+- Known preferences or constraints
 
 ## Files To Read
 
 - `00-control/current-state.md`
-- `01-idea/raw-notes.md`
-- `01-idea/idea-brief.md`
+- `00-import/import-summary.md` if imported
+- `01-idea/raw-notes.md` if it exists
 
 ## Files To Write
 
-- `01-idea/idea-brief.md`
 - `01-idea/raw-notes.md`
-- `00-control/open-questions.md`
+- `01-idea/idea-brief.md`
 - `00-control/current-state.md`
+- `00-control/open-questions.md` if blocked
 
 ## Questions To Ask
 
-- What is the idea in plain language?
+- What is the idea?
 - Who might it help?
-- What triggered the idea?
-- What outcome would make exploration worthwhile?
+- What outcome would make it worth exploring?
 
 ## Blocking Conditions
 
-- The idea has no identifiable action, audience, or situation.
-- The user cannot say what kind of outcome matters.
+- No identifiable idea, audience, or desired outcome.
 
 ## Skip Behavior
 
-If detailed intake is skipped, log the risk that later work may optimize around an unclear idea.
+If detailed intake is skipped, log risk that later phases may optimize around the wrong idea.
 
 ## Outputs
 
+- Raw notes
 - One-sentence idea
-- Raw notes preserved
-- Initial audience and desired outcome
-- Open questions
+- Initial audience
+- Desired outcome
 
 ## Next Recommended Skill
 

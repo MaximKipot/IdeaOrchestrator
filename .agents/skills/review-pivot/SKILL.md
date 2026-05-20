@@ -1,78 +1,95 @@
 ---
 name: review-pivot
-description: Use when reviewing experiment results, deciding whether to continue, adjust, pivot, pause, or stop an idea project.
+description: Use when reviewing evidence, experiment results, stalls, or deciding whether to continue, adjust, pivot, pause, or stop.
 ---
 
 # Review Pivot
 
 ## Quick Start
 
-1. Read `00-control/current-state.md`, experiment design, success metrics, and progress log.
-2. Create only this phase's required folders and files if they are missing; do not create later-phase folders.
+1. Read current state, experiment design, metrics, and progress.
+2. Create only `11-review` files if missing.
 3. Summarize what changed and what was learned.
-4. Decide whether to continue, adjust, pivot, pause, or stop.
-5. Preserve abandoned paths and log pivot decisions.
-6. Update `00-control/current-state.md` and recommend the next phase or action.
+4. Decide continue, adjust, pivot, pause, or stop.
+5. Update current state and route next.
+
+## Context Budget
+
+Always read:
+
+- `00-control/current-state.md`
+- `10-execution/progress-log.md`
+
+Read only if needed:
+
+- `08-mvp-experiments/experiment-design.md`
+- `07-strategy/success-metrics.md`
+- `03-research/evidence-map.md`
+- `11-review/*`
+
+Do not read:
+
+- templates/
+- examples/
+- future phase folders
+
+Read `framework/rules/context-efficiency.md` only when unsure what to load.
 
 ## Ease Of Use Rules
 
-- Anchor review in evidence, not general sentiment.
-- If evidence is thin, say so and choose the smallest next learning action.
-- Do not erase the previous direction; preserve it as rejected, paused, or superseded.
-- Keep the review decision plain and explicit.
+- Ask only questions that block the next useful file update.
+- Create only files needed for the current action.
+- Keep outputs compact: bullets or tables, not long narrative.
+- Preserve uncertainty labels and rejected alternatives.
 
 ## When To Use
 
-Use for phase `11-review-pivot`, after an experiment, a milestone, a stall, or new contradictory evidence.
+Use for phase `11-review-pivot`.
 
 ## Inputs
 
-- Evidence map
-- Experiment design
 - Progress log
+- Experiment design
 - Success metrics
+- Evidence map
 - User judgment
 
 ## Files To Read
 
 - `00-control/current-state.md`
-- `03-research/evidence-map.md`
-- `07-strategy/success-metrics.md`
-- `08-mvp-experiments/experiment-design.md`
-- `10-execution/progress-log.md`
-- `11-review/review-log.md`
+- progress log
+- experiment design and metrics if needed
 
 ## Files To Write
 
 - `11-review/review-log.md`
 - `11-review/pivot-decisions.md`
-- `09-roadmap/rejected-options.md`
+- `09-roadmap/rejected-options.md` if preserving paths
 - `00-control/decision-log.md`
 - `00-control/current-state.md`
 
 ## Questions To Ask
 
 - What did the evidence show?
-- What changed since the last decision?
 - Should the project continue, adjust, pivot, pause, or stop?
-- What should be preserved for later?
+- What should be preserved?
 
 ## Blocking Conditions
 
-- There is no evidence or progress to review.
-- A pivot is proposed without naming consequences.
+- No evidence or progress to review.
+- Pivot proposed without consequences.
 
 ## Skip Behavior
 
-If review is skipped, log the risk that the project may continue despite contradictory evidence.
+Log risk that the project may continue despite contradictory evidence.
 
 ## Outputs
 
 - Review findings
-- Continue, adjust, pivot, pause, or stop decision
+- Continue/pivot/pause/stop decision
 - Preserved alternatives
 - Updated current state
 
 ## Next Recommended Skill
 
-`idea-orchestrator` to choose the next phase or continue execution.
+`idea-orchestrator` to route the next phase or action.

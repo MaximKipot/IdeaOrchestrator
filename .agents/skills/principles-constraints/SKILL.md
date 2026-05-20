@@ -1,25 +1,44 @@
 ---
 name: principles-constraints
-description: Use when defining decision principles, hard constraints, preferences, and boundaries for an idea project.
+description: Use when defining decision principles, constraints, preferences, and boundaries.
 ---
 
 # Principles Constraints
 
 ## Quick Start
 
-1. Read `00-control/current-state.md`, direction, and anti-vision.
-2. Create only this phase's required folders and files if they are missing; do not create later-phase folders.
-3. Write 3-7 principles that can guide tradeoffs.
-4. Separate hard constraints from preferences.
-5. Log any meaningful constraint decisions.
-6. Update `00-control/current-state.md` and recommend `strategy`.
+1. Read current state, direction, and anti-vision.
+2. Create only `06-principles` files if missing.
+3. Write 3-7 actionable principles.
+4. Separate constraints from preferences.
+5. Update current state and route forward.
+
+## Context Budget
+
+Always read:
+
+- `00-control/current-state.md`
+- `05-vision-direction/direction.md`
+
+Read only if needed:
+
+- `05-vision-direction/anti-vision.md`
+- `06-principles/principles.md`
+- `06-principles/constraints.md`
+
+Do not read:
+
+- strategy files unless checking conflict
+- future phase folders
+
+Read `framework/rules/context-efficiency.md` only when unsure what to load.
 
 ## Ease Of Use Rules
 
-- Keep each principle actionable, not aspirational.
-- Use constraints to simplify choices, not to create extra process.
-- If a constraint is uncertain, label it and continue unless it blocks strategy.
-- Avoid adding principles that do not change a decision.
+- Ask only questions that block the next useful file update.
+- Create only files needed for the current action.
+- Keep outputs compact: bullets or tables, not long narrative.
+- Preserve uncertainty labels and rejected alternatives.
 
 ## When To Use
 
@@ -42,30 +61,29 @@ Use for phase `06-principles-constraints`.
 
 - `06-principles/principles.md`
 - `06-principles/constraints.md`
-- `00-control/decision-log.md`
+- `00-control/decision-log.md` if needed
 - `00-control/current-state.md`
 
 ## Questions To Ask
 
-- What principles should guide tradeoffs?
+- What principles guide tradeoffs?
 - Which constraints are hard?
-- Which constraints are preferences?
-- What should be avoided even if it seems efficient?
+- Which are preferences?
 
 ## Blocking Conditions
 
-- Constraints are unknown but could change MVP or strategy choices.
-- Principles are too generic to guide decisions.
+- Constraints are unknown and affect strategy.
+- Principles are too vague to guide decisions.
 
 ## Skip Behavior
 
-If principles are skipped, log the risk that future choices may be inconsistent.
+Log risk that future choices may be inconsistent.
 
 ## Outputs
 
 - Actionable principles
-- Classified constraints and preferences
-- Any constraint decisions logged
+- Classified constraints
+- Constraint decisions if any
 
 ## Next Recommended Skill
 

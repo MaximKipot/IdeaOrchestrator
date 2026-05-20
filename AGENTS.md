@@ -13,6 +13,8 @@ The framework is intentionally Markdown-based. Chat is useful for discussion, bu
 - Phase folders and files are created just in time when their phase starts or when a file is actually needed.
 - If the user starts from an existing chat, document, transcript, or notes dump, use `idea-import` before normal intake.
 - Import work may create `00-import/source-material.md` and `00-import/import-summary.md`, but only when source material exists.
+- Protect context: follow `framework/rules/context-efficiency.md`.
+- Use `framework/index.md` for routing when the next skill is unclear.
 - Every important decision must be written to `00-control/decision-log.md`.
 - Every phase must begin by reading `00-control/current-state.md`.
 - Every phase must end by updating `00-control/current-state.md`.
@@ -46,6 +48,7 @@ Codex must use the relevant skill from `.agents/skills/` for each phase.
 - Before starting any phase, read `00-control/current-state.md`.
 - After finishing any phase, update `00-control/current-state.md`.
 - When starting a phase, create only the folders and files required by that phase if they are missing.
+- Do not load examples, templates, future phase files, or all rules unless needed.
 
 ## Blocking And Skipping
 

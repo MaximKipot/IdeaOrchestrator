@@ -1,119 +1,90 @@
 ---
 name: idea-orchestrator
-description: Use when starting, continuing, routing, skipping, jumping, or reviewing an idea project in the Codex idea framework; especially when the user uses plain-language commands like start, import existing material, continue, run a phase, what next, skip this, or review.
+description: Use when routing, starting, continuing, importing, skipping, jumping, reviewing, or answering what to do next in an idea project.
 ---
 
 # Idea Orchestrator
 
 ## Quick Start
 
-Use this skill as the front door for the framework.
+1. Read `00-control/current-state.md`; create only control files if missing.
+2. Use `framework/index.md` when routing is unclear.
+3. Route to one skill: import, intake, phase, execution, or review.
+4. Log jumps, skips, blockers, and process decisions.
+5. Update current state with next action and next recommended skill.
 
-1. Read `00-control/current-state.md`. If it is missing, create only `00-control/current-state.md`, `00-control/open-questions.md`, and `00-control/decision-log.md`; do not copy or create the full folder tree.
-2. Translate the user's plain-language request into one of: start, import, continue, run phase, skip, jump, review, or status.
-3. Check blockers in `00-control/open-questions.md` before moving forward.
-4. Before running a phase, create only that phase's required folders and files if they are missing.
-5. Run or recommend exactly one next phase skill unless the user asks for a broader review.
-6. End by updating `00-control/current-state.md` with current phase, status, next action, and next recommended skill.
+## Context Budget
+
+Always read:
+
+- `00-control/current-state.md`
+
+Read only if needed:
+
+- `framework/index.md` for routing
+- `00-control/open-questions.md` for blockers
+- `00-control/decision-log.md` for decisions
+
+Do not read:
+
+- examples/
+- templates/project/ unless creating a file
+- future phase folders
+
+Read `framework/rules/context-efficiency.md` only when unsure what to load.
 
 ## Ease Of Use Rules
 
-- Do not make the user learn the framework structure.
-- Do not create folders for future phases in advance.
-- Prefer a concrete proposed next step over an open-ended question.
 - Ask only questions that block the next useful file update.
-- If information is uncertain but not blocking, continue and label it as `Assumption` or `Guess`.
-- Keep user-facing summaries short: current phase, next action, blockers, and files changed.
-- Use the smallest useful phase step; do not expand into a full strategy session unless the user asks.
-
-## Common User Commands
-
-| User Says | Do This |
-| --- | --- |
-| Start a new idea | Create only control files, capture raw idea, recommend `idea-intake`. |
-| Import existing material | Create control and `00-import` files, preserve source, recommend `idea-import`. |
-| Continue | Read current state, resolve blockers, run the next recommended skill. |
-| What next? | Summarize current phase, blockers, and one recommended next action. |
-| Run research | Route to `research-evidence` and check research depth. |
-| Skip this | Log skipped item, risk, owner, and revisit trigger before advancing. |
-| Jump to MVP | Allow the jump, log prior-phase risks, then route to `mvp-experiments`. |
-| Review or pivot | Route to `review-pivot` and anchor the review in evidence. |
-
-## Default Depth Selection
-
-Suggest a depth, but let the user override it.
-
-| Depth | Use When |
-| --- | --- |
-| `Light` | Personal, internal, low-risk, or exploratory idea. |
-| `Standard` | Most software, business, service, workshop, content, or product ideas. |
-| `Deep` | High-cost, high-risk, regulated, legal, financial, medical, safety-sensitive, or strategically important idea. |
-
-If unsure, choose `Standard` and write the reason in `00-control/current-state.md`.
+- Create only files needed for the current action.
+- Keep outputs compact: bullets or tables, not long narrative.
+- Preserve uncertainty labels and rejected alternatives.
 
 ## When To Use
 
-Use before any phase, when resuming a project, when interpreting a plain-language request, or when the user asks what to do next.
+Use as the front door whenever the user gives a plain-language process request.
 
 ## Inputs
 
 - User request
-- Project files
-- Desired depth override, if any
-- Current blockers or skipped items
+- Existing project state
+- Optional depth preference
 
 ## Files To Read
 
-- `AGENTS.md`
-- `framework/rules/phase-transition-rules.md`
-- `framework/rules/blocking-and-skipping.md`
 - `00-control/current-state.md`
-- `00-control/open-questions.md`
-- `00-control/decision-log.md`
+- `framework/index.md` when route is unclear
+- `00-control/open-questions.md` when blocked or skipped
 
 ## Files To Write
 
 - `00-control/current-state.md`
-- `00-control/open-questions.md`
-- `00-control/decision-log.md` when process decisions are made
-- `00-import/source-material.md` when importing existing material
-- `00-import/import-summary.md` when importing existing material
+- `00-control/open-questions.md` for blockers/skips
+- `00-control/decision-log.md` for process decisions
 
 ## Questions To Ask
 
-Ask at most one question at a time. Prefer these only when needed:
-
-- Should I continue the next recommended phase or jump to a specific phase?
-- Do you accept the logged risk of skipping this item?
-- Should this use `Light`, `Standard`, or `Deep` depth?
+- Which project focus should I use?
+- Do you accept the logged risk of skipping or jumping?
+- Should depth be Light, Standard, or Deep?
 
 ## Blocking Conditions
 
-- No project folder exists and the user has not provided enough information to initialize it.
-- `00-control/current-state.md` is missing and project setup is not being run.
-- The requested jump would ignore an unresolved blocker without user acceptance.
-- A required decision is being implied but not logged.
+- No project folder or usable starting material.
+- A jump or skip risk is not accepted.
+- A decision is implied but not logged.
 
 ## Skip Behavior
 
-If the user skips a phase, artifact, or question:
-
-1. Log what was skipped.
-2. Log why it was skipped.
-3. Log the risk created.
-4. Log who accepted the risk.
-5. Log the revisit trigger.
-6. Continue only after the skip is written to `00-control/current-state.md` or the relevant phase file.
+Log skipped item, reason, risk, owner, date, and revisit trigger before advancing.
 
 ## Outputs
 
-- Current phase confirmed
-- Depth confirmed or proposed
-- Blockers identified
-- One next action named
-- Next recommended skill named
-- Required control files updated
+- Current phase
+- Next action
+- Next recommended skill
+- Any blockers or skip risks
 
 ## Next Recommended Skill
 
-Use the phase skill matching the current phase. If the user provides existing source material, use `idea-import`. If no phase is clear, use `idea-intake` for a new idea or `execution-tracking` for an active project with a selected path.
+Use the routed skill. If existing material is provided, use `idea-import`; if fresh, use `idea-intake`.

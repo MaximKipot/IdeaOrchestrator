@@ -4,6 +4,8 @@ A reusable Markdown-first framework for turning raw business or actionable ideas
 
 The framework is built for Codex. It keeps the project memory in files so work can continue across sessions without depending on chat history.
 
+It is also context-efficient by default: Codex should read the current state first, then only the files needed for the current phase.
+
 ## When To Use It
 
 Use this framework for software ideas, businesses, services, internal initiatives, workshops, content projects, physical products, or personal projects.
@@ -56,9 +58,11 @@ Old chat conclusions are not automatically decisions. They become decisions only
 Ask Codex to:
 
 1. Read `00-control/current-state.md`.
-2. Read `00-control/open-questions.md`.
+2. Read `00-control/open-questions.md` only when blocked, skipped, or unclear.
 3. Identify the current phase and blocked items.
 4. Continue the next recommended phase unless you request a manual jump.
+
+Codex should not read examples, templates, future phase folders, or every rule file unless the current task needs them.
 
 ## Run One Phase
 
@@ -106,6 +110,7 @@ Pivots are decisions. Record them in both `11-review/pivot-decisions.md` and `00
 
 - `framework/phases/`: phase-by-phase process guidance.
 - `framework/rules/`: cross-phase rules for evidence, decisions, files, transitions, blocking, and skipping.
+- `framework/index.md`: compact routing index for context-efficient navigation.
 - `templates/project/`: reference file patterns for progressive creation; do not copy all files up front.
 - `.agents/skills/`: Codex skills for orchestrating and running phases.
 - `examples/cozyinn-demo/`: a short fictional example project.

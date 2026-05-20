@@ -1,25 +1,46 @@
 ---
 name: mvp-experiments
-description: Use when generating MVP options, designing experiments, or selecting the smallest useful next experiment.
+description: Use when generating MVP options, experiment options, or selecting the smallest useful next experiment.
 ---
 
 # MVP Experiments
 
 ## Quick Start
 
-1. Read `00-control/current-state.md`, assumptions, risks, target user, metrics, and constraints.
-2. Create only this phase's required folders and files if they are missing; do not create later-phase folders.
-3. Generate at least three MVP or experiment options.
-4. Compare options by learning value, speed, cost, and risk.
-5. Select the smallest useful experiment and preserve rejected options.
-6. Log the decision, update `00-control/current-state.md`, and recommend `decision-roadmap`.
+1. Read current state, assumptions, risks, target user, and metrics.
+2. Create only `08-mvp-experiments` files if missing.
+3. Generate at least three options.
+4. Select smallest useful experiment.
+5. Preserve rejected options and route forward.
+
+## Context Budget
+
+Always read:
+
+- `00-control/current-state.md`
+- `04-assumptions-risks/assumptions.md`
+- `07-strategy/target-user.md`
+
+Read only if needed:
+
+- `04-assumptions-risks/risks.md`
+- `07-strategy/success-metrics.md`
+- `06-principles/constraints.md`
+- `08-mvp-experiments/*`
+
+Do not read:
+
+- roadmap files until selection is made
+- future phase folders
+
+Read `framework/rules/context-efficiency.md` only when unsure what to load.
 
 ## Ease Of Use Rules
 
-- Always look for a smaller experiment before selecting a larger one.
-- Prefer experiments that test the riskiest assumption quickly.
-- Do not let the first plausible idea become the only option.
-- Keep rejected options visible so the user can revisit them later.
+- Ask only questions that block the next useful file update.
+- Create only files needed for the current action.
+- Keep outputs compact: bullets or tables, not long narrative.
+- Preserve uncertainty labels and rejected alternatives.
 
 ## When To Use
 
@@ -27,53 +48,50 @@ Use for phase `08-mvp-experiments`.
 
 ## Inputs
 
-- Strategy
 - Assumptions
 - Risks
-- Success metrics
+- Target user
+- Metrics
 - Constraints
 
 ## Files To Read
 
 - `00-control/current-state.md`
-- `04-assumptions-risks/assumptions.md`
-- `04-assumptions-risks/risks.md`
-- `07-strategy/target-user.md`
-- `07-strategy/success-metrics.md`
-- `06-principles/constraints.md`
+- assumptions/risks
+- target user/metrics
+- constraints if needed
 
 ## Files To Write
 
 - `08-mvp-experiments/mvp-options.md`
 - `08-mvp-experiments/smallest-useful-experiment.md`
 - `08-mvp-experiments/experiment-design.md`
-- `09-roadmap/rejected-options.md`
+- `09-roadmap/rejected-options.md` when rejecting options
 - `00-control/decision-log.md`
 - `00-control/current-state.md`
 
 ## Questions To Ask
 
-- What are at least three ways to test the idea?
-- Which assumption does each option test?
+- What are at least three ways to test?
+- Which assumption does each test?
 - What is the smallest useful experiment?
-- What options should be rejected or deferred?
 
 ## Blocking Conditions
 
-- Only one option is considered.
-- The selected experiment does not test an important assumption.
-- Success criteria are missing.
+- Only one option considered.
+- Selected experiment does not test an important assumption.
+- Success criteria missing.
 
 ## Skip Behavior
 
-If alternatives are skipped, log the risk of prematurely committing to a weak experiment.
+Log risk of premature commitment if alternatives are skipped.
 
 ## Outputs
 
-- Multiple MVP or experiment options
+- MVP options
 - Selected smallest useful experiment
 - Experiment design
-- Rejected options preserved
+- Rejected options
 
 ## Next Recommended Skill
 

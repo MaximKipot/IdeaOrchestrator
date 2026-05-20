@@ -1,25 +1,45 @@
 ---
 name: strategy
-description: Use when defining target user, positioning, value proposition, differentiation, business model, distribution, or success metrics.
+description: Use when defining target user, positioning, value, differentiation, model, distribution, or success metrics.
 ---
 
 # Strategy
 
 ## Quick Start
 
-1. Read `00-control/current-state.md`, direction, evidence, principles, and constraints.
-2. Create only this phase's required folders and files if they are missing; do not create later-phase folders.
-3. Select an initial target user.
-4. Draft positioning, value proposition, differentiation, model, distribution, and metrics at the chosen depth.
-5. Log strategy decisions and unresolved questions.
-6. Update `00-control/current-state.md` and recommend `mvp-experiments`.
+1. Read current state, direction, principles, constraints, and evidence.
+2. Create only `07-strategy` files if missing.
+3. Draft strategy just enough for experiments.
+4. Log strategic decisions and gaps.
+5. Update current state and route forward.
+
+## Context Budget
+
+Always read:
+
+- `00-control/current-state.md`
+- `05-vision-direction/direction.md`
+- `06-principles/principles.md`
+
+Read only if needed:
+
+- `03-research/evidence-map.md`
+- `06-principles/constraints.md`
+- `07-strategy/*`
+
+Do not read:
+
+- MVP files unless revising strategy
+- future phase folders
+
+Read `framework/rules/context-efficiency.md` only when unsure what to load.
 
 ## Ease Of Use Rules
 
-- Fill strategy files just enough to choose experiments; do not over-polish.
-- If several target users are plausible, pick the most reachable initial segment and label the choice as a `Decision`.
-- Prefer testable distribution ideas over broad channel lists.
-- Keep metrics focused on learning and early evidence.
+- Ask only questions that block the next useful file update.
+- Create only files needed for the current action.
+- Keep outputs compact: bullets or tables, not long narrative.
+- Preserve uncertainty labels and rejected alternatives.
 
 ## When To Use
 
@@ -28,18 +48,17 @@ Use for phase `07-strategy`.
 ## Inputs
 
 - Direction
+- Evidence
 - Principles
 - Constraints
-- Research evidence
 - Assumptions and risks
 
 ## Files To Read
 
 - `00-control/current-state.md`
-- `03-research/evidence-map.md`
 - `05-vision-direction/direction.md`
 - `06-principles/principles.md`
-- `06-principles/constraints.md`
+- constraints/evidence if needed
 
 ## Files To Write
 
@@ -57,25 +76,24 @@ Use for phase `07-strategy`.
 
 - Who is the first target user?
 - What value is promised?
-- What alternative is being replaced or improved?
 - How will users be reached?
 - What counts as early success?
 
 ## Blocking Conditions
 
-- No initial target user can be selected.
-- Distribution is ignored for a business or service idea.
-- Success metrics are too vague to evaluate experiments.
+- No initial target user.
+- Distribution ignored for business/service idea.
+- Metrics are too vague.
 
 ## Skip Behavior
 
-If a strategy artifact is skipped, log the risk in `current-state.md` and mark the artifact as deferred.
+Log risk for each skipped strategy artifact.
 
 ## Outputs
 
-- Strategy files completed enough to guide experiments
-- Strategy decisions logged
-- Open questions for unresolved strategy areas
+- Lean strategy files
+- Strategy decisions
+- Unresolved strategy questions
 
 ## Next Recommended Skill
 

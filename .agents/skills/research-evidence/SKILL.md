@@ -1,25 +1,46 @@
 ---
 name: research-evidence
-description: Use when gathering, classifying, or summarizing research evidence for an idea project.
+description: Use when gathering, classifying, or summarizing evidence for an idea project.
 ---
 
 # Research Evidence
 
 ## Quick Start
 
-1. Read `00-control/current-state.md`, idea brief, and problem context.
-2. Create only this phase's required folders and files if they are missing; do not create later-phase folders.
-3. Choose research depth: `Light`, `Standard`, or `Deep`, unless already set.
-4. Gather or summarize evidence appropriate to the depth.
-5. Update the research log, source list, and evidence map.
-6. Update `00-control/current-state.md` and recommend `assumptions-risks`.
+1. Read current state, idea brief, and problem context.
+2. Create only `03-research` files if missing.
+3. Pick Light, Standard, or Deep depth.
+4. Log sources and classify evidence.
+5. Update current state and route forward.
+
+## Context Budget
+
+Always read:
+
+- `00-control/current-state.md`
+- `01-idea/idea-brief.md`
+- `02-problem/problem-context.md`
+
+Read only if needed:
+
+- `03-research/research-log.md`
+- `03-research/evidence-map.md`
+- `03-research/source-list.md`
+
+Do not read:
+
+- examples/
+- future phase folders
+- full source dumps after summarized
+
+Read `framework/rules/context-efficiency.md` only when unsure what to load.
 
 ## Ease Of Use Rules
 
-- Start with the smallest research pass that can change the next decision.
-- Use user-provided sources first; add external research only when needed and available.
-- Treat unsourced claims as `Assumption` or `Guess`, not `Fact`.
-- If research cannot be completed now, log the missing research and risk rather than stalling silently.
+- Ask only questions that block the next useful file update.
+- Create only files needed for the current action.
+- Keep outputs compact: bullets or tables, not long narrative.
+- Preserve uncertainty labels and rejected alternatives.
 
 ## When To Use
 
@@ -30,46 +51,45 @@ Use for phase `03-research-evidence`.
 - Idea brief
 - Problem context
 - Research questions
-- User-provided sources or notes
+- Sources or notes
 
 ## Files To Read
 
 - `00-control/current-state.md`
 - `01-idea/idea-brief.md`
 - `02-problem/problem-context.md`
-- `03-research/research-log.md`
-- `03-research/source-list.md`
+- existing `03-research` files if present
 
 ## Files To Write
 
 - `03-research/research-log.md`
 - `03-research/evidence-map.md`
 - `03-research/source-list.md`
-- `00-control/open-questions.md`
 - `00-control/current-state.md`
+- `00-control/open-questions.md`
 
 ## Questions To Ask
 
-- What must be true for this idea to work?
-- What research depth is appropriate?
-- Are there specific sources, competitors, users, or markets to inspect?
-- Are any regulated or safety-sensitive domains involved?
+- What must be true?
+- What depth is appropriate?
+- Any specific sources, competitors, users, or markets?
 
 ## Blocking Conditions
 
-- No research has been logged.
+- No research can be logged.
 - Claims are treated as facts without sources.
 - High-risk domains lack explicit uncertainty.
 
 ## Skip Behavior
 
-Research may be narrowed, but not removed. Log deferred research and the risk created.
+Research may be narrowed, not removed; log deferred research and risk.
 
 ## Outputs
 
 - Research log
 - Source list
-- Evidence map separating support, weakness, and uncertainty
+- Evidence map
+- Research gaps
 
 ## Next Recommended Skill
 

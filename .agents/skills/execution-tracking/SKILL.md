@@ -1,25 +1,44 @@
 ---
 name: execution-tracking
-description: Use when tracking progress, current focus, next actions, and evidence produced during execution.
+description: Use when tracking current focus, next actions, progress, blockers, or evidence from execution.
 ---
 
 # Execution Tracking
 
 ## Quick Start
 
-1. Read `00-control/current-state.md`, selected path, roadmap, and execution files.
-2. Create only this phase's required folders and files if they are missing; do not create later-phase folders.
-3. Update current focus before adding new actions.
-4. Add or revise next actions with owner, status, and due date when known.
-5. Log progress and evidence created by execution.
-6. Update `00-control/current-state.md`; recommend review when evidence is available.
+1. Read current state and selected path.
+2. Create only `10-execution` files if missing.
+3. Update current focus.
+4. Record next actions and progress.
+5. Recommend review when evidence exists.
+
+## Context Budget
+
+Always read:
+
+- `00-control/current-state.md`
+- `09-roadmap/selected-path.md`
+
+Read only if needed:
+
+- `09-roadmap/roadmap.md`
+- `10-execution/*`
+- `00-control/open-questions.md` for blockers
+
+Do not read:
+
+- review files until reviewing
+- future phase folders
+
+Read `framework/rules/context-efficiency.md` only when unsure what to load.
 
 ## Ease Of Use Rules
 
-- Make the next action concrete and small.
-- Do not turn execution tracking into project management overhead.
-- If no due date is known, leave it blank rather than inventing one.
-- Surface decisions created by execution immediately.
+- Ask only questions that block the next useful file update.
+- Create only files needed for the current action.
+- Keep outputs compact: bullets or tables, not long narrative.
+- Preserve uncertainty labels and rejected alternatives.
 
 ## When To Use
 
@@ -35,44 +54,40 @@ Use for phase `10-execution-tracking`.
 ## Files To Read
 
 - `00-control/current-state.md`
-- `09-roadmap/selected-path.md`
-- `09-roadmap/roadmap.md`
-- `10-execution/next-actions.md`
-- `10-execution/progress-log.md`
-- `10-execution/current-focus.md`
+- selected path
+- roadmap/current execution files if present
 
 ## Files To Write
 
+- `10-execution/current-focus.md`
 - `10-execution/next-actions.md`
 - `10-execution/progress-log.md`
-- `10-execution/current-focus.md`
-- `00-control/open-questions.md`
 - `00-control/current-state.md`
-- `00-control/decision-log.md` when execution produces a decision
+- `00-control/open-questions.md`
+- `00-control/decision-log.md` if execution creates a decision
 
 ## Questions To Ask
 
-- What changed since the last update?
+- What changed?
 - What is the current focus?
 - What is the next action?
-- What evidence did execution create?
 - Is anything blocked?
 
 ## Blocking Conditions
 
-- No owner or next action exists.
+- No owner or next action.
 - New evidence requires a decision before continuing.
 
 ## Skip Behavior
 
-If progress logging is skipped, log the risk that future reviews will lack evidence.
+Log risk that future reviews will lack evidence.
 
 ## Outputs
 
 - Current focus
 - Next actions
 - Progress log
-- Blockers or decisions surfaced
+- Blockers or decisions
 
 ## Next Recommended Skill
 

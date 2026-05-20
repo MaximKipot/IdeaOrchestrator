@@ -1,25 +1,45 @@
 ---
 name: vision-direction
-description: Use when turning evidence, problem context, and uncertainty into a vision, direction, and anti-vision.
+description: Use when turning evidence and uncertainty into vision, direction, and anti-vision.
 ---
 
 # Vision Direction
 
 ## Quick Start
 
-1. Read `00-control/current-state.md`, problem context, evidence, assumptions, and risks.
-2. Create only this phase's required folders and files if they are missing; do not create later-phase folders.
-3. Draft a concise future-state vision.
-4. Choose a direction that fits the evidence and constraints.
-5. Write the anti-vision so scope boundaries are clear.
-6. Log direction decisions, update `00-control/current-state.md`, and recommend `principles-constraints`.
+1. Read current state, problem, evidence, assumptions, and risks.
+2. Create only `05-vision-direction` files if missing.
+3. Draft vision, direction, and anti-vision.
+4. Log direction decisions.
+5. Update current state and route forward.
+
+## Context Budget
+
+Always read:
+
+- `00-control/current-state.md`
+- `02-problem/problem-context.md`
+- `03-research/evidence-map.md`
+
+Read only if needed:
+
+- `04-assumptions-risks/assumptions.md`
+- `04-assumptions-risks/risks.md`
+- `05-vision-direction/*`
+
+Do not read:
+
+- strategy files unless direction already exists
+- future phase folders
+
+Read `framework/rules/context-efficiency.md` only when unsure what to load.
 
 ## Ease Of Use Rules
 
-- Keep vision practical enough to guide near-term choices.
-- If several directions are plausible, recommend one and preserve the others as rejected or deferred.
-- Use anti-vision to prevent scope creep.
-- Ask for user confirmation only when the direction would materially change the project.
+- Ask only questions that block the next useful file update.
+- Create only files needed for the current action.
+- Keep outputs compact: bullets or tables, not long narrative.
+- Preserve uncertainty labels and rejected alternatives.
 
 ## When To Use
 
@@ -37,8 +57,7 @@ Use for phase `05-vision-direction`.
 - `00-control/current-state.md`
 - `02-problem/problem-context.md`
 - `03-research/evidence-map.md`
-- `04-assumptions-risks/assumptions.md`
-- `04-assumptions-risks/risks.md`
+- assumptions/risks if needed
 
 ## Files To Write
 
@@ -51,24 +70,24 @@ Use for phase `05-vision-direction`.
 ## Questions To Ask
 
 - What future should this create?
-- Which direction best fits the evidence?
-- What should this idea avoid becoming?
-- Which direction choices are decisions?
+- Which direction fits the evidence?
+- What should it avoid becoming?
 
 ## Blocking Conditions
 
 - Direction depends on unresolved critical assumptions.
-- The chosen direction conflicts with stated constraints.
+- Direction conflicts with constraints.
 
 ## Skip Behavior
 
-If anti-vision is skipped, log the risk of scope creep or ambiguous direction.
+Log risk of ambiguous direction or scope creep.
 
 ## Outputs
 
 - Vision
 - Direction decision
-- Anti-vision and rejected directions
+- Anti-vision
+- Deferred or rejected directions
 
 ## Next Recommended Skill
 
