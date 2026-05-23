@@ -10,8 +10,10 @@ description: Use when gathering, classifying, or summarizing evidence for an ide
 1. Read current state, idea brief, and problem context.
 2. Create only `03-research` files if missing.
 3. Pick Light, Standard, or Deep depth.
-4. Log sources and classify evidence.
-5. Update current state and route forward.
+4. Choose research mode: Founder Assumption Audit, End-User Questionnaire, or Mixed.
+5. Always run a market scan for present solutions and alternatives.
+6. Log sources and classify evidence.
+7. Update current state and route forward.
 
 ## Context Budget
 
@@ -46,6 +48,18 @@ Read `framework/rules/context-efficiency.md` only when unsure what to load.
 
 Use for phase `03-research-evidence`.
 
+## Research Mode Fork
+
+Choose one mode before detailed research. The user may override it.
+
+| Mode | Use When | Output |
+| --- | --- | --- |
+| `Founder Assumption Audit` | The idea is early, founder-led, or based mostly on internal belief. | A ranked list of founder assumptions, what would validate or falsify each, and the smallest evidence step. |
+| `End-User Questionnaire` | The target user or buyer can be reached and user evidence is needed. | Interview or survey questions tied to assumptions, with what each question is meant to reveal. |
+| `Mixed` | Most product, service, business, or market-facing ideas. | Both assumption audit and questionnaire, kept short enough to act on. |
+
+Every mode must include a market scan for present solutions, substitutes, current workarounds, and comparable alternatives.
+
 ## Inputs
 
 - Idea brief
@@ -73,12 +87,14 @@ Use for phase `03-research-evidence`.
 
 - What must be true?
 - What depth is appropriate?
+- Which research mode should be used: Founder Assumption Audit, End-User Questionnaire, or Mixed?
 - Any specific sources, competitors, users, or markets?
 
 ## Blocking Conditions
 
 - No research can be logged.
 - Claims are treated as facts without sources.
+- Present solutions or substitutes have not been checked.
 - High-risk domains lack explicit uncertainty.
 
 ## Skip Behavior
@@ -90,6 +106,9 @@ Research may be narrowed, not removed; log deferred research and risk.
 - Research log
 - Source list
 - Evidence map
+- Founder assumptions and validation tests when that mode is used
+- End-user questionnaire when that mode is used
+- Market scan for present solutions in every mode
 - Research gaps
 
 ## Quality Gate

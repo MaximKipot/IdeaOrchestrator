@@ -1,5 +1,17 @@
 # Evidence Map
 
+## Research Mode Used
+
+- Mode: Mixed
+- Market Scan Completed: Yes
+- If no, logged skip risk: Not applicable
+
+## Present Solutions And Alternatives
+
+| Solution / Alternative | Type | Evidence | Classification | Implication |
+| --- | --- | --- | --- | --- |
+| Hospitality messaging and digital guidebook tools | Present solution | Comparable tools exist for guest messaging and local recommendations. | Fact | CozyInn needs sharper differentiation for small independent inns. |
+
 ## Supports The Idea
 
 | Evidence | Classification | Source | Strength |
@@ -19,4 +31,3 @@
 | --- | --- | --- |
 | Owner willingness to pay | Determines viability | Offer a paid manual audit to 3 owners |
 | Best acquisition channel | Determines execution path | Try local inn associations and direct email |
-

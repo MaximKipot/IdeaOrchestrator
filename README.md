@@ -15,7 +15,7 @@ Use `idea-o` as the router. The numbered skills show the normal order in slash s
 | Optional | `idea-o-00-import` | Import an existing chat, document, transcript, or notes dump. |
 | 01 | `idea-o-01-intake` | Capture or sharpen the raw idea. |
 | 02 | `idea-o-02-problem` | Define problem, user, context, and current alternatives. |
-| 03 | `idea-o-03-research` | Gather and classify evidence. |
+| 03 | `idea-o-03-research` | Gather and classify evidence, with a founder-assumption, end-user-questionnaire, or mixed research mode. |
 | 04 | `idea-o-04-risks` | Sort assumptions, risks, unknowns, and tests. |
 | 05 | `idea-o-05-vision` | Define vision, direction, and anti-vision. |
 | 06 | `idea-o-06-principles` | Set principles, constraints, and tradeoff rules. |
@@ -148,6 +148,14 @@ Codex should:
 7. Log decisions and risks.
 8. Apply `framework/rules/phase-quality-gates.md`.
 9. Update `00-control/current-state.md`.
+
+In `idea-o-03-research`, Codex should choose or ask for a research mode:
+
+- `Founder Assumption Audit`: test what the founder currently believes.
+- `End-User Questionnaire`: create interview or survey questions for target users.
+- `Mixed`: use both, usually for product, service, business, and market-facing ideas.
+
+Every research mode must include a market scan for present solutions, substitutes, workarounds, and comparable alternatives.
 
 ## Skip With Risk Logging
 

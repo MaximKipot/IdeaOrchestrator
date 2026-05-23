@@ -17,7 +17,7 @@
 | 00 Project Setup | Complete | Demo project created. |
 | 01 Idea Capture | Complete | Idea brief captured. |
 | 02 Problem Context | Complete | Focused on small inns without marketing staff. |
-| 03 Research Evidence | Complete | Lightweight desk research and comparable tools logged. |
+| 03 Research Evidence | Complete | Mixed-mode research with market scan, founder assumption, and owner question logged. |
 | 04 Assumptions Risks | Complete | Biggest risk is owner willingness to pay. |
 | 05 Vision Direction | Complete | Concierge-first guest experience helper. |
 | 06 Principles Constraints | Complete | Avoid full property management software. |
@@ -36,4 +36,3 @@
 ## Notes
 
 - This is a fictional example project for showing file format.
-
