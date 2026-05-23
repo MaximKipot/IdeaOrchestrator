@@ -1,16 +1,16 @@
 ---
-name: idea-o-vision
-description: Use when turning evidence and uncertainty into vision, direction, and anti-vision.
+name: idea-o-06-principles
+description: Use when defining decision principles, constraints, preferences, and boundaries.
 ---
 
-# Vision Direction
+# Principles Constraints
 
 ## Quick Start
 
-1. Read current state, problem, evidence, assumptions, and risks.
-2. Create only `05-vision-direction` files if missing.
-3. Draft vision, direction, and anti-vision.
-4. Log direction decisions.
+1. Read current state, direction, and anti-vision.
+2. Create only `06-principles` files if missing.
+3. Write 3-7 actionable principles.
+4. Separate constraints from preferences.
 5. Update current state and route forward.
 
 ## Context Budget
@@ -18,18 +18,17 @@ description: Use when turning evidence and uncertainty into vision, direction, a
 Always read:
 
 - `00-control/current-state.md`
-- `02-problem/problem-context.md`
-- `03-research/evidence-map.md`
+- `05-vision-direction/direction.md`
 
 Read only if needed:
 
-- `04-assumptions-risks/assumptions.md`
-- `04-assumptions-risks/risks.md`
-- `05-vision-direction/*`
+- `05-vision-direction/anti-vision.md`
+- `06-principles/principles.md`
+- `06-principles/constraints.md`
 
 Do not read:
 
-- strategy files unless direction already exists
+- strategy files unless checking conflict
 - future phase folders
 
 Read `framework/rules/context-efficiency.md` only when unsure what to load.
@@ -43,52 +42,49 @@ Read `framework/rules/context-efficiency.md` only when unsure what to load.
 
 ## When To Use
 
-Use for phase `05-vision-direction`.
+Use for phase `06-principles-constraints`.
 
 ## Inputs
 
-- Problem context
-- Evidence map
-- Assumptions and risks
+- Direction
+- Anti-vision
+- Known constraints
 - User preferences
 
 ## Files To Read
 
 - `00-control/current-state.md`
-- `02-problem/problem-context.md`
-- `03-research/evidence-map.md`
-- assumptions/risks if needed
+- `05-vision-direction/direction.md`
+- `05-vision-direction/anti-vision.md`
 
 ## Files To Write
 
-- `05-vision-direction/vision.md`
-- `05-vision-direction/direction.md`
-- `05-vision-direction/anti-vision.md`
-- `00-control/decision-log.md`
+- `06-principles/principles.md`
+- `06-principles/constraints.md`
+- `00-control/decision-log.md` if needed
 - `00-control/current-state.md`
 - `00-control/handoff.md` when Clean Handoff Mode is active
 
 ## Questions To Ask
 
-- What future should this create?
-- Which direction fits the evidence?
-- What should it avoid becoming?
+- What principles guide tradeoffs?
+- Which constraints are hard?
+- Which are preferences?
 
 ## Blocking Conditions
 
-- Direction depends on unresolved critical assumptions.
-- Direction conflicts with constraints.
+- Constraints are unknown and affect strategy.
+- Principles are too vague to guide decisions.
 
 ## Skip Behavior
 
-Log risk of ambiguous direction or scope creep.
+Log risk that future choices may be inconsistent.
 
 ## Outputs
 
-- Vision
-- Direction decision
-- Anti-vision
-- Deferred or rejected directions
+- Actionable principles
+- Classified constraints
+- Constraint decisions if any
 
 ## Quality Gate
 
@@ -100,4 +96,4 @@ When Clean Handoff Mode is active, update `00-control/handoff.md` using `framewo
 
 ## Next Recommended Skill
 
-`idea-o-principles`
+`idea-o-07-strategy`

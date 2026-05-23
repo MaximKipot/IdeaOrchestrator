@@ -1,5 +1,5 @@
 ---
-name: idea-o-import
+name: idea-o-00-import
 description: Use when an idea project starts from existing material such as a long chat, document, transcript, research dump, strategy note, or mixed notes.
 ---
 
@@ -96,4 +96,4 @@ When Clean Handoff Mode is active, update `00-control/handoff.md` using `framewo
 
 ## Next Recommended Skill
 
-Primary `idea-o-intake`; use `idea-o-problem` when the main idea and user problem are already clear.
+Primary `idea-o-01-intake`; use `idea-o-02-problem` when the main idea and user problem are already clear.

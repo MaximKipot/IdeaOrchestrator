@@ -6,6 +6,25 @@ The framework is built for Codex. It keeps the project memory in files so work c
 
 It is also context-efficient by default: Codex should read the current state first, then only the files needed for the current phase.
 
+## Skill Sequence
+
+Use `idea-o` as the router. The numbered skills show the normal order in slash search:
+
+| Order | Skill | Purpose |
+| --- | --- | --- |
+| Optional | `idea-o-00-import` | Import an existing chat, document, transcript, or notes dump. |
+| 01 | `idea-o-01-intake` | Capture or sharpen the raw idea. |
+| 02 | `idea-o-02-problem` | Define problem, user, context, and current alternatives. |
+| 03 | `idea-o-03-research` | Gather and classify evidence. |
+| 04 | `idea-o-04-risks` | Sort assumptions, risks, unknowns, and tests. |
+| 05 | `idea-o-05-vision` | Define vision, direction, and anti-vision. |
+| 06 | `idea-o-06-principles` | Set principles, constraints, and tradeoff rules. |
+| 07 | `idea-o-07-strategy` | Define target, value, positioning, model, distribution, and metrics. |
+| 08 | `idea-o-08-mvp` | Generate MVP and experiment options. |
+| 09 | `idea-o-09-roadmap` | Select a path, preserve rejected options, and plan the roadmap. |
+| 10 | `idea-o-10-execution` | Track focus, progress, blockers, and next actions. |
+| 11 | `idea-o-11-review` | Review evidence and decide whether to continue, adjust, pivot, pause, or stop. |
+
 ## When To Use It
 
 Use this framework for software ideas, businesses, services, internal initiatives, workshops, content projects, physical products, or personal projects.
@@ -34,7 +53,7 @@ Suggested depth levels:
 
 ## Start From Existing Material
 
-Use `idea-o-import` before normal intake when you already have a long chat, document, transcript, research dump, strategy note, or mixed notes.
+Use `idea-o-00-import` before normal intake when you already have a long chat, document, transcript, research dump, strategy note, or mixed notes.
 
 Ask Codex:
 
@@ -49,7 +68,7 @@ Codex should:
 3. Preserve the original material or a faithful summary of it.
 4. Extract candidate ideas, facts, assumptions, guesses, opinions, preferences, rejected alternatives, open questions, and candidate decisions.
 5. Ask you to confirm the main idea and any candidate decisions.
-6. Route into `idea-o-intake` or `idea-o-problem`.
+6. Route into `idea-o-01-intake` or `idea-o-02-problem`.
 
 Old chat conclusions are not automatically decisions. They become decisions only after you confirm them.
 
@@ -80,16 +99,16 @@ Codex should then create or update `00-control/handoff.md` after each phase.
 
 Best use cases for Clean Handoff Mode:
 
-- `idea-o-import`: when the source chat or document is long.
-- `idea-o-research`: when evidence quality matters or research is broad.
-- `idea-o-strategy`: when target, positioning, distribution, or model choices are strategic.
-- `idea-o-mvp`: when comparing several experiment paths.
-- `idea-o-review`: when deciding whether to continue, pivot, pause, or stop.
+- `idea-o-00-import`: when the source chat or document is long.
+- `idea-o-03-research`: when evidence quality matters or research is broad.
+- `idea-o-07-strategy`: when target, positioning, distribution, or model choices are strategic.
+- `idea-o-08-mvp`: when comparing several experiment paths.
+- `idea-o-11-review`: when deciding whether to continue, pivot, pause, or stop.
 
 Less useful for Clean Handoff Mode:
 
-- `idea-o-intake`: usually small enough to run inline.
-- `idea-o-execution`: often better as quick incremental updates.
+- `idea-o-01-intake`: usually small enough to run inline.
+- `idea-o-10-execution`: often better as quick incremental updates.
 - Tiny personal projects or low-risk internal notes.
 
 Model assignment idea:
@@ -97,18 +116,18 @@ Model assignment idea:
 | Skill | Suggested Model Type |
 | --- | --- |
 | `idea-o` | Fast general model |
-| `idea-o-import` | Strong summarization model for long source material |
-| `idea-o-intake` | Fast general model |
-| `idea-o-problem` | General or stronger reasoning model |
-| `idea-o-research` | Strong research/reasoning model |
-| `idea-o-assumptions` | Strong reasoning model |
-| `idea-o-vision` | Strong reasoning model |
-| `idea-o-principles` | General reasoning model |
-| `idea-o-strategy` | Strong strategy/reasoning model |
-| `idea-o-mvp` | Strong reasoning and option-generation model |
-| `idea-o-roadmap` | General reasoning model |
-| `idea-o-execution` | Fast general model |
-| `idea-o-review` | Strong reasoning model |
+| `idea-o-00-import` | Strong summarization model for long source material |
+| `idea-o-01-intake` | Fast general model |
+| `idea-o-02-problem` | General or stronger reasoning model |
+| `idea-o-03-research` | Strong research/reasoning model |
+| `idea-o-04-risks` | Strong reasoning model |
+| `idea-o-05-vision` | Strong reasoning model |
+| `idea-o-06-principles` | General reasoning model |
+| `idea-o-07-strategy` | Strong strategy/reasoning model |
+| `idea-o-08-mvp` | Strong reasoning and option-generation model |
+| `idea-o-09-roadmap` | General reasoning model |
+| `idea-o-10-execution` | Fast general model |
+| `idea-o-11-review` | Strong reasoning model |
 
 Use `Parallel Support` only for independent research branches, competitor scans, or option generation. One agent should integrate the results into the project files.
 

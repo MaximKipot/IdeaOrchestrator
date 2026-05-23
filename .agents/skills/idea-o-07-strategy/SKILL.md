@@ -1,16 +1,16 @@
 ---
-name: idea-o-principles
-description: Use when defining decision principles, constraints, preferences, and boundaries.
+name: idea-o-07-strategy
+description: Use when defining target user, positioning, value, differentiation, model, distribution, or success metrics.
 ---
 
-# Principles Constraints
+# Strategy
 
 ## Quick Start
 
-1. Read current state, direction, and anti-vision.
-2. Create only `06-principles` files if missing.
-3. Write 3-7 actionable principles.
-4. Separate constraints from preferences.
+1. Read current state, direction, principles, constraints, and evidence.
+2. Create only `07-strategy` files if missing.
+3. Draft strategy just enough for experiments.
+4. Log strategic decisions and gaps.
 5. Update current state and route forward.
 
 ## Context Budget
@@ -19,16 +19,17 @@ Always read:
 
 - `00-control/current-state.md`
 - `05-vision-direction/direction.md`
+- `06-principles/principles.md`
 
 Read only if needed:
 
-- `05-vision-direction/anti-vision.md`
-- `06-principles/principles.md`
+- `03-research/evidence-map.md`
 - `06-principles/constraints.md`
+- `07-strategy/*`
 
 Do not read:
 
-- strategy files unless checking conflict
+- MVP files unless revising strategy
 - future phase folders
 
 Read `framework/rules/context-efficiency.md` only when unsure what to load.
@@ -42,49 +43,58 @@ Read `framework/rules/context-efficiency.md` only when unsure what to load.
 
 ## When To Use
 
-Use for phase `06-principles-constraints`.
+Use for phase `07-strategy`.
 
 ## Inputs
 
 - Direction
-- Anti-vision
-- Known constraints
-- User preferences
+- Evidence
+- Principles
+- Constraints
+- Assumptions and risks
 
 ## Files To Read
 
 - `00-control/current-state.md`
 - `05-vision-direction/direction.md`
-- `05-vision-direction/anti-vision.md`
+- `06-principles/principles.md`
+- constraints/evidence if needed
 
 ## Files To Write
 
-- `06-principles/principles.md`
-- `06-principles/constraints.md`
-- `00-control/decision-log.md` if needed
+- `07-strategy/target-user.md`
+- `07-strategy/positioning.md`
+- `07-strategy/value-proposition.md`
+- `07-strategy/differentiation.md`
+- `07-strategy/business-model.md`
+- `07-strategy/distribution.md`
+- `07-strategy/success-metrics.md`
+- `00-control/decision-log.md`
 - `00-control/current-state.md`
 - `00-control/handoff.md` when Clean Handoff Mode is active
 
 ## Questions To Ask
 
-- What principles guide tradeoffs?
-- Which constraints are hard?
-- Which are preferences?
+- Who is the first target user?
+- What value is promised?
+- How will users be reached?
+- What counts as early success?
 
 ## Blocking Conditions
 
-- Constraints are unknown and affect strategy.
-- Principles are too vague to guide decisions.
+- No initial target user.
+- Distribution ignored for business/service idea.
+- Metrics are too vague.
 
 ## Skip Behavior
 
-Log risk that future choices may be inconsistent.
+Log risk for each skipped strategy artifact.
 
 ## Outputs
 
-- Actionable principles
-- Classified constraints
-- Constraint decisions if any
+- Lean strategy files
+- Strategy decisions
+- Unresolved strategy questions
 
 ## Quality Gate
 
@@ -96,4 +106,4 @@ When Clean Handoff Mode is active, update `00-control/handoff.md` using `framewo
 
 ## Next Recommended Skill
 
-`idea-o-strategy`
+`idea-o-08-mvp`

@@ -1,34 +1,36 @@
 ---
-name: idea-o-assumptions
-description: Use when sorting assumptions, risks, and unknowns that should shape experiments.
+name: idea-o-08-mvp
+description: Use when generating MVP options, experiment options, or selecting the smallest useful next experiment.
 ---
 
-# Assumptions Risks
+# MVP Experiments
 
 ## Quick Start
 
-1. Read current state and evidence map.
-2. Create only `04-assumptions-risks` files if missing.
-3. Prioritize assumptions, risks, and unknowns.
-4. Make key uncertainty testable.
-5. Update current state and route forward.
+1. Read current state, assumptions, risks, target user, and metrics.
+2. Create only `08-mvp-experiments` files if missing.
+3. Generate at least three options.
+4. Select smallest useful experiment.
+5. Preserve rejected options and route forward.
 
 ## Context Budget
 
 Always read:
 
 - `00-control/current-state.md`
-- `03-research/evidence-map.md`
+- `04-assumptions-risks/assumptions.md`
+- `07-strategy/target-user.md`
 
 Read only if needed:
 
-- `04-assumptions-risks/assumptions.md`
 - `04-assumptions-risks/risks.md`
-- `04-assumptions-risks/unknowns.md`
+- `07-strategy/success-metrics.md`
+- `06-principles/constraints.md`
+- `08-mvp-experiments/*`
 
 Do not read:
 
-- strategy files unless resolving a conflict
+- roadmap files until selection is made
 - future phase folders
 
 Read `framework/rules/context-efficiency.md` only when unsure what to load.
@@ -42,49 +44,55 @@ Read `framework/rules/context-efficiency.md` only when unsure what to load.
 
 ## When To Use
 
-Use for phase `04-assumptions-risks`.
+Use for phase `08-mvp-experiments`.
 
 ## Inputs
 
-- Evidence map
-- Problem context
-- Known constraints if already recorded
+- Assumptions
+- Risks
+- Target user
+- Metrics
+- Constraints
 
 ## Files To Read
 
 - `00-control/current-state.md`
-- `03-research/evidence-map.md`
-- existing assumptions/risk files if present
+- assumptions/risks
+- target user/metrics
+- constraints if needed
 
 ## Files To Write
 
-- `04-assumptions-risks/assumptions.md`
-- `04-assumptions-risks/risks.md`
-- `04-assumptions-risks/unknowns.md`
+- `08-mvp-experiments/mvp-options.md`
+- `08-mvp-experiments/smallest-useful-experiment.md`
+- `08-mvp-experiments/experiment-design.md`
+- `09-roadmap/rejected-options.md` when rejecting options
+- `00-control/decision-log.md`
 - `00-control/current-state.md`
-- `00-control/open-questions.md`
 - `00-control/handoff.md` when Clean Handoff Mode is active
 
 ## Questions To Ask
 
-- What must be true?
-- What could make this fail?
-- Which unknown matters most?
+- What are at least three ways to test?
+- Which assumption does each test?
+- What is the smallest useful experiment?
 
 ## Blocking Conditions
 
-- Critical assumptions are invisible.
-- Serious risks are omitted.
+- Only one option considered.
+- Selected experiment does not test an important assumption.
+- Success criteria missing.
 
 ## Skip Behavior
 
-Log risk that MVP selection may test the wrong thing or miss avoidable risk.
+Log risk of premature commitment if alternatives are skipped.
 
 ## Outputs
 
-- Prioritized assumptions
-- Prioritized risks
-- Unknowns with resolution paths
+- MVP options
+- Selected smallest useful experiment
+- Experiment design
+- Rejected options
 
 ## Quality Gate
 
@@ -96,4 +104,4 @@ When Clean Handoff Mode is active, update `00-control/handoff.md` using `framewo
 
 ## Next Recommended Skill
 
-`idea-o-vision`
+`idea-o-09-roadmap`

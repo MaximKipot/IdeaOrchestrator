@@ -36,5 +36,5 @@ Ground the idea in evidence before strategy and MVP choices.
 
 - Sources and evidence are logged.
 - Facts are separated from assumptions and guesses.
-- The next recommended skill is `idea-o-assumptions`.
+- The next recommended skill is `idea-o-04-risks`.
 

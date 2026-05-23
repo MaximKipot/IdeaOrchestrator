@@ -1,5 +1,5 @@
 ---
-name: idea-o-execution
+name: idea-o-10-execution
 description: Use when tracking current focus, next actions, progress, blockers, or evidence from execution.
 ---
 
@@ -100,4 +100,4 @@ When Clean Handoff Mode is active, update `00-control/handoff.md` using `framewo
 
 ## Next Recommended Skill
 
-`idea-o-review` when enough evidence exists; otherwise continue `idea-o-execution`.
+`idea-o-11-review` when enough evidence exists; otherwise continue `idea-o-10-execution`.

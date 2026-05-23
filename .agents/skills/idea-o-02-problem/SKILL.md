@@ -1,16 +1,16 @@
 ---
-name: idea-o-intake
-description: Use when capturing a fresh raw idea or sharpening an imported candidate idea into an initial idea brief.
+name: idea-o-02-problem
+description: Use when clarifying the user problem, beneficiary, current alternatives, and why the idea matters.
 ---
 
-# Idea Intake
+# Problem Definition
 
 ## Quick Start
 
-1. Read current state.
-2. Create only `01-idea` files if missing.
-3. Preserve raw notes.
-4. Write a concise idea brief with evidence labels.
+1. Read current state and idea brief.
+2. Create only `02-problem` files if missing.
+3. Describe problem from user perspective.
+4. Record current alternatives.
 5. Update current state and route forward.
 
 ## Context Budget
@@ -18,16 +18,17 @@ description: Use when capturing a fresh raw idea or sharpening an imported candi
 Always read:
 
 - `00-control/current-state.md`
+- `01-idea/idea-brief.md`
 
 Read only if needed:
 
-- `00-import/import-summary.md` after import
-- `01-idea/raw-notes.md`
-- `01-idea/idea-brief.md`
+- `02-problem/problem-context.md`
+- `02-problem/user-context.md`
+- `00-control/open-questions.md`
 
 Do not read:
 
-- research files
+- research logs unless already summarized
 - strategy files
 - future phase folders
 
@@ -42,48 +43,49 @@ Read `framework/rules/context-efficiency.md` only when unsure what to load.
 
 ## When To Use
 
-Use for phase `01-idea-capture` or after `idea-o-import` needs main-idea sharpening.
+Use for phase `02-problem-context`.
 
 ## Inputs
 
-- Raw idea
-- Imported candidate idea
-- Known preferences or constraints
+- Idea brief
+- Raw notes or import summary
+- Known user context
 
 ## Files To Read
 
 - `00-control/current-state.md`
-- `00-import/import-summary.md` if imported
-- `01-idea/raw-notes.md` if it exists
+- `01-idea/idea-brief.md`
+- `01-idea/raw-notes.md` if needed
 
 ## Files To Write
 
-- `01-idea/raw-notes.md`
-- `01-idea/idea-brief.md`
+- `02-problem/problem-context.md`
+- `02-problem/user-context.md`
 - `00-control/current-state.md`
-- `00-control/open-questions.md` if blocked
+- `00-control/open-questions.md`
 - `00-control/handoff.md` when Clean Handoff Mode is active
 
 ## Questions To Ask
 
-- What is the idea?
-- Who might it help?
-- What outcome would make it worth exploring?
+- Who has the problem?
+- What do they do today?
+- What makes it painful, costly, slow, risky, or important?
 
 ## Blocking Conditions
 
-- No identifiable idea, audience, or desired outcome.
+- No plausible user or beneficiary.
+- Only a solution exists, not a problem.
 
 ## Skip Behavior
 
-If detailed intake is skipped, log risk that later phases may optimize around the wrong idea.
+Log risk that strategy and MVP may target the wrong audience.
 
 ## Outputs
 
-- Raw notes
-- One-sentence idea
-- Initial audience
-- Desired outcome
+- Problem statement
+- User context
+- Current alternatives
+- Open blockers
 
 ## Quality Gate
 
@@ -95,4 +97,4 @@ When Clean Handoff Mode is active, update `00-control/handoff.md` using `framewo
 
 ## Next Recommended Skill
 
-`idea-o-problem`
+`idea-o-03-research`

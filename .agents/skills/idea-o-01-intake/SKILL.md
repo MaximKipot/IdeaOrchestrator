@@ -1,16 +1,16 @@
 ---
-name: idea-o-research
-description: Use when gathering, classifying, or summarizing evidence for an idea project.
+name: idea-o-01-intake
+description: Use when capturing a fresh raw idea or sharpening an imported candidate idea into an initial idea brief.
 ---
 
-# Research Evidence
+# Idea Intake
 
 ## Quick Start
 
-1. Read current state, idea brief, and problem context.
-2. Create only `03-research` files if missing.
-3. Pick Light, Standard, or Deep depth.
-4. Log sources and classify evidence.
+1. Read current state.
+2. Create only `01-idea` files if missing.
+3. Preserve raw notes.
+4. Write a concise idea brief with evidence labels.
 5. Update current state and route forward.
 
 ## Context Budget
@@ -18,20 +18,18 @@ description: Use when gathering, classifying, or summarizing evidence for an ide
 Always read:
 
 - `00-control/current-state.md`
-- `01-idea/idea-brief.md`
-- `02-problem/problem-context.md`
 
 Read only if needed:
 
-- `03-research/research-log.md`
-- `03-research/evidence-map.md`
-- `03-research/source-list.md`
+- `00-import/import-summary.md` after import
+- `01-idea/raw-notes.md`
+- `01-idea/idea-brief.md`
 
 Do not read:
 
-- examples/
+- research files
+- strategy files
 - future phase folders
-- full source dumps after summarized
 
 Read `framework/rules/context-efficiency.md` only when unsure what to load.
 
@@ -44,53 +42,48 @@ Read `framework/rules/context-efficiency.md` only when unsure what to load.
 
 ## When To Use
 
-Use for phase `03-research-evidence`.
+Use for phase `01-idea-capture` or after `idea-o-00-import` needs main-idea sharpening.
 
 ## Inputs
 
-- Idea brief
-- Problem context
-- Research questions
-- Sources or notes
+- Raw idea
+- Imported candidate idea
+- Known preferences or constraints
 
 ## Files To Read
 
 - `00-control/current-state.md`
-- `01-idea/idea-brief.md`
-- `02-problem/problem-context.md`
-- existing `03-research` files if present
+- `00-import/import-summary.md` if imported
+- `01-idea/raw-notes.md` if it exists
 
 ## Files To Write
 
-- `03-research/research-log.md`
-- `03-research/evidence-map.md`
-- `03-research/source-list.md`
+- `01-idea/raw-notes.md`
+- `01-idea/idea-brief.md`
 - `00-control/current-state.md`
-- `00-control/open-questions.md`
+- `00-control/open-questions.md` if blocked
 - `00-control/handoff.md` when Clean Handoff Mode is active
 
 ## Questions To Ask
 
-- What must be true?
-- What depth is appropriate?
-- Any specific sources, competitors, users, or markets?
+- What is the idea?
+- Who might it help?
+- What outcome would make it worth exploring?
 
 ## Blocking Conditions
 
-- No research can be logged.
-- Claims are treated as facts without sources.
-- High-risk domains lack explicit uncertainty.
+- No identifiable idea, audience, or desired outcome.
 
 ## Skip Behavior
 
-Research may be narrowed, not removed; log deferred research and risk.
+If detailed intake is skipped, log risk that later phases may optimize around the wrong idea.
 
 ## Outputs
 
-- Research log
-- Source list
-- Evidence map
-- Research gaps
+- Raw notes
+- One-sentence idea
+- Initial audience
+- Desired outcome
 
 ## Quality Gate
 
@@ -102,4 +95,4 @@ When Clean Handoff Mode is active, update `00-control/handoff.md` using `framewo
 
 ## Next Recommended Skill
 
-`idea-o-assumptions`
+`idea-o-02-problem`

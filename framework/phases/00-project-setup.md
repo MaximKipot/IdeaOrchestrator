@@ -36,4 +36,4 @@ Do not create the full project folder tree. Later phase folders are created only
 - The initial control files exist.
 - No future phase folders were created in advance.
 - Current phase, depth, owner, and next action are recorded.
-- The next recommended skill is `idea-o-intake`.
+- The next recommended skill is `idea-o-01-intake`.

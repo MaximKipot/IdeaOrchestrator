@@ -1,37 +1,37 @@
 ---
-name: idea-o-review
-description: Use when reviewing evidence, experiment results, stalls, or deciding whether to continue, adjust, pivot, pause, or stop.
+name: idea-o-03-research
+description: Use when gathering, classifying, or summarizing evidence for an idea project.
 ---
 
-# Review Pivot
+# Research Evidence
 
 ## Quick Start
 
-1. Read current state, experiment design, metrics, and progress.
-2. Create only `11-review` files if missing.
-3. Summarize what changed and what was learned.
-4. Decide continue, adjust, pivot, pause, or stop.
-5. Update current state and route next.
+1. Read current state, idea brief, and problem context.
+2. Create only `03-research` files if missing.
+3. Pick Light, Standard, or Deep depth.
+4. Log sources and classify evidence.
+5. Update current state and route forward.
 
 ## Context Budget
 
 Always read:
 
 - `00-control/current-state.md`
-- `10-execution/progress-log.md`
+- `01-idea/idea-brief.md`
+- `02-problem/problem-context.md`
 
 Read only if needed:
 
-- `08-mvp-experiments/experiment-design.md`
-- `07-strategy/success-metrics.md`
+- `03-research/research-log.md`
 - `03-research/evidence-map.md`
-- `11-review/*`
+- `03-research/source-list.md`
 
 Do not read:
 
-- templates/
 - examples/
 - future phase folders
+- full source dumps after summarized
 
 Read `framework/rules/context-efficiency.md` only when unsure what to load.
 
@@ -44,52 +44,53 @@ Read `framework/rules/context-efficiency.md` only when unsure what to load.
 
 ## When To Use
 
-Use for phase `11-review-pivot`.
+Use for phase `03-research-evidence`.
 
 ## Inputs
 
-- Progress log
-- Experiment design
-- Success metrics
-- Evidence map
-- User judgment
+- Idea brief
+- Problem context
+- Research questions
+- Sources or notes
 
 ## Files To Read
 
 - `00-control/current-state.md`
-- progress log
-- experiment design and metrics if needed
+- `01-idea/idea-brief.md`
+- `02-problem/problem-context.md`
+- existing `03-research` files if present
 
 ## Files To Write
 
-- `11-review/review-log.md`
-- `11-review/pivot-decisions.md`
-- `09-roadmap/rejected-options.md` if preserving paths
-- `00-control/decision-log.md`
+- `03-research/research-log.md`
+- `03-research/evidence-map.md`
+- `03-research/source-list.md`
 - `00-control/current-state.md`
+- `00-control/open-questions.md`
 - `00-control/handoff.md` when Clean Handoff Mode is active
 
 ## Questions To Ask
 
-- What did the evidence show?
-- Should the project continue, adjust, pivot, pause, or stop?
-- What should be preserved?
+- What must be true?
+- What depth is appropriate?
+- Any specific sources, competitors, users, or markets?
 
 ## Blocking Conditions
 
-- No evidence or progress to review.
-- Pivot proposed without consequences.
+- No research can be logged.
+- Claims are treated as facts without sources.
+- High-risk domains lack explicit uncertainty.
 
 ## Skip Behavior
 
-Log risk that the project may continue despite contradictory evidence.
+Research may be narrowed, not removed; log deferred research and risk.
 
 ## Outputs
 
-- Review findings
-- Continue/pivot/pause/stop decision
-- Preserved alternatives
-- Updated current state
+- Research log
+- Source list
+- Evidence map
+- Research gaps
 
 ## Quality Gate
 
@@ -101,4 +102,4 @@ When Clean Handoff Mode is active, update `00-control/handoff.md` using `framewo
 
 ## Next Recommended Skill
 
-`idea-o` to route the next phase or action.
+`idea-o-04-risks`

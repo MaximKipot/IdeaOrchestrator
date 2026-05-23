@@ -1,36 +1,36 @@
 ---
-name: idea-o-mvp
-description: Use when generating MVP options, experiment options, or selecting the smallest useful next experiment.
+name: idea-o-11-review
+description: Use when reviewing evidence, experiment results, stalls, or deciding whether to continue, adjust, pivot, pause, or stop.
 ---
 
-# MVP Experiments
+# Review Pivot
 
 ## Quick Start
 
-1. Read current state, assumptions, risks, target user, and metrics.
-2. Create only `08-mvp-experiments` files if missing.
-3. Generate at least three options.
-4. Select smallest useful experiment.
-5. Preserve rejected options and route forward.
+1. Read current state, experiment design, metrics, and progress.
+2. Create only `11-review` files if missing.
+3. Summarize what changed and what was learned.
+4. Decide continue, adjust, pivot, pause, or stop.
+5. Update current state and route next.
 
 ## Context Budget
 
 Always read:
 
 - `00-control/current-state.md`
-- `04-assumptions-risks/assumptions.md`
-- `07-strategy/target-user.md`
+- `10-execution/progress-log.md`
 
 Read only if needed:
 
-- `04-assumptions-risks/risks.md`
+- `08-mvp-experiments/experiment-design.md`
 - `07-strategy/success-metrics.md`
-- `06-principles/constraints.md`
-- `08-mvp-experiments/*`
+- `03-research/evidence-map.md`
+- `11-review/*`
 
 Do not read:
 
-- roadmap files until selection is made
+- templates/
+- examples/
 - future phase folders
 
 Read `framework/rules/context-efficiency.md` only when unsure what to load.
@@ -44,55 +44,52 @@ Read `framework/rules/context-efficiency.md` only when unsure what to load.
 
 ## When To Use
 
-Use for phase `08-mvp-experiments`.
+Use for phase `11-review-pivot`.
 
 ## Inputs
 
-- Assumptions
-- Risks
-- Target user
-- Metrics
-- Constraints
+- Progress log
+- Experiment design
+- Success metrics
+- Evidence map
+- User judgment
 
 ## Files To Read
 
 - `00-control/current-state.md`
-- assumptions/risks
-- target user/metrics
-- constraints if needed
+- progress log
+- experiment design and metrics if needed
 
 ## Files To Write
 
-- `08-mvp-experiments/mvp-options.md`
-- `08-mvp-experiments/smallest-useful-experiment.md`
-- `08-mvp-experiments/experiment-design.md`
-- `09-roadmap/rejected-options.md` when rejecting options
+- `11-review/review-log.md`
+- `11-review/pivot-decisions.md`
+- `09-roadmap/rejected-options.md` if preserving paths
 - `00-control/decision-log.md`
 - `00-control/current-state.md`
 - `00-control/handoff.md` when Clean Handoff Mode is active
 
 ## Questions To Ask
 
-- What are at least three ways to test?
-- Which assumption does each test?
-- What is the smallest useful experiment?
+- What did the evidence show?
+- Should the project continue, adjust, pivot, pause, or stop?
+- What should be preserved?
 
 ## Blocking Conditions
 
-- Only one option considered.
-- Selected experiment does not test an important assumption.
-- Success criteria missing.
+- No evidence or progress to review.
+- Pivot proposed without consequences.
 
 ## Skip Behavior
 
-Log risk of premature commitment if alternatives are skipped.
+Log risk that the project may continue despite contradictory evidence.
 
 ## Outputs
 
-- MVP options
-- Selected smallest useful experiment
-- Experiment design
-- Rejected options
+- Review findings
+- Continue/pivot/pause/stop decision
+- Preserved alternatives
+- Updated current state
 
 ## Quality Gate
 
@@ -104,4 +101,4 @@ When Clean Handoff Mode is active, update `00-control/handoff.md` using `framewo
 
 ## Next Recommended Skill
 
-`idea-o-roadmap`
+`idea-o` to route the next phase or action.

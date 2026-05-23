@@ -1,34 +1,34 @@
 ---
-name: idea-o-roadmap
-description: Use when selecting the path, preserving rejected options, and turning an experiment into a practical roadmap.
+name: idea-o-04-risks
+description: Use when sorting assumptions, risks, and unknowns that should shape experiments.
 ---
 
-# Decision Roadmap
+# Assumptions Risks
 
 ## Quick Start
 
-1. Read current state and selected experiment.
-2. Create only `09-roadmap` files if missing.
-3. Record selected path.
-4. Preserve rejected/deferred/paused options.
-5. Write short roadmap and route forward.
+1. Read current state and evidence map.
+2. Create only `04-assumptions-risks` files if missing.
+3. Prioritize assumptions, risks, and unknowns.
+4. Make key uncertainty testable.
+5. Update current state and route forward.
 
 ## Context Budget
 
 Always read:
 
 - `00-control/current-state.md`
-- `08-mvp-experiments/smallest-useful-experiment.md`
+- `03-research/evidence-map.md`
 
 Read only if needed:
 
-- `08-mvp-experiments/mvp-options.md`
-- `08-mvp-experiments/experiment-design.md`
-- `09-roadmap/*`
+- `04-assumptions-risks/assumptions.md`
+- `04-assumptions-risks/risks.md`
+- `04-assumptions-risks/unknowns.md`
 
 Do not read:
 
-- execution files until roadmap exists
+- strategy files unless resolving a conflict
 - future phase folders
 
 Read `framework/rules/context-efficiency.md` only when unsure what to load.
@@ -42,51 +42,49 @@ Read `framework/rules/context-efficiency.md` only when unsure what to load.
 
 ## When To Use
 
-Use for phase `09-decisions-roadmap`.
+Use for phase `04-assumptions-risks`.
 
 ## Inputs
 
-- MVP options
-- Selected experiment
-- Constraints
+- Evidence map
+- Problem context
+- Known constraints if already recorded
 
 ## Files To Read
 
 - `00-control/current-state.md`
-- selected experiment
-- MVP options if needed
+- `03-research/evidence-map.md`
+- existing assumptions/risk files if present
 
 ## Files To Write
 
-- `09-roadmap/selected-path.md`
-- `09-roadmap/rejected-options.md`
-- `09-roadmap/roadmap.md`
-- `00-control/decision-log.md`
+- `04-assumptions-risks/assumptions.md`
+- `04-assumptions-risks/risks.md`
+- `04-assumptions-risks/unknowns.md`
 - `00-control/current-state.md`
+- `00-control/open-questions.md`
 - `00-control/handoff.md` when Clean Handoff Mode is active
 
 ## Questions To Ask
 
-- What path is selected?
-- What is rejected, deferred, or paused?
-- What milestones are needed?
+- What must be true?
+- What could make this fail?
+- Which unknown matters most?
 
 ## Blocking Conditions
 
-- Selection criteria unclear.
-- Rejected alternatives missing.
-- Roadmap actions do not connect to experiment.
+- Critical assumptions are invisible.
+- Serious risks are omitted.
 
 ## Skip Behavior
 
-Log risk that execution may start without owners or sequence.
+Log risk that MVP selection may test the wrong thing or miss avoidable risk.
 
 ## Outputs
 
-- Selected path
-- Preserved alternatives
-- Short roadmap
-- Decision log entries
+- Prioritized assumptions
+- Prioritized risks
+- Unknowns with resolution paths
 
 ## Quality Gate
 
@@ -98,4 +96,4 @@ When Clean Handoff Mode is active, update `00-control/handoff.md` using `framewo
 
 ## Next Recommended Skill
 
-`idea-o-execution`
+`idea-o-05-vision`

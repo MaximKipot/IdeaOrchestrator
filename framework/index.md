@@ -26,25 +26,25 @@ Before marking a phase complete, use `framework/rules/phase-quality-gates.md`.
 
 | Situation | Skill |
 | --- | --- |
-| Existing chat, doc, transcript, or notes dump | `idea-o-import` |
-| Fresh raw idea | `idea-o-intake` |
-| Problem/user unclear | `idea-o-problem` |
-| Evidence needed | `idea-o-research` |
-| Uncertainty needs sorting | `idea-o-assumptions` |
-| Direction unclear | `idea-o-vision` |
-| Tradeoff rules needed | `idea-o-principles` |
-| Target, value, model, channel, metrics needed | `idea-o-strategy` |
-| Experiment options needed | `idea-o-mvp` |
-| Path and roadmap needed | `idea-o-roadmap` |
-| Actions/progress needed | `idea-o-execution` |
-| Evidence review or pivot needed | `idea-o-review` |
+| Existing chat, doc, transcript, or notes dump | `idea-o-00-import` |
+| Fresh raw idea | `idea-o-01-intake` |
+| Problem/user unclear | `idea-o-02-problem` |
+| Evidence needed | `idea-o-03-research` |
+| Uncertainty needs sorting | `idea-o-04-risks` |
+| Direction unclear | `idea-o-05-vision` |
+| Tradeoff rules needed | `idea-o-06-principles` |
+| Target, value, model, channel, metrics needed | `idea-o-07-strategy` |
+| Experiment options needed | `idea-o-08-mvp` |
+| Path and roadmap needed | `idea-o-09-roadmap` |
+| Actions/progress needed | `idea-o-10-execution` |
+| Evidence review or pivot needed | `idea-o-11-review` |
 
 ## Sequential Flow
 
-Optional: `idea-o-import`
+Optional: `idea-o-00-import`
 
 Normal flow:
 
-`idea-o-intake` -> `idea-o-problem` -> `idea-o-research` -> `idea-o-assumptions` -> `idea-o-vision` -> `idea-o-principles` -> `idea-o-strategy` -> `idea-o-mvp` -> `idea-o-roadmap` -> `idea-o-execution` -> `idea-o-review`
+`idea-o-01-intake` -> `idea-o-02-problem` -> `idea-o-03-research` -> `idea-o-04-risks` -> `idea-o-05-vision` -> `idea-o-06-principles` -> `idea-o-07-strategy` -> `idea-o-08-mvp` -> `idea-o-09-roadmap` -> `idea-o-10-execution` -> `idea-o-11-review`
 
 Manual jumps are allowed only when requested by the user and logged with risk.

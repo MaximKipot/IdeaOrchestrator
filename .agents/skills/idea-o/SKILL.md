@@ -96,4 +96,4 @@ When Clean Handoff Mode is active, update `00-control/handoff.md` using `framewo
 
 ## Next Recommended Skill
 
-Use the routed skill. If existing material is provided, use `idea-o-import`; if fresh, use `idea-o-intake`.
+Use the routed skill. If existing material is provided, use `idea-o-00-import`; if fresh, use `idea-o-01-intake`.

@@ -1,16 +1,16 @@
 ---
-name: idea-o-strategy
-description: Use when defining target user, positioning, value, differentiation, model, distribution, or success metrics.
+name: idea-o-05-vision
+description: Use when turning evidence and uncertainty into vision, direction, and anti-vision.
 ---
 
-# Strategy
+# Vision Direction
 
 ## Quick Start
 
-1. Read current state, direction, principles, constraints, and evidence.
-2. Create only `07-strategy` files if missing.
-3. Draft strategy just enough for experiments.
-4. Log strategic decisions and gaps.
+1. Read current state, problem, evidence, assumptions, and risks.
+2. Create only `05-vision-direction` files if missing.
+3. Draft vision, direction, and anti-vision.
+4. Log direction decisions.
 5. Update current state and route forward.
 
 ## Context Budget
@@ -18,18 +18,18 @@ description: Use when defining target user, positioning, value, differentiation,
 Always read:
 
 - `00-control/current-state.md`
-- `05-vision-direction/direction.md`
-- `06-principles/principles.md`
+- `02-problem/problem-context.md`
+- `03-research/evidence-map.md`
 
 Read only if needed:
 
-- `03-research/evidence-map.md`
-- `06-principles/constraints.md`
-- `07-strategy/*`
+- `04-assumptions-risks/assumptions.md`
+- `04-assumptions-risks/risks.md`
+- `05-vision-direction/*`
 
 Do not read:
 
-- MVP files unless revising strategy
+- strategy files unless direction already exists
 - future phase folders
 
 Read `framework/rules/context-efficiency.md` only when unsure what to load.
@@ -43,58 +43,52 @@ Read `framework/rules/context-efficiency.md` only when unsure what to load.
 
 ## When To Use
 
-Use for phase `07-strategy`.
+Use for phase `05-vision-direction`.
 
 ## Inputs
 
-- Direction
-- Evidence
-- Principles
-- Constraints
+- Problem context
+- Evidence map
 - Assumptions and risks
+- User preferences
 
 ## Files To Read
 
 - `00-control/current-state.md`
-- `05-vision-direction/direction.md`
-- `06-principles/principles.md`
-- constraints/evidence if needed
+- `02-problem/problem-context.md`
+- `03-research/evidence-map.md`
+- assumptions/risks if needed
 
 ## Files To Write
 
-- `07-strategy/target-user.md`
-- `07-strategy/positioning.md`
-- `07-strategy/value-proposition.md`
-- `07-strategy/differentiation.md`
-- `07-strategy/business-model.md`
-- `07-strategy/distribution.md`
-- `07-strategy/success-metrics.md`
+- `05-vision-direction/vision.md`
+- `05-vision-direction/direction.md`
+- `05-vision-direction/anti-vision.md`
 - `00-control/decision-log.md`
 - `00-control/current-state.md`
 - `00-control/handoff.md` when Clean Handoff Mode is active
 
 ## Questions To Ask
 
-- Who is the first target user?
-- What value is promised?
-- How will users be reached?
-- What counts as early success?
+- What future should this create?
+- Which direction fits the evidence?
+- What should it avoid becoming?
 
 ## Blocking Conditions
 
-- No initial target user.
-- Distribution ignored for business/service idea.
-- Metrics are too vague.
+- Direction depends on unresolved critical assumptions.
+- Direction conflicts with constraints.
 
 ## Skip Behavior
 
-Log risk for each skipped strategy artifact.
+Log risk of ambiguous direction or scope creep.
 
 ## Outputs
 
-- Lean strategy files
-- Strategy decisions
-- Unresolved strategy questions
+- Vision
+- Direction decision
+- Anti-vision
+- Deferred or rejected directions
 
 ## Quality Gate
 
@@ -106,4 +100,4 @@ When Clean Handoff Mode is active, update `00-control/handoff.md` using `framewo
 
 ## Next Recommended Skill
 
-`idea-o-mvp`
+`idea-o-06-principles`

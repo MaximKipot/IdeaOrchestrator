@@ -35,5 +35,5 @@ Make uncertainty visible and prepare it for testing.
 ## Done When
 
 - Assumptions, risks, and unknowns are prioritized.
-- The next recommended skill is `idea-o-vision`.
+- The next recommended skill is `idea-o-05-vision`.
 
