@@ -40,6 +40,15 @@ Read `framework/rules/context-efficiency.md` only when unsure what to load.
 - Keep outputs compact: bullets or tables, not long narrative.
 - Preserve uncertainty labels and rejected alternatives.
 
+
+## Persistence Rules
+
+- Before writing, check `00-control/current-state.md`, unresolved `00-control/open-questions.md`, and existing phase files for what the user already completed, deliberately skipped, or left blocked.
+- Treat a phase as unfinished until required outputs are written to files or consciously skipped with accepted risk.
+- If required output is missing, keep going by updating the file, asking one blocking question, or logging a conscious skip.
+- Do not mark the phase complete or recommend the next skill until outputs exist or each missing output has reason, risk, owner, date, and revisit trigger.
+- If the user asks to skip or jump, state the risk briefly and record explicit acceptance before advancing.
+
 ## When To Use
 
 Use for phase `10-execution-tracking`.

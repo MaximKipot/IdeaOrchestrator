@@ -10,6 +10,8 @@ Read this only when routing, starting, or resuming an idea project.
 
 Do not read `examples/`, `templates/project/`, future phase files, or all rules by default.
 
+Before advancing, confirm required outputs are written or consciously skipped with accepted risk. Use `framework/rules/persistence-and-completion.md` when this is unclear.
+
 ## Context Modes
 
 | Mode | Use When |

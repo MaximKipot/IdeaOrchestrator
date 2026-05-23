@@ -6,6 +6,8 @@ The framework is built for Codex. It keeps the project memory in files so work c
 
 It is also context-efficient by default: Codex should read the current state first, then only the files needed for the current phase.
 
+It is persistence-oriented: each skill should help finish written outputs, identify what is already done, and distinguish conscious skips from unresolved gaps.
+
 ## Skill Sequence
 
 Use `idea-o` as the router. The numbered skills show the normal order in slash search:
@@ -78,7 +80,7 @@ Ask Codex to:
 
 1. Read `00-control/current-state.md`.
 2. Read `00-control/open-questions.md` only when blocked, skipped, or unclear.
-3. Identify the current phase and blocked items.
+3. Identify what is already completed, deliberately skipped, or still blocked.
 4. Continue the next recommended phase unless you request a manual jump.
 
 Codex should not read examples, templates, future phase folders, or every rule file unless the current task needs them.
@@ -148,6 +150,8 @@ Codex should:
 7. Log decisions and risks.
 8. Apply `framework/rules/phase-quality-gates.md`.
 9. Update `00-control/current-state.md`.
+
+Codex should not mark the phase complete until required outputs are written to Markdown files or you consciously accept a logged skip with risk.
 
 In `idea-o-03-research`, Codex should choose or ask for a research mode:
 

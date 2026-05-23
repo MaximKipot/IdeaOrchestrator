@@ -13,7 +13,9 @@ Log blockers in `00-control/open-questions.md`:
 
 ## Skipping
 
-Skipping is allowed only when the user accepts the risk.
+Skipping is allowed only when the user consciously accepts the risk.
+
+Do not infer skip acceptance from silence, impatience, or a vague request to continue. If the risk is material, state it briefly and record explicit acceptance before advancing.
 
 Log skips in the current phase file and `00-control/current-state.md`:
 
@@ -26,4 +28,3 @@ Log skips in the current phase file and `00-control/current-state.md`:
 - Do not hide skipped research.
 - Do not treat a skipped decision as made.
 - Do not advance when a blocking question remains unresolved unless the user explicitly accepts the risk.
-

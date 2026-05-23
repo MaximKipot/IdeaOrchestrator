@@ -22,6 +22,7 @@ Before starting a phase:
 
 - Read `00-control/current-state.md`.
 - Read unresolved items in `00-control/open-questions.md`.
+- Check what the user already completed, deliberately skipped, or left blocked.
 - Confirm the phase is not blocked.
 - Use the relevant skill.
 - Create only the folders and files needed for the phase being started.
@@ -45,6 +46,7 @@ Before leaving a phase:
 - Update the phase output files.
 - Log decisions.
 - Log skipped items and risks.
+- Do not advance until outputs are written or skipped with explicit accepted risk.
 - Apply `framework/rules/phase-quality-gates.md`.
 - Update `00-control/current-state.md`.
 - Recommend the next phase.

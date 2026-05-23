@@ -29,9 +29,17 @@
 
 ## Active Risks From Skips Or Jumps
 
-| Date | Item | Risk | Revisit Trigger |
+| Date | Item | Reason | Risk | Accepted By | Revisit Trigger |
+| --- | --- | --- | --- | --- | --- |
+| 2026-05-19 | Deep market sizing | Demo uses lightweight depth. | Could underestimate market size or pricing limits. | Example owner | After first 3 owner calls. |
+
+## Completion Evidence
+
+| Phase | Required Outputs Written | Conscious Skips Logged | Remaining Blocker |
 | --- | --- | --- | --- |
-| 2026-05-19 | Deep market sizing | Could underestimate market size or pricing limits. | After first 3 owner calls. |
+| 03 Research Evidence | Yes | Deep market sizing deferred with accepted risk. | None |
+| 09 Decisions Roadmap | Yes | None | None |
+| 10 Execution Tracking | In progress | None | Recruit 3 small inn owners. |
 
 ## Notes
 

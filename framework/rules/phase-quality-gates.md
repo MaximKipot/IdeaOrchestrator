@@ -5,6 +5,8 @@ Run this before marking any phase complete.
 ## Required Checks
 
 - Required files for the current phase were created or intentionally skipped.
+- Existing phase files and control files were checked for what the user already completed, skipped, or left blocked.
+- Required phase outputs are written, or each missing output has a conscious skip with accepted risk.
 - `00-control/current-state.md` was updated.
 - Decisions were logged in `00-control/decision-log.md`.
 - Open questions were logged in `00-control/open-questions.md`.
@@ -25,4 +27,3 @@ Instead:
 - Or log the skip and accepted risk.
 
 Keep the gate lightweight. It should prevent false completion, not create process overhead.
-

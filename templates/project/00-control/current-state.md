@@ -31,7 +31,12 @@
 
 ## Active Risks From Skips Or Jumps
 
-| Date | Item | Risk | Revisit Trigger |
+| Date | Item | Reason | Risk | Accepted By | Revisit Trigger |
+| --- | --- | --- | --- | --- | --- |
+
+## Completion Evidence
+
+| Phase | Required Outputs Written | Conscious Skips Logged | Remaining Blocker |
 | --- | --- | --- | --- |
 
 ## Notes
