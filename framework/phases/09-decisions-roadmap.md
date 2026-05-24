@@ -25,6 +25,7 @@ Select the path, preserve alternatives, and translate the next experiment into a
 - What is deferred, rejected, or paused?
 - What milestones are needed?
 - What decision should be revisited after evidence arrives?
+- Why might the selected path be wrong?
 
 ## Blocking Conditions
 
@@ -34,6 +35,6 @@ Select the path, preserve alternatives, and translate the next experiment into a
 ## Done When
 
 - Selected path and roadmap are recorded.
+- Challenge findings and stop/pivot triggers are recorded.
 - Decision log is current.
 - The next recommended skill is `idea-o-10-execution`.
-

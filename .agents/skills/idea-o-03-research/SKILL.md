@@ -69,6 +69,10 @@ Choose one mode before detailed research. The user may override it.
 
 Every mode must include a market scan for present solutions, substitutes, current workarounds, and comparable alternatives.
 
+## Challenge Pass
+
+Before completing research, use `framework/rules/challenge-pass.md` to record contrary evidence, present solutions, substitutes, and reasons the idea may not matter.
+
 ## Inputs
 
 - Idea brief
@@ -112,6 +116,7 @@ Research may be narrowed, not removed; log deferred research and risk.
 
 ## Outputs
 
+- Challenge findings from contrary evidence and present solutions
 - Research log
 - Source list
 - Evidence map

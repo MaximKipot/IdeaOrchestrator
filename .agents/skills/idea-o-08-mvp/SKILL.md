@@ -55,6 +55,10 @@ Read `framework/rules/context-efficiency.md` only when unsure what to load.
 
 Use for phase `08-mvp-experiments`.
 
+## Challenge Pass
+
+Before selecting or recommending an experiment, use `framework/rules/challenge-pass.md` to challenge each MVP option. Record what each option fails to test and whether it could create misleading positive evidence.
+
 ## Inputs
 
 - Assumptions
@@ -98,6 +102,7 @@ Log risk of premature commitment if alternatives are skipped.
 
 ## Outputs
 
+- Challenge findings for misleading or weak experiment options
 - MVP options
 - Selected smallest useful experiment
 - Experiment design

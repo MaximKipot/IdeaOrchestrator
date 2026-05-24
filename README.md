@@ -8,6 +8,8 @@ It is also context-efficient by default: Codex should read the current state fir
 
 It is persistence-oriented: each skill should help finish written outputs, identify what is already done, and distinguish conscious skips from unresolved gaps.
 
+It also includes a lightweight challenge pass: research, risks, MVP, roadmap, and review phases should deliberately ask what could make the idea fail before advancing.
+
 ## Skill Sequence
 
 Use `idea-o` as the router. The numbered skills show the normal order in slash search:

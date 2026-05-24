@@ -7,6 +7,6 @@
 - Evidence:
 - What Changes:
 - What Stays:
+- Challenge Finding:
 - Consequences:
 - Revisit Trigger:
-

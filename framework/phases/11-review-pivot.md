@@ -25,6 +25,7 @@ Review evidence, decide whether to continue, adjust, pivot, pause, or stop.
 - What did we learn?
 - What changed?
 - Should the project continue, adjust, pivot, pause, or stop?
+- Are we continuing because of evidence or momentum?
 - What should be preserved for later?
 
 ## Blocking Conditions
@@ -35,6 +36,6 @@ Review evidence, decide whether to continue, adjust, pivot, pause, or stop.
 ## Done When
 
 - Review findings are written.
+- Challenge findings are written.
 - Pivot or continuation decisions are logged.
 - Current state points to the next phase or next action.
-

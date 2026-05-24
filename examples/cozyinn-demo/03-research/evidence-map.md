@@ -12,6 +12,12 @@
 | --- | --- | --- | --- | --- |
 | Hospitality messaging and digital guidebook tools | Present solution | Comparable tools exist for guest messaging and local recommendations. | Fact | CozyInn needs sharper differentiation for small independent inns. |
 
+## Challenge Pass
+
+| Challenge | Evidence Or Reason | Severity | Response | Stop / Pivot Trigger |
+| --- | --- | --- | --- | --- |
+| Existing tools may already solve enough of the job. | Comparable guest messaging and guidebook tools exist. | Medium | Test paid setup help before building. | If 3 owners all prefer existing tools, stop or reposition. |
+
 ## Supports The Idea
 
 | Evidence | Classification | Source | Strength |

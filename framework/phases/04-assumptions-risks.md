@@ -26,6 +26,7 @@ Make uncertainty visible and prepare it for testing.
 - What could make this fail?
 - Which unknowns are most important?
 - Which assumptions should be tested first?
+- What would make us stop, pause, or pivot?
 
 ## Blocking Conditions
 
@@ -35,5 +36,5 @@ Make uncertainty visible and prepare it for testing.
 ## Done When
 
 - Assumptions, risks, and unknowns are prioritized.
+- Challenge findings and stop/pivot triggers are logged.
 - The next recommended skill is `idea-o-05-vision`.
-

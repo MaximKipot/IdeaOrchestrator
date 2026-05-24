@@ -25,6 +25,7 @@ Generate multiple MVP or experiment options and choose the smallest useful next 
 - What is the smallest useful thing to test?
 - Which assumptions does each option test?
 - What can be learned without building the full idea?
+- What could each experiment fail to test or falsely validate?
 - What options are rejected and why?
 
 ## Blocking Conditions
@@ -35,7 +36,7 @@ Generate multiple MVP or experiment options and choose the smallest useful next 
 ## Done When
 
 - Multiple options exist.
+- Challenge findings are logged for weak or misleading options.
 - One smallest useful experiment is selected.
 - Rejected options are preserved.
 - The next recommended skill is `idea-o-09-roadmap`.
-

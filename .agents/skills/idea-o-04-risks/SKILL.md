@@ -53,6 +53,10 @@ Read `framework/rules/context-efficiency.md` only when unsure what to load.
 
 Use for phase `04-assumptions-risks`.
 
+## Challenge Pass
+
+This is the main devil's advocate checkpoint. Use `framework/rules/challenge-pass.md` to identify failure modes, fragile assumptions, stop/pivot triggers, and reasons the idea should not proceed unchanged.
+
 ## Inputs
 
 - Evidence map
@@ -79,6 +83,7 @@ Use for phase `04-assumptions-risks`.
 - What must be true?
 - What could make this fail?
 - Which unknown matters most?
+- What would make us stop, pause, or pivot?
 
 ## Blocking Conditions
 
@@ -91,6 +96,7 @@ Log risk that MVP selection may test the wrong thing or miss avoidable risk.
 
 ## Outputs
 
+- Challenge findings with stop or pivot triggers
 - Prioritized assumptions
 - Prioritized risks
 - Unknowns with resolution paths

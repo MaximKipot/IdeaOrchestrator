@@ -55,6 +55,10 @@ Read `framework/rules/context-efficiency.md` only when unsure what to load.
 
 Use for phase `11-review-pivot`.
 
+## Challenge Pass
+
+Before deciding to continue, use `framework/rules/challenge-pass.md` to test whether continuation is supported by evidence or only by momentum. Record stop, pause, pivot, or continue triggers.
+
 ## Inputs
 
 - Progress log
@@ -95,6 +99,7 @@ Log risk that the project may continue despite contradictory evidence.
 
 ## Outputs
 
+- Challenge findings for continuing, pausing, pivoting, or stopping
 - Review findings
 - Continue/pivot/pause/stop decision
 - Preserved alternatives

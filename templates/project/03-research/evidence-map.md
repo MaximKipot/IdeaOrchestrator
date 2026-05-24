@@ -11,6 +11,11 @@
 | Solution / Alternative | Type | Evidence | Classification | Implication |
 | --- | --- | --- | --- | --- |
 
+## Challenge Pass
+
+| Challenge | Evidence Or Reason | Severity | Response | Stop / Pivot Trigger |
+| --- | --- | --- | --- | --- |
+
 ## Supports The Idea
 
 | Evidence | Classification | Source | Strength |

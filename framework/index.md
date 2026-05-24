@@ -24,6 +24,8 @@ For Clean Handoff Mode, use `framework/rules/clean-handoff.md`.
 
 Before marking a phase complete, use `framework/rules/phase-quality-gates.md`.
 
+Use `framework/rules/challenge-pass.md` in phases 03, 04, 08, 09, and 11.
+
 ## Skill Route
 
 | Situation | Skill |

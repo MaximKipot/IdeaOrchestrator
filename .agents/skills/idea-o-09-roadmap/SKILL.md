@@ -53,6 +53,10 @@ Read `framework/rules/context-efficiency.md` only when unsure what to load.
 
 Use for phase `09-decisions-roadmap`.
 
+## Challenge Pass
+
+Before finalizing the selected path, use `framework/rules/challenge-pass.md` to challenge why the path might be wrong, what rejected option may later prove better, and what stop/pivot trigger should be watched.
+
 ## Inputs
 
 - MVP options
@@ -92,6 +96,7 @@ Log risk that execution may start without owners or sequence.
 
 ## Outputs
 
+- Challenge findings for the selected path
 - Selected path
 - Preserved alternatives
 - Short roadmap

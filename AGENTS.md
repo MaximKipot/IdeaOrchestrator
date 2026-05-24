@@ -15,6 +15,7 @@ The framework is intentionally Markdown-based. Chat is useful for discussion, bu
 - Import work may create `00-import/source-material.md` and `00-import/import-summary.md`, but only when source material exists.
 - Protect context: follow `framework/rules/context-efficiency.md`.
 - Persist until phase outputs are written or consciously skipped: follow `framework/rules/persistence-and-completion.md`.
+- Use `framework/rules/challenge-pass.md` in research, assumptions/risks, MVP, roadmap, and review phases.
 - Use Clean Handoff Mode from `framework/rules/clean-handoff.md` when the user requests separate agents/models, clean context, or phase handoffs.
 - Use `framework/index.md` for routing when the next skill is unclear.
 - Every important decision must be written to `00-control/decision-log.md`.

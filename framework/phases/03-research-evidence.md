@@ -38,6 +38,7 @@ Every mode must include a market scan for present solutions, substitutes, curren
 - Which research mode fits best: Founder Assumption Audit, End-User Questionnaire, or Mixed?
 - What comparable products, services, behaviors, or precedents exist?
 - What evidence supports or weakens the idea?
+- What contrary evidence or present solution challenges the idea?
 - What research depth is appropriate?
 
 ## Blocking Conditions
@@ -51,5 +52,6 @@ Every mode must include a market scan for present solutions, substitutes, curren
 - Sources and evidence are logged.
 - A research mode is recorded.
 - Market scan findings are logged.
+- Challenge findings are logged.
 - Facts are separated from assumptions and guesses.
 - The next recommended skill is `idea-o-04-risks`.
