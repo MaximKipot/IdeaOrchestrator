@@ -30,3 +30,8 @@
 
 | Unknown | Why It Matters | How To Test |
 | --- | --- | --- |
+
+## Decision Packets
+
+| Decision Question | Packet File | Confidence | Recommendation | Decision Log Update |
+| --- | --- | --- | --- | --- |

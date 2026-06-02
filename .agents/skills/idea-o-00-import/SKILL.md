@@ -9,9 +9,10 @@ description: Use when an idea project starts from existing material such as a lo
 
 1. Receive or locate the source material.
 2. Create only control files and `00-import` files if missing.
-3. Preserve source or a faithful summary.
-4. Extract candidate ideas, classified claims, rejected alternatives, questions, and candidate decisions.
-5. Ask the user to confirm main idea and decisions.
+3. Choose an import fidelity mode: `Verbatim Preservation`, `Structured Faithful Summary`, or `Decision-Focused Summary`.
+4. Preserve source or summarize according to the chosen mode.
+5. Extract candidate ideas, classified claims, rejected alternatives, questions, and candidate decisions.
+6. Ask the user to confirm main idea and decisions.
 
 ## Context Budget
 
@@ -19,6 +20,7 @@ Always read:
 
 - Provided source material
 - `00-control/current-state.md` if it exists
+- `framework/rules/import-fidelity.md`
 
 Read only if needed:
 
@@ -31,14 +33,20 @@ Do not read:
 - examples/
 - templates/project/ unless creating import files
 
+Resolve `framework/rules/...` from the project workspace first, then from the installed IDEA-O skill/framework location. Missing project-local rules are not a failure.
+
 Read `framework/rules/context-efficiency.md` only when unsure what to load.
 
 ## Ease Of Use Rules
 
+- Use `framework/rules/import-fidelity.md` to choose and record the fidelity mode, preservation choice, omissions, and remaining risk.
 - Ask only questions that block the next useful file update.
 - Create only files needed for the current action.
 - Keep outputs compact: bullets or tables, not long narrative.
 - Preserve uncertainty labels and rejected alternatives.
+- Keep `00-control/current-state.md` as a compact dashboard with active decisions, blocking questions, recently changed files, and next action; move long history elsewhere.
+- Use decision lifecycle statuses in `00-control/decision-log.md`: Active, Superseded, Rejected, Deferred, Archived.
+- Triage `00-control/open-questions.md` into Blocking Next Action, Decision Needed Soon, Research Later, Parking Lot, and Resolved.
 
 
 ## Persistence Rules
@@ -67,14 +75,14 @@ Use before normal intake when substantial existing material already exists.
 
 - `00-control/current-state.md`
 - `00-control/open-questions.md`
-- `00-import/source-material.md`
 - `00-import/import-summary.md`
+- `00-import/source-material.md` only when preserving source material locally or recording a source pointer there is useful
 - `00-control/decision-log.md` for confirmed decisions only
 - `00-control/handoff.md` when Clean Handoff Mode is active
 
 ## Questions To Ask
 
-- Preserve verbatim or summarize with reference?
+- Which fidelity mode should this import use: `Verbatim Preservation`, `Structured Faithful Summary`, or `Decision-Focused Summary`?
 - Which candidate idea is the project focus?
 - Are candidate decisions confirmed or still open?
 
@@ -92,6 +100,7 @@ If import is skipped, log risk of losing context, rejected alternatives, assumpt
 
 - Preserved or summarized source
 - Import summary
+- Fidelity mode, preservation/omission notes, and remaining risk
 - Candidate decisions separated from confirmed decisions
 - Recommended next skill
 

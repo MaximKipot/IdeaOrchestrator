@@ -1,5 +1,16 @@
 # Import Summary
 
+## Fidelity Choice
+
+| Field | Value |
+| --- | --- |
+| Mode | `Verbatim Preservation` / `Structured Faithful Summary` / `Decision-Focused Summary` |
+| Why This Mode |  |
+| Preserved |  |
+| Omitted |  |
+| Remaining Risk |  |
+| Source Pointer |  |
+
 ## Candidate Ideas
 
 | Idea | Evidence | Confidence | Notes |
@@ -12,7 +23,7 @@
 
 ## Preferences
 
-- 
+-
 
 ## Rejected Or Deferred Alternatives
 
@@ -28,8 +39,8 @@ These are not confirmed decisions until the user accepts them.
 
 ## Open Questions
 
-- 
+-
 
 ## Recommended Next Step
 
-- 
+-

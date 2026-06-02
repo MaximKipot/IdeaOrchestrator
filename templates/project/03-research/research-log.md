@@ -5,6 +5,7 @@
 - Selected Mode:
 - Reason:
 - Depth: Light / Standard / Deep
+- Assumption-led Deferred Research Risk:
 
 ## Market Scan For Present Solutions
 
@@ -14,6 +15,11 @@
 ## Founder Assumption Audit
 
 | Assumption | Classification | Why It Matters | Validate Signal | Falsify Signal | Smallest Evidence Step |
+| --- | --- | --- | --- | --- | --- |
+
+## Assumption-led Focus
+
+| High-Risk Assumption | Decision It Affects | Research Done Now | Deferred Research | Deferred Risk | Smallest Validation Step |
 | --- | --- | --- | --- | --- | --- |
 
 ## End-User Questionnaire

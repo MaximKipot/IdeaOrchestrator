@@ -9,9 +9,10 @@ description: Use when routing, starting, continuing, importing, skipping, jumpin
 
 1. Read `00-control/current-state.md`; create only control files if missing.
 2. Use `framework/index.md` when routing is unclear.
-3. Route to one skill: import, intake, phase, execution, or review.
-4. Log jumps, skips, blockers, and process decisions.
-5. Update current state with next action and next recommended skill.
+3. For direct reasoning, process, or product questions, answer first and update files only if durable project memory changes.
+4. Route to one skill only when the request needs import, intake, phase, Phase 10 prep, execution evidence, publish, or review.
+5. Log jumps, skips, blockers, and process decisions.
+6. Update current state with next action and next recommended skill when a file update is needed.
 
 ## Context Budget
 
@@ -31,14 +32,23 @@ Do not read:
 - templates/project/ unless creating a file
 - future phase folders
 
+Resolve `framework/rules/...` from the project workspace first, then from the installed IDEA-O skill/framework location. Missing project-local rules are not a failure.
+
 Read `framework/rules/context-efficiency.md` only when unsure what to load.
 
 ## Ease Of Use Rules
 
+- Direct questions are allowed inside idea projects. Answer the question first, then decide whether the answer changes durable project memory.
+- Update Markdown only when the answer changes a decision, risk, evidence item, assumption, open question, rejected alternative, artifact index, current focus, or next action. If not, say no file update was required.
 - Ask only questions that block the next useful file update.
 - Create only files needed for the current action.
 - Keep outputs compact: bullets or tables, not long narrative.
 - Preserve uncertainty labels and rejected alternatives.
+- Keep `00-control/current-state.md` as a compact dashboard with active decisions, blocking questions, recently changed files, and next action; move long history elsewhere.
+- Use decision lifecycle statuses in `00-control/decision-log.md`: Active, Superseded, Rejected, Deferred, Archived.
+- Triage `00-control/open-questions.md` into Blocking Next Action, Decision Needed Soon, Research Later, Parking Lot, and Resolved.
+- Index custom or optional UX artifacts in `00-control/current-state.md` with purpose, status, owner, and next use.
+- For child idea tracks, create only control files and `00-control/track-context.md`; use `framework/rules/sub-idea-tracks.md`.
 
 
 ## Persistence Rules
@@ -52,6 +62,8 @@ Read `framework/rules/context-efficiency.md` only when unsure what to load.
 ## When To Use
 
 Use as the front door whenever the user gives a plain-language process request.
+
+Also use it for direct reasoning, process, or product questions inside an idea project. These do not require a phase run by default: answer first, make the smallest relevant durable update when needed, and route to a phase only when the user asks or actual phase outputs are needed.
 
 ## Inputs
 
@@ -77,12 +89,16 @@ Use as the front door whenever the user gives a plain-language process request.
 - Which project focus should I use?
 - Do you accept the logged risk of skipping or jumping?
 - Should depth be Light, Standard, or Deep?
+- Does execution need an implementation spec or agent execution rules before work starts?
+- Is this a sub-idea track that needs parent context and promotion rules?
+- Is this a publish request that needs target folder, base branch, branch name, and staging scope confirmed?
 
 ## Blocking Conditions
 
 - No project folder or usable starting material.
 - A jump or skip risk is not accepted.
 - A decision is implied but not logged.
+- A publish or sub-track request lacks enough folder or parent context to prevent wrong-folder work.
 
 ## Skip Behavior
 
@@ -105,4 +121,4 @@ When Clean Handoff Mode is active, update `00-control/handoff.md` using `framewo
 
 ## Next Recommended Skill
 
-Use the routed skill. If existing material is provided, use `idea-o-00-import`; if fresh, use `idea-o-01-intake`.
+Use the routed skill. If existing material is provided, use `idea-o-00-import`; if fresh, use `idea-o-01-intake`. Use `idea-o-publish` for branch, staging, commit, push, or PR requests involving idea artifacts. After roadmap, use `idea-o-10-implementation-spec` or `idea-o-10-execution-rules` before `idea-o-10-execution` when implementation requirements or agent boundaries need to be explicit. Use `idea-o-10-execution-evidence` when execution creates evidence worth preserving without a full review.

@@ -1,44 +1,59 @@
 # Current State
 
+Keep this file as a compact dashboard. Move long history to phase files or `00-control/project-history.md` only when needed.
+
 - Project:
 - Owner:
 - Current Phase:
-- Suggested Depth: Light | Standard | Deep
+- Suggested Depth / Mode: Light | Standard | Deep | Assumption-led
 - User-Approved Depth:
 - Context Mode: Inline | Clean Handoff | Parallel Support
+- Track Type: Parent | Sub-Idea Track | Standalone
+- Parent Project:
 - Status: Active | Blocked | Paused | Complete
 - Last Updated:
 - Next Recommended Skill:
 - Next Action:
 
-## Phase Summary
+## Current Focus
 
-| Phase | Status | Notes |
+-
+
+## Active Decisions
+
+| Decision | Source | Revisit Trigger |
 | --- | --- | --- |
-| 00 Import Existing Material | Optional | Use only when starting from an existing chat, document, transcript, or notes dump. |
-| 00 Project Setup | Not Started | |
-| 01 Idea Capture | Not Started | |
-| 02 Problem Context | Not Started | |
-| 03 Research Evidence | Not Started | |
-| 04 Assumptions Risks | Not Started | |
-| 05 Vision Direction | Not Started | |
-| 06 Principles Constraints | Not Started | |
-| 07 Strategy | Not Started | |
-| 08 MVP Experiments | Not Started | |
-| 09 Decisions Roadmap | Not Started | |
-| 10 Execution Tracking | Not Started | |
-| 11 Review Pivot | Not Started | |
+
+## Blocking Questions
+
+| Question | Owner | Phase/Status | Revisit Trigger |
+| --- | --- | --- | --- |
+
+## Recently Changed Files
+
+| Date | File | Why It Changed |
+| --- | --- | --- |
+
+## Current Phase Checkpoint
+
+- Required output:
+- Status: Not Started | Active | Blocked | Complete | Skipped With Accepted Risk
+- Evidence or file link:
+- Remaining blocker:
 
 ## Active Risks From Skips Or Jumps
 
 | Date | Item | Reason | Risk | Accepted By | Revisit Trigger |
 | --- | --- | --- | --- | --- | --- |
 
-## Completion Evidence
+## Linked Detail
 
-| Phase | Required Outputs Written | Conscious Skips Logged | Remaining Blocker |
-| --- | --- | --- | --- |
+| Topic | File | Purpose | Status | Owner | Next Use |
+| --- | --- | --- | --- | --- | --- |
 
-## Notes
+## Custom Artifact Index
 
-- 
+Use this for optional UX files and other custom phase-local artifacts.
+
+| File | Purpose | Status | Owner | Next Use |
+| --- | --- | --- | --- | --- |

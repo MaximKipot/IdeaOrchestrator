@@ -8,7 +8,11 @@ It is also context-efficient by default: Codex should read the current state fir
 
 It is persistence-oriented: each skill should help finish written outputs, identify what is already done, and distinguish conscious skips from unresolved gaps.
 
+It also supports direct reasoning inside projects: Codex should answer direct process, product, or reasoning questions first, then update Markdown only when durable project memory changes.
+
 It also includes a lightweight challenge pass: research, risks, MVP, roadmap, and review phases should deliberately ask what could make the idea fail before advancing.
+
+Framework rule lookup is project-local first, then installed-skill or framework-relative. A missing project-local `framework/rules/...` file is not a failure if the installed IDEA-O copy is available.
 
 ## Skill Sequence
 
@@ -26,8 +30,26 @@ Use `idea-o` as the router. The numbered skills show the normal order in slash s
 | 07 | `idea-o-07-strategy` | Define target, value, positioning, model, distribution, and metrics. |
 | 08 | `idea-o-08-mvp` | Generate MVP and experiment options. |
 | 09 | `idea-o-09-roadmap` | Select a path, preserve rejected options, and plan the roadmap. |
+| 10 prep | `idea-o-10-implementation-spec` | Create implementation-ready requirements, acceptance criteria, and verification. |
+| 10 prep | `idea-o-10-execution-rules` | Define AI agent execution boundaries, checkpoints, stop conditions, and handoff rules. |
 | 10 | `idea-o-10-execution` | Track focus, progress, blockers, and next actions. |
+| 10 | `idea-o-10-execution-evidence` | Capture build, test, debug, launch, feedback, or implementation evidence without forcing full review. |
 | 11 | `idea-o-11-review` | Review evidence and decide whether to continue, adjust, pivot, pause, or stop. |
+| Utility | `idea-o-publish` | Safely branch, stage, commit, push, or open a PR for idea artifacts. |
+
+Phase 10 prep is optional but explicit:
+
+`idea-o-09-roadmap` -> `idea-o-10-implementation-spec` -> `idea-o-10-execution-rules` -> `idea-o-10-execution`
+
+Use it when the roadmap has become concrete implementation work, especially if AI agents will execute the build. The implementation spec and execution rules live as sibling files in `10-execution/`.
+
+The implementation spec should include non-goals, forbidden assumptions, acceptance criteria, verification expectations, and a Spec Kit compatible prompt when the work will move into Spec Kit. Agent execution rules should define allowed files, protected files/actions, verification commands, stop conditions, and handoff evidence.
+
+Phase 10 can also capture execution evidence without requiring a full review:
+
+`idea-o-10-execution` -> `idea-o-10-execution-evidence` -> `idea-o-10-execution`
+
+Use this when build, test, debug, launch, user feedback, or implementation work changes evidence, assumptions, user-visible behavior, or decisions. Move to `idea-o-11-review` only when the evidence changes direction, finishes an experiment, creates a pivot/stop/pause decision, or needs broader tradeoff review.
 
 ## When To Use It
 
@@ -54,6 +76,7 @@ Suggested depth levels:
 - `Light`: personal, internal, or low-risk idea.
 - `Standard`: most business, software, service, or content ideas.
 - `Deep`: high-cost, high-risk, regulated, or strategically important idea.
+- `Assumption-led`: fast mode for high-risk assumptions and decision-relevant research. It narrows research but still requires a market scan, evidence labels, deferred research risk, and the smallest validation step.
 
 ## Start From Existing Material
 
@@ -66,15 +89,19 @@ Ask Codex:
 Codex should:
 
 1. Create the control files if they do not exist.
-2. Create only the import files:
-   - `00-import/source-material.md`
+2. Choose and record an import fidelity mode: `Verbatim Preservation`, `Structured Faithful Summary`, or `Decision-Focused Summary`.
+3. Create only the import files needed for the chosen fidelity mode:
    - `00-import/import-summary.md`
-3. Preserve the original material or a faithful summary of it.
-4. Extract candidate ideas, facts, assumptions, guesses, opinions, preferences, rejected alternatives, open questions, and candidate decisions.
-5. Ask you to confirm the main idea and any candidate decisions.
-6. Route into `idea-o-01-intake` or `idea-o-02-problem`.
+   - `00-import/source-material.md` only when preserving source material locally or recording a source pointer there is useful
+4. Preserve the original material, a source pointer, or a summary according to the fidelity mode.
+5. Record why the mode was chosen, what was preserved, what was omitted, remaining risk, and a source pointer when exact wording may matter.
+6. Extract candidate ideas, facts, assumptions, guesses, opinions, preferences, rejected alternatives, open questions, and candidate decisions.
+7. Ask you to confirm the main idea and any candidate decisions.
+8. Route into `idea-o-01-intake` or `idea-o-02-problem`.
 
 Old chat conclusions are not automatically decisions. They become decisions only after you confirm them.
+
+Imports do not need to preserve huge verbatim transcripts by default. The fidelity mode makes compression explicit and logs the risk.
 
 ## Continue An Existing Idea Project
 
@@ -86,6 +113,34 @@ Ask Codex to:
 4. Continue the next recommended phase unless you request a manual jump.
 
 Codex should not read examples, templates, future phase folders, or every rule file unless the current task needs them.
+
+For direct questions, Codex should answer first and only make the smallest relevant file update when the answer changes a decision, risk, evidence item, assumption, open question, rejected alternative, artifact index, current focus, or next action. If no durable update is needed, Codex should say no file update was required.
+
+`00-control/current-state.md` should stay a compact dashboard: current phase/status, current focus, active decisions, blocking questions, recently changed files, next recommended skill, and next action. Move long history into phase files or `00-control/project-history.md` only when needed.
+
+`00-control/decision-log.md` should keep an active-decision summary near the top and mark each decision as Active, Superseded, Rejected, Deferred, or Archived. Superseded decisions link to their replacements.
+
+`00-control/open-questions.md` should be triaged into Blocking Next Action, Decision Needed Soon, Research Later, Parking Lot, and Resolved, with owner, phase/status, and revisit trigger.
+
+Optional UX and custom artifacts should be indexed in `00-control/current-state.md` with file, purpose, status, owner, and next use. This keeps files like `screen-map.md`, `copy-decisions.md`, `interaction-rules.md`, `permission-experience.md`, or other custom phase-local notes discoverable without creating a rigid new track.
+
+## Sub-Idea Tracks
+
+Use a sub-idea track when a focused child question needs its own idea files but should stay connected to a parent project.
+
+Create only the child project folder, control files, and `00-control/track-context.md`. Do not create the full child folder tree up front.
+
+`00-control/track-context.md` records:
+
+- parent project and path
+- track purpose
+- parent context files to read
+- parent decisions that constrain the track
+- decisions that can stay local
+- decisions that must be promoted to the parent
+- naming and publishing expectations
+
+Promote decisions back to the parent when they affect product direction, target user, positioning, principles, roadmap priority, implementation requirements, launch scope, risk posture, or assumptions the parent depends on.
 
 ## Clean Handoff Mode
 
@@ -107,6 +162,8 @@ Best use cases for Clean Handoff Mode:
 - `idea-o-03-research`: when evidence quality matters or research is broad.
 - `idea-o-07-strategy`: when target, positioning, distribution, or model choices are strategic.
 - `idea-o-08-mvp`: when comparing several experiment paths.
+- `idea-o-10-implementation-spec`: when implementation requirements must be clear before execution.
+- `idea-o-10-execution-rules`: when AI agents need explicit boundaries before execution.
 - `idea-o-11-review`: when deciding whether to continue, pivot, pause, or stop.
 
 Less useful for Clean Handoff Mode:
@@ -130,6 +187,8 @@ Model assignment idea:
 | `idea-o-07-strategy` | Strong strategy/reasoning model |
 | `idea-o-08-mvp` | Strong reasoning and option-generation model |
 | `idea-o-09-roadmap` | General reasoning model |
+| `idea-o-10-implementation-spec` | Strong implementation planning model |
+| `idea-o-10-execution-rules` | General reasoning model |
 | `idea-o-10-execution` | Fast general model |
 | `idea-o-11-review` | Strong reasoning model |
 
@@ -160,8 +219,24 @@ In `idea-o-03-research`, Codex should choose or ask for a research mode:
 - `Founder Assumption Audit`: test what the founder currently believes.
 - `End-User Questionnaire`: create interview or survey questions for target users.
 - `Mixed`: use both, usually for product, service, business, and market-facing ideas.
+- `Assumption-led`: choose high-risk assumptions, do decision-relevant research, log deferred research risk, and define the smallest validation step.
 
 Every research mode must include a market scan for present solutions, substitutes, workarounds, and comparable alternatives.
+
+When research supports a specific choice, Codex may create a research decision packet in `03-research/decision-packet.md` or a named packet. The packet should include the decision question, direct evidence, analogous evidence, counter-evidence, confidence, recommendation, and what would change the decision. Accepted recommendations must be linked from `00-control/decision-log.md`.
+
+## Optional UX Artifacts
+
+Create UX artifacts only when needed by the active phase. Keep them phase-local instead of creating a permanent UX track.
+
+Optional files:
+
+- `screen-map.md`: screens, states, entry points, exits, and unresolved screen questions.
+- `copy-decisions.md`: confirmed copy, rejected copy, tone rules, and copy risks.
+- `interaction-rules.md`: mode behavior, allowed actions, blocked actions, feedback, and edge cases.
+- `permission-experience.md`: permission prompts, user benefit, fallback behavior, privacy concerns, and recovery paths.
+
+When one is created, index it in `00-control/current-state.md` and log any decisions or blockers it creates.
 
 ## Skip With Risk Logging
 
@@ -187,6 +262,22 @@ Use phase `11-review-pivot` when:
 - Strategy, MVP, or target user needs to change.
 
 Pivots are decisions. Record them in both `11-review/pivot-decisions.md` and `00-control/decision-log.md`.
+
+## Publish Idea Artifacts
+
+Use `idea-o-publish` before branching, staging, committing, pushing, or opening a PR for idea artifacts.
+
+The publish workflow confirms:
+
+- target idea folder
+- repository root
+- base branch
+- branch naming convention, usually `codex/<idea-or-track-name>`
+- exact files to stage
+- wrong-folder prevention checks
+- publish decision recorded in control files
+
+Codex should not stage unrelated dirty worktree changes or perform git writes the user did not explicitly request.
 
 ## Repository Contents
 

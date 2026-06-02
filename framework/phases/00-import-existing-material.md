@@ -10,6 +10,7 @@ This is optional. Use it only when source material already exists.
 
 - User-provided source material
 - `00-control/current-state.md` if it exists
+- `framework/rules/import-fidelity.md`
 - `00-control/open-questions.md` if it exists
 - `00-control/decision-log.md` if it exists
 
@@ -18,13 +19,13 @@ This is optional. Use it only when source material already exists.
 - `00-control/current-state.md`
 - `00-control/open-questions.md`
 - `00-control/decision-log.md` for confirmed decisions only
-- `00-import/source-material.md`
 - `00-import/import-summary.md`
+- `00-import/source-material.md` only when preserving source material locally or recording a source pointer there is useful
 
 ## Questions
 
 - What material should be treated as the source?
-- Should the source be preserved verbatim, summarized, or referenced by filename?
+- Which fidelity mode should be used: `Verbatim Preservation`, `Structured Faithful Summary`, or `Decision-Focused Summary`?
 - Which extracted idea should be treated as the main idea?
 - Are any candidate decisions confirmed?
 
@@ -40,7 +41,8 @@ If import is skipped despite existing material, log the risk that important cont
 
 ## Done When
 
-- Source material is preserved or faithfully summarized.
+- Source material is preserved or summarized according to the chosen fidelity mode.
+- The import summary records the chosen mode, why it was chosen, what was preserved, what was omitted, remaining risk, and any source pointer needed for exact wording.
 - Extracted claims are classified.
 - Candidate decisions are separated from confirmed decisions.
 - Open questions are logged.

@@ -11,7 +11,7 @@ description: Use when selecting the path, preserving rejected options, and turni
 2. Create only `09-roadmap` files if missing.
 3. Record selected path.
 4. Preserve rejected/deferred/paused options.
-5. Write short roadmap and route forward.
+5. Write short roadmap and route forward, using Phase 10 prep when implementation needs it.
 
 ## Context Budget
 
@@ -31,6 +31,8 @@ Do not read:
 - execution files until roadmap exists
 - future phase folders
 
+Resolve `framework/rules/...` from the project workspace first, then from the installed IDEA-O skill/framework location. Missing project-local rules are not a failure.
+
 Read `framework/rules/context-efficiency.md` only when unsure what to load.
 
 ## Ease Of Use Rules
@@ -39,6 +41,9 @@ Read `framework/rules/context-efficiency.md` only when unsure what to load.
 - Create only files needed for the current action.
 - Keep outputs compact: bullets or tables, not long narrative.
 - Preserve uncertainty labels and rejected alternatives.
+- Keep `00-control/current-state.md` as a compact dashboard with active decisions, blocking questions, recently changed files, and next action; move long history elsewhere.
+- Use decision lifecycle statuses in `00-control/decision-log.md`: Active, Superseded, Rejected, Deferred, Archived.
+- Triage `00-control/open-questions.md` into Blocking Next Action, Decision Needed Soon, Research Later, Parking Lot, and Resolved.
 
 
 ## Persistence Rules
@@ -83,6 +88,9 @@ Before finalizing the selected path, use `framework/rules/challenge-pass.md` to 
 - What path is selected?
 - What is rejected, deferred, or paused?
 - What milestones are needed?
+- Which decisions remain Active, and which are Superseded, Rejected, Deferred, or Archived?
+- Does execution need an implementation spec before work starts?
+- Will AI agents need explicit execution rules?
 
 ## Blocking Conditions
 
@@ -92,7 +100,7 @@ Before finalizing the selected path, use `framework/rules/challenge-pass.md` to 
 
 ## Skip Behavior
 
-Log risk that execution may start without owners or sequence.
+Log risk that execution may start without owners, sequence, implementation-ready requirements, or agent boundaries.
 
 ## Outputs
 
@@ -100,7 +108,7 @@ Log risk that execution may start without owners or sequence.
 - Selected path
 - Preserved alternatives
 - Short roadmap
-- Decision log entries
+- Decision log entries with lifecycle status and supersession links when decisions changed
 
 ## Quality Gate
 
@@ -112,4 +120,4 @@ When Clean Handoff Mode is active, update `00-control/handoff.md` using `framewo
 
 ## Next Recommended Skill
 
-`idea-o-10-execution`
+Use `idea-o-10-implementation-spec` when implementation-ready requirements, acceptance criteria, or verification are needed before execution. Use `idea-o-10-execution-rules` when AI agents need execution boundaries but the implementation spec is already sufficient. Otherwise use `idea-o-10-execution`.

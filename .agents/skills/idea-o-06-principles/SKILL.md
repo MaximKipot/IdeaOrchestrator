@@ -31,6 +31,8 @@ Do not read:
 - strategy files unless checking conflict
 - future phase folders
 
+Resolve `framework/rules/...` from the project workspace first, then from the installed IDEA-O skill/framework location. Missing project-local rules are not a failure.
+
 Read `framework/rules/context-efficiency.md` only when unsure what to load.
 
 ## Ease Of Use Rules
@@ -39,6 +41,9 @@ Read `framework/rules/context-efficiency.md` only when unsure what to load.
 - Create only files needed for the current action.
 - Keep outputs compact: bullets or tables, not long narrative.
 - Preserve uncertainty labels and rejected alternatives.
+- Keep `00-control/current-state.md` as a compact dashboard with active decisions, blocking questions, recently changed files, and next action; move long history elsewhere.
+- Use decision lifecycle statuses in `00-control/decision-log.md`: Active, Superseded, Rejected, Deferred, Archived.
+- Triage `00-control/open-questions.md` into Blocking Next Action, Decision Needed Soon, Research Later, Parking Lot, and Resolved.
 
 
 ## Persistence Rules
